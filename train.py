@@ -28,6 +28,14 @@ MIN_NON_PRIMARY_CONFIDENCE = 0.5
 PRIMARY_LANGUAGE = "en"
 TARGET_LANGUAGE = "es"
 
+# Words that should not trigger a language switch on their own.
+# These are common English words or language-ambiguous words that
+# the Spanish STT stream can pick up with high confidence from English speakers.
+ENGLISH_TRIGGER_BLOCKLIST = {
+    "no", "hello", "yes", "hi", "hey", "okay", "ok", "yeah", "yep",
+    "nope", "sure", "right", "well", "oh", "uh", "um",
+}
+
 
 class BaselineLanguageSwitchPolicy:
     """
@@ -79,6 +87,9 @@ class BaselineLanguageSwitchPolicy:
             return None
 
         if language != TARGET_LANGUAGE:
+            return None
+
+        if text.lower() in ENGLISH_TRIGGER_BLOCKLIST:
             return None
 
         should_switch, reason = self._should_switch_to_target(
