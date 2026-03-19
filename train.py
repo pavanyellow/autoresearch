@@ -89,7 +89,7 @@ class BaselineLanguageSwitchPolicy:
         if language != TARGET_LANGUAGE:
             return None
 
-        if text.lower() in ENGLISH_TRIGGER_BLOCKLIST:
+        if len(text) < 2 or text.lower() in ENGLISH_TRIGGER_BLOCKLIST:
             return None
 
         should_switch, reason = self._should_switch_to_target(
