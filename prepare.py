@@ -1,389 +1,333 @@
 """
-One-time data preparation for autoresearch experiments.
-Downloads data shards and trains a BPE tokenizer.
+Fixed offline evaluation harness for bilingual STT switch-policy experiments.
 
-Usage:
-    python prepare.py                  # full prep (download + tokenizer)
-    python prepare.py --num-shards 8   # download only 8 shards (for testing)
-
-Data and tokenizer are stored in ~/.cache/autoresearch/.
+This module is intentionally read-only during the autoresearch loop.
+It loads the production event log, builds deterministic splits, and
+evaluates a policy by replaying STT events call by call.
 """
 
-import os
-import sys
-import time
-import math
+from __future__ import annotations
+
 import argparse
-import pickle
-from multiprocessing import Pool
+import json
+import os
+import random
+import statistics
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
 
-import requests
-import pyarrow.parquet as pq
-import rustbpe
-import tiktoken
-import torch
+DEFAULT_EVENTS_PATH = "/Users/pavan/Downloads/bilingual_stt_events.json"
+EVENTS_PATH_ENV = "AUTORESEARCH_EVENTS_PATH"
+SPLIT_SEED = 42
+SWITCH_ROUTING_PREFIX = "[BilingualSTT] LANGUAGE SWITCH:"
+CHANGE_LANGUAGE_EVENT = "change_language"
 
-# ---------------------------------------------------------------------------
-# Constants (fixed, do not modify)
-# ---------------------------------------------------------------------------
-
-MAX_SEQ_LEN = 2048       # context length
-TIME_BUDGET = 300        # training time budget in seconds (5 minutes)
-EVAL_TOKENS = 40 * 524288  # number of tokens for val eval
-
-# ---------------------------------------------------------------------------
-# Configuration
-# ---------------------------------------------------------------------------
-
-CACHE_DIR = os.path.join(os.path.expanduser("~"), ".cache", "autoresearch")
-DATA_DIR = os.path.join(CACHE_DIR, "data")
-TOKENIZER_DIR = os.path.join(CACHE_DIR, "tokenizer")
-BASE_URL = "https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle/resolve/main"
-MAX_SHARD = 6542 # the last datashard is shard_06542.parquet
-VAL_SHARD = MAX_SHARD  # pinned validation shard (shard_06542)
-VAL_FILENAME = f"shard_{VAL_SHARD:05d}.parquet"
-VOCAB_SIZE = 8192
-
-# BPE split pattern (GPT-4 style, with \p{N}{1,2} instead of {1,3})
-SPLIT_PATTERN = r"""'(?i:[sdmt]|ll|ve|re)|[^\r\n\p{L}\p{N}]?+\p{L}+|\p{N}{1,2}| ?[^\s\p{L}\p{N}]++[\r\n]*|\s*[\r\n]|\s+(?!\S)|\s+"""
-
-SPECIAL_TOKENS = [f"<|reserved_{i}|>" for i in range(4)]
-BOS_TOKEN = "<|reserved_0|>"
-
-# ---------------------------------------------------------------------------
-# Data download
-# ---------------------------------------------------------------------------
-
-def download_single_shard(index):
-    """Download one parquet shard with retries. Returns True on success."""
-    filename = f"shard_{index:05d}.parquet"
-    filepath = os.path.join(DATA_DIR, filename)
-    if os.path.exists(filepath):
-        return True
-
-    url = f"{BASE_URL}/{filename}"
-    max_attempts = 5
-    for attempt in range(1, max_attempts + 1):
-        try:
-            response = requests.get(url, stream=True, timeout=30)
-            response.raise_for_status()
-            temp_path = filepath + ".tmp"
-            with open(temp_path, "wb") as f:
-                for chunk in response.iter_content(chunk_size=1024 * 1024):
-                    if chunk:
-                        f.write(chunk)
-            os.rename(temp_path, filepath)
-            print(f"  Downloaded {filename}")
-            return True
-        except (requests.RequestException, IOError) as e:
-            print(f"  Attempt {attempt}/{max_attempts} failed for {filename}: {e}")
-            for path in [filepath + ".tmp", filepath]:
-                if os.path.exists(path):
-                    try:
-                        os.remove(path)
-                    except OSError:
-                        pass
-            if attempt < max_attempts:
-                time.sleep(2 ** attempt)
-    return False
+REQUIRED_CALL_KEYS = {
+    "call_id",
+    "result",
+    "duration",
+    "language",
+    "language_switched",
+    "stt_events",
+    "routing_events",
+    "tool_events",
+}
+REQUIRED_STT_EVENT_KEYS = {"ts", "audio_ts", "type", "stream", "lang", "conf", "text"}
+REQUIRED_LOG_EVENT_KEYS = {"ts", "event"}
 
 
-def download_data(num_shards, download_workers=8):
-    """Download training shards + pinned validation shard."""
-    os.makedirs(DATA_DIR, exist_ok=True)
-    num_train = min(num_shards, MAX_SHARD)
-    ids = list(range(num_train))
-    if VAL_SHARD not in ids:
-        ids.append(VAL_SHARD)
-
-    # Count what's already downloaded
-    existing = sum(1 for i in ids if os.path.exists(os.path.join(DATA_DIR, f"shard_{i:05d}.parquet")))
-    if existing == len(ids):
-        print(f"Data: all {len(ids)} shards already downloaded at {DATA_DIR}")
-        return
-
-    needed = len(ids) - existing
-    print(f"Data: downloading {needed} shards ({existing} already exist)...")
-
-    workers = max(1, min(download_workers, needed))
-    with Pool(processes=workers) as pool:
-        results = pool.map(download_single_shard, ids)
-
-    ok = sum(1 for r in results if r)
-    print(f"Data: {ok}/{len(ids)} shards ready at {DATA_DIR}")
-
-# ---------------------------------------------------------------------------
-# Tokenizer training
-# ---------------------------------------------------------------------------
-
-def list_parquet_files():
-    """Return sorted list of parquet file paths in the data directory."""
-    files = sorted(f for f in os.listdir(DATA_DIR) if f.endswith(".parquet") and not f.endswith(".tmp"))
-    return [os.path.join(DATA_DIR, f) for f in files]
+@dataclass(frozen=True)
+class STTEvent:
+    ts: float
+    audio_ts: float
+    type: str
+    stream: int | None
+    lang: str
+    conf: float
+    text: str
 
 
-def text_iterator(max_chars=1_000_000_000, doc_cap=10_000):
-    """Yield documents from training split (all shards except pinned val shard)."""
-    parquet_paths = [p for p in list_parquet_files() if not p.endswith(VAL_FILENAME)]
-    nchars = 0
-    for filepath in parquet_paths:
-        pf = pq.ParquetFile(filepath)
-        for rg_idx in range(pf.num_row_groups):
-            rg = pf.read_row_group(rg_idx)
-            for text in rg.column("text").to_pylist():
-                doc = text[:doc_cap] if len(text) > doc_cap else text
-                nchars += len(doc)
-                yield doc
-                if nchars >= max_chars:
-                    return
+@dataclass(frozen=True)
+class LoggedEvent:
+    ts: float
+    event: str
 
 
-def train_tokenizer():
-    """Train BPE tokenizer using rustbpe, save as tiktoken pickle."""
-    tokenizer_pkl = os.path.join(TOKENIZER_DIR, "tokenizer.pkl")
-    token_bytes_path = os.path.join(TOKENIZER_DIR, "token_bytes.pt")
+@dataclass(frozen=True)
+class CallRecord:
+    call_id: str
+    result: str
+    duration: int
+    language: str
+    language_switched: bool
+    stt_events: tuple[STTEvent, ...]
+    routing_events: tuple[LoggedEvent, ...]
+    tool_events: tuple[LoggedEvent, ...]
 
-    if os.path.exists(tokenizer_pkl) and os.path.exists(token_bytes_path):
-        print(f"Tokenizer: already trained at {TOKENIZER_DIR}")
-        return
 
-    os.makedirs(TOKENIZER_DIR, exist_ok=True)
+@dataclass(frozen=True)
+class Prediction:
+    switch_to_es: bool
+    decision_ts: float
+    decision_audio_ts: float
+    trigger_text: str
+    reason: str
 
-    parquet_files = list_parquet_files()
-    if len(parquet_files) < 2:
-        print("Tokenizer: need at least 2 data shards (1 train + 1 val). Download more data first.")
-        sys.exit(1)
 
-    # --- Train with rustbpe ---
-    print("Tokenizer: training BPE tokenizer...")
-    t0 = time.time()
+@dataclass(frozen=True)
+class CallOutcome:
+    call_id: str
+    split: str
+    gold_switch: bool
+    gold_switch_ts: float | None
+    predicted_switch: bool
+    decision_ts: float | None
+    decision_audio_ts: float | None
+    latency_s: float | None
+    result: str
+    prediction_reason: str | None
+    trigger_text: str | None
 
-    tokenizer = rustbpe.Tokenizer()
-    vocab_size_no_special = VOCAB_SIZE - len(SPECIAL_TOKENS)
-    tokenizer.train_from_iterator(text_iterator(), vocab_size_no_special, pattern=SPLIT_PATTERN)
 
-    # Build tiktoken encoding from trained merges
-    pattern = tokenizer.get_pattern()
-    mergeable_ranks = {bytes(k): v for k, v in tokenizer.get_mergeable_ranks()}
-    tokens_offset = len(mergeable_ranks)
-    special_tokens = {name: tokens_offset + i for i, name in enumerate(SPECIAL_TOKENS)}
-    enc = tiktoken.Encoding(
-        name="rustbpe",
-        pat_str=pattern,
-        mergeable_ranks=mergeable_ranks,
-        special_tokens=special_tokens,
+def resolve_events_path(events_path: str | None = None) -> Path:
+    path = Path(events_path or os.environ.get(EVENTS_PATH_ENV) or DEFAULT_EVENTS_PATH)
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Event log not found at {path}. "
+            f"Set {EVENTS_PATH_ENV} or place the file at {DEFAULT_EVENTS_PATH}."
+        )
+    return path
+
+
+def _require_keys(obj: dict[str, Any], required: set[str], context: str) -> None:
+    missing = sorted(required - set(obj))
+    if missing:
+        raise ValueError(f"{context} is missing keys: {missing}")
+
+
+def _load_logged_events(events: list[dict[str, Any]], context: str) -> tuple[LoggedEvent, ...]:
+    parsed = []
+    for index, event in enumerate(events):
+        _require_keys(event, REQUIRED_LOG_EVENT_KEYS, f"{context}[{index}]")
+        parsed.append(
+            LoggedEvent(
+                ts=float(event["ts"]),
+                event=str(event["event"]),
+            )
+        )
+    return tuple(sorted(parsed, key=lambda item: item.ts))
+
+
+def _load_stt_events(events: list[dict[str, Any]], context: str) -> tuple[STTEvent, ...]:
+    parsed = []
+    for index, event in enumerate(events):
+        _require_keys(event, REQUIRED_STT_EVENT_KEYS, f"{context}[{index}]")
+        parsed.append(
+            STTEvent(
+                ts=float(event["ts"]),
+                audio_ts=float(event["audio_ts"]),
+                type=str(event["type"]).upper(),
+                stream=int(event["stream"]) if event["stream"] is not None else None,
+                lang=str(event["lang"]),
+                conf=float(event["conf"]),
+                text=str(event["text"]),
+            )
+        )
+    return tuple(
+        sorted(
+            parsed,
+            key=lambda item: (item.ts, item.audio_ts, -1 if item.stream is None else item.stream, item.type),
+        )
     )
 
-    # Save tokenizer
-    with open(tokenizer_pkl, "wb") as f:
-        pickle.dump(enc, f)
 
-    t1 = time.time()
-    print(f"Tokenizer: trained in {t1 - t0:.1f}s, saved to {tokenizer_pkl}")
+def load_calls(events_path: str | None = None) -> list[CallRecord]:
+    path = resolve_events_path(events_path)
+    with path.open() as handle:
+        raw = json.load(handle)
 
-    # --- Build token_bytes lookup for BPB evaluation ---
-    print("Tokenizer: building token_bytes lookup...")
-    special_set = set(SPECIAL_TOKENS)
-    token_bytes_list = []
-    for token_id in range(enc.n_vocab):
-        token_str = enc.decode([token_id])
-        if token_str in special_set:
-            token_bytes_list.append(0)
+    if not isinstance(raw, list):
+        raise ValueError("Top-level event log must be a list of calls")
+
+    calls = []
+    for index, item in enumerate(raw):
+        if not isinstance(item, dict):
+            raise ValueError(f"Call entry {index} must be a dict")
+        _require_keys(item, REQUIRED_CALL_KEYS, f"call[{index}]")
+
+        calls.append(
+            CallRecord(
+                call_id=str(item["call_id"]),
+                result=str(item["result"]),
+                duration=int(item["duration"]),
+                language=str(item["language"]),
+                language_switched=bool(item["language_switched"]),
+                stt_events=_load_stt_events(item["stt_events"], f"call[{index}].stt_events"),
+                routing_events=_load_logged_events(item["routing_events"], f"call[{index}].routing_events"),
+                tool_events=_load_logged_events(item["tool_events"], f"call[{index}].tool_events"),
+            )
+        )
+    return calls
+
+
+def _class_split_counts(total: int) -> tuple[int, int, int]:
+    dev = round(total * 0.2)
+    test = round(total * 0.2)
+    train = total - dev - test
+    if min(train, dev, test) < 0:
+        raise ValueError(f"Invalid split counts for class size {total}")
+    return train, dev, test
+
+
+def get_splits(calls: list[CallRecord], seed: int = SPLIT_SEED) -> dict[str, list[CallRecord]]:
+    switched = sorted((call for call in calls if call.language_switched), key=lambda call: call.call_id)
+    non_switched = sorted((call for call in calls if not call.language_switched), key=lambda call: call.call_id)
+
+    randomizer = random.Random(seed)
+    randomizer.shuffle(switched)
+    randomizer.shuffle(non_switched)
+
+    split_map = {"train": [], "dev": [], "test": []}
+    for bucket in (switched, non_switched):
+        train_count, dev_count, test_count = _class_split_counts(len(bucket))
+        split_map["train"].extend(bucket[:train_count])
+        split_map["dev"].extend(bucket[train_count : train_count + dev_count])
+        split_map["test"].extend(bucket[train_count + dev_count : train_count + dev_count + test_count])
+
+    for split_name in split_map:
+        split_map[split_name] = sorted(split_map[split_name], key=lambda call: call.call_id)
+
+    seen: set[str] = set()
+    for split_name, split_calls in split_map.items():
+        split_ids = {call.call_id for call in split_calls}
+        if seen & split_ids:
+            raise ValueError(f"Overlapping calls detected in split {split_name}")
+        seen.update(split_ids)
+
+    return split_map
+
+
+def get_gold_switch_ts(call: CallRecord) -> float | None:
+    for event in call.tool_events:
+        if event.event == CHANGE_LANGUAGE_EVENT:
+            return event.ts
+    for event in call.routing_events:
+        if SWITCH_ROUTING_PREFIX in event.event:
+            return event.ts
+    return None
+
+
+def replay_call(call: CallRecord, policy: Any) -> Prediction | None:
+    for event in call.stt_events:
+        prediction = policy.observe_event(event)
+        if prediction is not None:
+            return prediction
+    return policy.finalize()
+
+
+def evaluate_policy(
+    policy_factory: Any,
+    calls: list[CallRecord],
+    split_name: str,
+) -> tuple[dict[str, float | int | None], list[CallOutcome]]:
+    outcomes: list[CallOutcome] = []
+    true_positive = false_positive = true_negative = false_negative = 0
+    latencies: list[float] = []
+
+    for call in calls:
+        policy = policy_factory()
+        prediction = replay_call(call, policy)
+        predicted_switch = bool(prediction and prediction.switch_to_es)
+        gold_switch = call.language_switched
+
+        if gold_switch and predicted_switch:
+            true_positive += 1
+        elif gold_switch and not predicted_switch:
+            false_negative += 1
+        elif not gold_switch and predicted_switch:
+            false_positive += 1
         else:
-            token_bytes_list.append(len(token_str.encode("utf-8")))
-    token_bytes_tensor = torch.tensor(token_bytes_list, dtype=torch.int32)
-    torch.save(token_bytes_tensor, token_bytes_path)
-    print(f"Tokenizer: saved token_bytes to {token_bytes_path}")
+            true_negative += 1
 
-    # Sanity check
-    test = "Hello world! Numbers: 123. Unicode: 你好"
-    encoded = enc.encode_ordinary(test)
-    decoded = enc.decode(encoded)
-    assert decoded == test, f"Tokenizer roundtrip failed: {test!r} -> {decoded!r}"
-    print(f"Tokenizer: sanity check passed (vocab_size={enc.n_vocab})")
+        gold_switch_ts = get_gold_switch_ts(call)
+        latency = None
+        if predicted_switch and gold_switch_ts is not None and prediction is not None:
+            latency = prediction.decision_ts - gold_switch_ts
+            latencies.append(latency)
 
-# ---------------------------------------------------------------------------
-# Runtime utilities (imported by train.py)
-# ---------------------------------------------------------------------------
+        outcomes.append(
+            CallOutcome(
+                call_id=call.call_id,
+                split=split_name,
+                gold_switch=gold_switch,
+                gold_switch_ts=gold_switch_ts,
+                predicted_switch=predicted_switch,
+                decision_ts=prediction.decision_ts if prediction else None,
+                decision_audio_ts=prediction.decision_audio_ts if prediction else None,
+                latency_s=latency,
+                result=call.result,
+                prediction_reason=prediction.reason if prediction else None,
+                trigger_text=prediction.trigger_text if prediction else None,
+            )
+        )
 
-class Tokenizer:
-    """Minimal tokenizer wrapper. Training is handled above."""
+    switched_total = true_positive + false_negative
+    non_switched_total = true_negative + false_positive
+    recall_switched = true_positive / switched_total if switched_total else 0.0
+    recall_non_switched = true_negative / non_switched_total if non_switched_total else 0.0
+    precision_switched = true_positive / (true_positive + false_positive) if (true_positive + false_positive) else 0.0
+    balanced_accuracy = (recall_switched + recall_non_switched) / 2.0
+    median_latency = statistics.median(latencies) if latencies else None
+    median_abs_latency = statistics.median(abs(value) for value in latencies) if latencies else None
 
-    def __init__(self, enc):
-        self.enc = enc
-        self.bos_token_id = enc.encode_single_token(BOS_TOKEN)
-
-    @classmethod
-    def from_directory(cls, tokenizer_dir=TOKENIZER_DIR):
-        with open(os.path.join(tokenizer_dir, "tokenizer.pkl"), "rb") as f:
-            enc = pickle.load(f)
-        return cls(enc)
-
-    def get_vocab_size(self):
-        return self.enc.n_vocab
-
-    def get_bos_token_id(self):
-        return self.bos_token_id
-
-    def encode(self, text, prepend=None, num_threads=8):
-        if prepend is not None:
-            prepend_id = prepend if isinstance(prepend, int) else self.enc.encode_single_token(prepend)
-        if isinstance(text, str):
-            ids = self.enc.encode_ordinary(text)
-            if prepend is not None:
-                ids.insert(0, prepend_id)
-        elif isinstance(text, list):
-            ids = self.enc.encode_ordinary_batch(text, num_threads=num_threads)
-            if prepend is not None:
-                for row in ids:
-                    row.insert(0, prepend_id)
-        else:
-            raise ValueError(f"Invalid input type: {type(text)}")
-        return ids
-
-    def decode(self, ids):
-        return self.enc.decode(ids)
+    metrics: dict[str, float | int | None] = {
+        f"{split_name}_bal_acc": balanced_accuracy,
+        f"{split_name}_precision_switched": precision_switched,
+        f"{split_name}_recall_switched": recall_switched,
+        f"{split_name}_fp": false_positive,
+        f"{split_name}_fn": false_negative,
+        f"{split_name}_tp": true_positive,
+        f"{split_name}_tn": true_negative,
+        f"{split_name}_median_latency_s": median_latency,
+        f"{split_name}_median_abs_latency_s": median_abs_latency,
+        f"num_{split_name}_calls": len(calls),
+    }
+    return metrics, outcomes
 
 
-def get_token_bytes(device="cpu"):
-    path = os.path.join(TOKENIZER_DIR, "token_bytes.pt")
-    with open(path, "rb") as f:
-        return torch.load(f, map_location=device)
+def summarize_dataset(calls: list[CallRecord]) -> dict[str, Any]:
+    switched_calls = sum(call.language_switched for call in calls)
+    return {
+        "num_calls": len(calls),
+        "num_switched_calls": switched_calls,
+        "num_non_switched_calls": len(calls) - switched_calls,
+        "default_events_path": DEFAULT_EVENTS_PATH,
+    }
 
 
-def _document_batches(split, tokenizer_batch_size=128):
-    """Infinite iterator over document batches from parquet files."""
-    parquet_paths = list_parquet_files()
-    assert len(parquet_paths) > 0, "No parquet files found. Run prepare.py first."
-    val_path = os.path.join(DATA_DIR, VAL_FILENAME)
-    if split == "train":
-        parquet_paths = [p for p in parquet_paths if p != val_path]
-        assert len(parquet_paths) > 0, "No training shards found."
-    else:
-        parquet_paths = [val_path]
-    epoch = 1
-    while True:
-        for filepath in parquet_paths:
-            pf = pq.ParquetFile(filepath)
-            for rg_idx in range(pf.num_row_groups):
-                rg = pf.read_row_group(rg_idx)
-                batch = rg.column('text').to_pylist()
-                for i in range(0, len(batch), tokenizer_batch_size):
-                    yield batch[i:i+tokenizer_batch_size], epoch
-        epoch += 1
+def _print_json(data: dict[str, Any]) -> None:
+    print(json.dumps(data, indent=2, sort_keys=True))
 
 
-def make_dataloader(tokenizer, B, T, split, buffer_size=1000):
-    """
-    BOS-aligned dataloader with best-fit packing.
-    Every row starts with BOS. Documents packed using best-fit to minimize cropping.
-    When no document fits remaining space, crops shortest doc to fill exactly.
-    100% utilization (no padding).
-    """
-    assert split in ["train", "val"]
-    row_capacity = T + 1
-    batches = _document_batches(split)
-    bos_token = tokenizer.get_bos_token_id()
-    doc_buffer = []
-    epoch = 1
-
-    def refill_buffer():
-        nonlocal epoch
-        doc_batch, epoch = next(batches)
-        token_lists = tokenizer.encode(doc_batch, prepend=bos_token)
-        doc_buffer.extend(token_lists)
-
-    # Pre-allocate buffers: [inputs (B*T) | targets (B*T)]
-    row_buffer = torch.empty((B, row_capacity), dtype=torch.long)
-    cpu_buffer = torch.empty(2 * B * T, dtype=torch.long, pin_memory=True)
-    gpu_buffer = torch.empty(2 * B * T, dtype=torch.long, device="cuda")
-    cpu_inputs = cpu_buffer[:B * T].view(B, T)
-    cpu_targets = cpu_buffer[B * T:].view(B, T)
-    inputs = gpu_buffer[:B * T].view(B, T)
-    targets = gpu_buffer[B * T:].view(B, T)
-
-    while True:
-        for row_idx in range(B):
-            pos = 0
-            while pos < row_capacity:
-                while len(doc_buffer) < buffer_size:
-                    refill_buffer()
-
-                remaining = row_capacity - pos
-
-                # Find largest doc that fits entirely
-                best_idx = -1
-                best_len = 0
-                for i, doc in enumerate(doc_buffer):
-                    doc_len = len(doc)
-                    if doc_len <= remaining and doc_len > best_len:
-                        best_idx = i
-                        best_len = doc_len
-
-                if best_idx >= 0:
-                    doc = doc_buffer.pop(best_idx)
-                    row_buffer[row_idx, pos:pos + len(doc)] = torch.tensor(doc, dtype=torch.long)
-                    pos += len(doc)
-                else:
-                    # No doc fits — crop shortest to fill remaining
-                    shortest_idx = min(range(len(doc_buffer)), key=lambda i: len(doc_buffer[i]))
-                    doc = doc_buffer.pop(shortest_idx)
-                    row_buffer[row_idx, pos:pos + remaining] = torch.tensor(doc[:remaining], dtype=torch.long)
-                    pos += remaining
-
-        cpu_inputs.copy_(row_buffer[:, :-1])
-        cpu_targets.copy_(row_buffer[:, 1:])
-        gpu_buffer.copy_(cpu_buffer, non_blocking=True)
-        yield inputs, targets, epoch
-
-# ---------------------------------------------------------------------------
-# Evaluation (DO NOT CHANGE — this is the fixed metric)
-# ---------------------------------------------------------------------------
-
-@torch.no_grad()
-def evaluate_bpb(model, tokenizer, batch_size):
-    """
-    Bits per byte (BPB): vocab size-independent evaluation metric.
-    Sums per-token cross-entropy (in nats), sums target byte lengths,
-    then converts nats/byte to bits/byte. Special tokens (byte length 0)
-    are excluded from both sums.
-    Uses fixed MAX_SEQ_LEN so results are comparable across configs.
-    """
-    token_bytes = get_token_bytes(device="cuda")
-    val_loader = make_dataloader(tokenizer, batch_size, MAX_SEQ_LEN, "val")
-    steps = EVAL_TOKENS // (batch_size * MAX_SEQ_LEN)
-    total_nats = 0.0
-    total_bytes = 0
-    for _ in range(steps):
-        x, y, _ = next(val_loader)
-        loss_flat = model(x, y, reduction='none').view(-1)
-        y_flat = y.view(-1)
-        nbytes = token_bytes[y_flat]
-        mask = nbytes > 0
-        total_nats += (loss_flat * mask).sum().item()
-        total_bytes += nbytes.sum().item()
-    return total_nats / (math.log(2) * total_bytes)
-
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Prepare data and tokenizer for autoresearch")
-    parser.add_argument("--num-shards", type=int, default=10, help="Number of training shards to download (-1 = all). Val shard is always pinned.")
-    parser.add_argument("--download-workers", type=int, default=8, help="Number of parallel download workers")
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Inspect and validate the bilingual STT backtest dataset.")
+    parser.add_argument("--events-path", default=None, help=f"Override {EVENTS_PATH_ENV}")
     args = parser.parse_args()
 
-    num_shards = MAX_SHARD if args.num_shards == -1 else args.num_shards
+    calls = load_calls(args.events_path)
+    splits = get_splits(calls)
+    summary = summarize_dataset(calls)
+    summary["splits"] = {
+        split_name: {
+            "count": len(split_calls),
+            "switched": sum(call.language_switched for call in split_calls),
+            "non_switched": sum(not call.language_switched for call in split_calls),
+        }
+        for split_name, split_calls in splits.items()
+    }
+    _print_json(summary)
 
-    print(f"Cache directory: {CACHE_DIR}")
-    print()
 
-    # Step 1: Download data
-    download_data(num_shards, download_workers=args.download_workers)
-    print()
-
-    # Step 2: Train tokenizer
-    train_tokenizer()
-    print()
-    print("Done! Ready to train.")
+if __name__ == "__main__":
+    main()
