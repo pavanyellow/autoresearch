@@ -71,7 +71,6 @@ class CallInput:
     result: str
     duration: int
     language: str
-    language_switched: bool
     stt_events: tuple[STTEvent, ...]
     routing_events: tuple[LoggedEvent, ...]
     tool_events: tuple[LoggedEvent, ...]
@@ -83,7 +82,6 @@ class CallInput:
 class CallScore:
     call_id: str
     call_language: str
-    language_switched: bool
     first_oracle_es_time: float | None = None
     first_oracle_es_text: str | None = None
     oracle_utterance_count: int = 0
@@ -214,7 +212,6 @@ def load_calls(events_path: str | None = None, oracle_dir: str | None = None) ->
                 result=str(call["result"]),
                 duration=int(call["duration"]),
                 language=str(call.get("language", "en")),
-                language_switched=bool(call.get("language_switched", False)),
                 stt_events=_load_stt_events(call.get("stt_events", [])),
                 routing_events=_load_logged_events(call.get("routing_events", [])),
                 tool_events=_load_logged_events(call.get("tool_events", [])),
@@ -264,7 +261,6 @@ def score_forwarded_events(call: CallInput, forwarded_events: list[ForwardedEven
     score = CallScore(
         call_id=call.call_id,
         call_language=call.language,
-        language_switched=call.language_switched,
         oracle_utterance_count=len(call.oracle_utterances),
         mixed_utterances=sum(1 for utterance in call.oracle_utterances if utterance.lang == "mixed"),
     )

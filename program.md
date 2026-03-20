@@ -4,7 +4,7 @@ This repo is for offline bilingual STT forwarding research.
 
 ## Objective
 
-Start from the prod-matching baseline in [train.py](/tmp/auto-research-language-switch-0319-v2/train.py) and beat it.
+Start from the prod-matching baseline in [train.py](/Users/pavan/code/auto-research-language-switch/train.py) and beat it.
 
 Primary target:
 
@@ -23,18 +23,32 @@ Current baseline:
 
 ## Rules
 
-- Treat [prepare.py](/tmp/auto-research-language-switch-0319-v2/prepare.py) as the fixed scorer/loader unless the harness is broken.
-- Edit [train.py](/tmp/auto-research-language-switch-0319-v2/train.py) to change replay behavior.
-- The active dataset is bundled in [eval_bilingual_stt/bilingual_stt_events.json](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/bilingual_stt_events.json).
-- Use the bundled oracle cache in [eval_bilingual_stt/eval_results/oracle](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/eval_results/oracle).
+- Treat [prepare.py](/Users/pavan/code/auto-research-language-switch/prepare.py) as the fixed scorer/loader unless the harness is broken.
+- Edit [train.py](/Users/pavan/code/auto-research-language-switch/train.py) to change replay behavior.
+- The active dataset is bundled in [eval_bilingual_stt/bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json).
+- Use the bundled oracle cache in [eval_bilingual_stt/eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle).
+- Do not cheat. New candidate policies may only use information that would exist online at decision time.
+
+Allowed policy inputs:
+
+- `call.stt_events`
+- initial call metadata known at start, such as `call.language`
+- `call.agent_session_events` only insofar as each event is consumed causally in timestamp order
+
+Forbidden policy inputs:
+
+- `call.routing_events`
+- logged `LLM_RECEIVED` outputs
+- oracle transcripts
+- aggregate or per-call eval outputs
 
 ## Workflow
 
 1. Run `.venv/bin/python train.py`.
 2. Inspect the baseline metrics.
-3. Change the replay logic in [train.py](/tmp/auto-research-language-switch-0319-v2/train.py).
+3. Change the replay logic in [train.py](/Users/pavan/code/auto-research-language-switch/train.py).
 4. Run `.venv/bin/python train.py --report-path reports/latest.json`.
-5. Use [eval_bilingual_stt/spotcheck.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/spotcheck.py) on suspicious calls.
+5. Use [eval_bilingual_stt/spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py) on suspicious calls.
 6. Keep a change only if it improves `text_avg_switch_delay` without unacceptable regressions in `text_false_es_rate`.
 
 ## Interpretation
