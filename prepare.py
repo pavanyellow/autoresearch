@@ -415,6 +415,35 @@ def _infer_lang_from_events(
     return fallback_lang
 
 
+def _es_stream_recent_final_count(stt_events: tuple[STTEvent, ...], ts: float, window: float = 15.0, min_conf: float = 0.6) -> int:
+    count = 0
+    for event in stt_events:
+        if event.ts > ts:
+            break
+        if event.stream != 1 or event.type != "FINAL":
+            continue
+        if ts - event.ts <= window and event.conf >= min_conf:
+            count += 1
+    return count
+
+
+def _es_stream_has_spanish_signal(stt_events: tuple[STTEvent, ...], ts: float) -> bool:
+    """True when the ES stream is clearly producing Spanish content."""
+    # Fast signal: long Spanish text in recent ES stream events
+    for event in stt_events:
+        if event.ts > ts:
+            break
+        if event.stream != 1 or event.conf < 0.5:
+            continue
+        if ts - event.ts > 5.0:
+            continue
+        text = event.text.strip()
+        if len(text) >= 8 and detect_text_language(text) == "es":
+            return True
+    # Slower but reliable: 2+ ES stream finals
+    return _es_stream_recent_final_count(stt_events, ts) >= 2
+
+
 def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 7.0) -> bool:
     for event in stt_events:
         if event.stream != 1:
@@ -442,6 +471,10 @@ def _should_suppress_event(
 ) -> bool:
     if text_lang not in ("en", "es"):
         return False
+    # Suppress EN text when ES stream is clearly producing Spanish content.
+    if text_lang == "en" and stt_events is not None:
+        if _es_stream_has_spanish_signal(stt_events, ts):
+            return True
     if text_lang == believed_lang:
         return False
     normalized = text.strip().lower()
@@ -494,6 +527,10 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
     believed_lang = primary_lang
 
     for event in call.agent_session_events:
+        # Flip believed_lang when ES stream clearly has Spanish content
+        if believed_lang == primary_lang and _es_stream_has_spanish_signal(call.stt_events, event.ts):
+            believed_lang = "es" if primary_lang == "en" else "en"
+
         if event.type == "prepend_buffered_speech":
             pending_prepend = event
             continue
