@@ -18,12 +18,15 @@ from prepare import (
     CallInput,
     build_report,
     evaluate_replay,
+    extract_agent_session_forwarded_events,
     extract_logged_forwarded_events,
     load_calls,
 )
 
 
-def replay_call(call: CallInput):
+def replay_call(call: CallInput, mode: str):
+    if mode == "causal":
+        return extract_agent_session_forwarded_events(call)
     return extract_logged_forwarded_events(call)
 
 
@@ -48,13 +51,15 @@ def main() -> None:
     parser.add_argument("--oracle-dir", default=None)
     parser.add_argument("--call-ids", default=None)
     parser.add_argument("--report-path", default=None)
+    parser.add_argument("--mode", choices=("logged", "causal"), default="logged")
     args = parser.parse_args()
 
     calls = load_calls(args.events_path, args.oracle_dir)
     calls = _select_calls(calls, args.call_ids)
-    metrics, scores = evaluate_replay(replay_call, calls)
+    metrics, scores = evaluate_replay(lambda call: replay_call(call, args.mode), calls)
 
     print("---")
+    print(f"mode: {args.mode}")
     print(f"text_avg_switch_delay: {_format_metric(metrics['text_based']['avg_switch_delay'])}")
     print(
         "text_false_es_rate: "

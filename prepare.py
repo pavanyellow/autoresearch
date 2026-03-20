@@ -5,7 +5,9 @@ Shared loader and scorer for the bilingual STT forwarding replay benchmark.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import asdict, dataclass, field
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Callable
 
@@ -14,6 +16,30 @@ from fast_langdetect import detect as lang_detect
 REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_EVENTS_PATH = REPO_ROOT / "eval_bilingual_stt/bilingual_stt_events.json"
 DEFAULT_ORACLE_DIR = REPO_ROOT / "eval_bilingual_stt/eval_results/oracle"
+
+ARRIVAL_TIME_GROUPING_WINDOW = 0.8
+CONFIDENCE_DECAY_FACTOR = 0.7
+MIN_CONFIDENCE_SWITCH_DELTA = 0.05
+PRIMARY_LANGUAGE_SWITCH_DELTA = 0.20
+NON_PRIMARY_CONFIDENCE_DECAY = 0.5
+ENGLISH_TRIGGER_BLOCKLIST = {
+    "no",
+    "hello",
+    "yes",
+    "hi",
+    "hey",
+    "okay",
+    "ok",
+    "yeah",
+    "yep",
+    "nope",
+    "sure",
+    "right",
+    "well",
+    "oh",
+    "uh",
+    "um",
+}
 
 
 @dataclass(frozen=True)
@@ -119,6 +145,10 @@ def detect_text_language(text: str) -> str:
     if detected["lang"] in ("en", "es") and detected["score"] >= 0.5:
         return detected["lang"]
     return "?"
+
+
+def _normalize_text(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
 
 
 def make_forwarded_event(ts: float, text: str, lang: str, is_final: bool) -> ForwardedEvent:
@@ -247,6 +277,272 @@ def extract_logged_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
             forwarded.append(
                 make_forwarded_event(event.ts, text, _infer_lang_from_context(call.routing_events, event.ts), False)
             )
+    return forwarded
+
+
+def extract_multi_stt_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
+    primary_language = (call.language or "en")[:2]
+    current_language: str | None = None
+    current_language_confidence = 0.0
+    current_text = ""
+    last_event_arrival_time = 0.0
+    forwarded_final_stream_index: int | None = None
+    forwarded: list[ForwardedEvent] = []
+
+    for event in call.stt_events:
+        if event.stream is None or event.stream >= 2:
+            continue
+
+        text = event.text.strip()
+        if not text:
+            continue
+
+        language = "en" if event.stream == 0 else "es"
+        confidence = event.conf
+        is_final = event.type == "FINAL"
+        arrival_time = event.ts
+        time_since_last = arrival_time - last_event_arrival_time if last_event_arrival_time > 0 else 0.0
+        is_same_group = last_event_arrival_time > 0 and time_since_last < ARRIVAL_TIME_GROUPING_WINDOW
+        last_event_arrival_time = arrival_time
+
+        if is_final and is_same_group and forwarded_final_stream_index is not None:
+            if event.stream != forwarded_final_stream_index:
+                forwarded_language = "en" if forwarded_final_stream_index == 0 else "es"
+                if forwarded_language == current_language:
+                    continue
+
+        is_primary_language = language == primary_language
+        if confidence < 0.5 and not is_primary_language:
+            continue
+
+        if not is_same_group:
+            forwarded_final_stream_index = None
+            if current_language == primary_language:
+                current_language_confidence *= CONFIDENCE_DECAY_FACTOR
+            else:
+                current_language_confidence *= NON_PRIMARY_CONFIDENCE_DECAY
+            current_text = ""
+
+        if current_language is None:
+            current_language = primary_language
+
+        if language == current_language:
+            if is_same_group:
+                if confidence > current_language_confidence or len(text) > len(current_text):
+                    current_language_confidence = max(confidence, current_language_confidence)
+                    if len(text) > len(current_text):
+                        current_text = text
+            else:
+                current_text = text
+                current_language_confidence = confidence
+        else:
+            if not is_final:
+                continue
+
+            if language == "es" and current_language == "en":
+                if len(text) < 2 or text.lower() in ENGLISH_TRIGGER_BLOCKLIST:
+                    continue
+
+            leaving_primary = current_language == primary_language
+            required_delta = PRIMARY_LANGUAGE_SWITCH_DELTA if leaving_primary else MIN_CONFIDENCE_SWITCH_DELTA
+
+            if is_same_group:
+                conf_delta = confidence - current_language_confidence
+                if conf_delta > required_delta:
+                    current_language = language
+                    current_language_confidence = confidence
+                    current_text = text
+                else:
+                    continue
+            else:
+                if confidence > current_language_confidence + (required_delta if leaving_primary else 0):
+                    current_language = language
+                    current_language_confidence = confidence
+                    current_text = text
+
+        if is_same_group:
+            should_forward = language == current_language
+        else:
+            should_forward = not is_final or language == current_language
+
+        if not should_forward:
+            continue
+
+        forwarded.append(make_forwarded_event(event.ts, text, language, is_final))
+        if is_final:
+            forwarded_final_stream_index = event.stream
+
+    return forwarded
+
+
+def _infer_lang_from_events(
+    events: list[ForwardedEvent] | tuple[ForwardedEvent, ...],
+    ts: float,
+    text: str,
+    is_final: bool,
+    fallback_lang: str,
+) -> str:
+    normalized_text = _normalize_text(text)
+    best_lang = "?"
+    best_score = float("-inf")
+
+    for event in events:
+        dt = abs(event.ts - ts)
+        if dt > 3.0:
+            continue
+        event_text = _normalize_text(event.text)
+        if not event_text:
+            continue
+
+        score = SequenceMatcher(None, normalized_text, event_text).ratio() * 100 - dt * 5
+        if is_final and event.is_final:
+            score += 10
+        if not is_final and not event.is_final:
+            score += 5
+        if normalized_text and event_text and (normalized_text in event_text or event_text in normalized_text):
+            score += 15
+
+        if score > best_score:
+            best_score = score
+            best_lang = event.lang
+
+    if best_score > 35:
+        return best_lang
+
+    text_lang = detect_text_language(text)
+    if text_lang in ("en", "es"):
+        return text_lang
+    return fallback_lang
+
+
+def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 3.0) -> bool:
+    for event in stt_events:
+        if event.stream != 1:
+            continue
+        if event.ts > ts:
+            break
+        if ts - event.ts <= window:
+            return True
+    return False
+
+
+def _should_suppress_event(
+    text_lang: str, believed_lang: str, call_language: str, text: str,
+    stt_events: tuple[STTEvent, ...] | None = None, ts: float = 0.0,
+) -> bool:
+    if text_lang not in ("en", "es"):
+        return False
+    if text_lang == believed_lang:
+        return False
+    normalized = text.strip().lower()
+    if believed_lang == "en" and text_lang == "es":
+        if len(normalized) <= 3 or normalized in ENGLISH_TRIGGER_BLOCKLIST:
+            return True
+    if believed_lang == "es" and text_lang == "en":
+        if len(normalized) <= 4 or normalized in ENGLISH_TRIGGER_BLOCKLIST:
+            return True
+        if stt_events is not None and _es_stream_active_near(stt_events, ts):
+            return True
+    return False
+
+
+def _update_believed_language(
+    believed_lang: str, primary_lang: str, forwarded: list[ForwardedEvent],
+) -> str:
+    switch_to_window = 3
+    switch_away_window = 6
+    window = switch_away_window if believed_lang == primary_lang else switch_to_window
+    if len(forwarded) < window:
+        return believed_lang
+    recent = forwarded[-window:]
+    recent_finals = [e for e in recent if e.is_final and e.text_lang in ("en", "es")]
+    recent_langs = [e.text_lang for e in recent if e.text_lang in ("en", "es")]
+    if believed_lang == primary_lang:
+        if len(recent_finals) >= 3 and all(e.text_lang != primary_lang for e in recent_finals[-3:]):
+            other = "es" if primary_lang == "en" else "en"
+            return other
+    else:
+        if len(recent_langs) >= switch_to_window and all(lang == primary_lang for lang in recent_langs[-switch_to_window:]):
+            return primary_lang
+    return believed_lang
+
+
+def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
+    routed_events = extract_multi_stt_forwarded_events(call)
+    forwarded: list[ForwardedEvent] = []
+    last_interim_text = ""
+    pending_prepend: AgentSessionEvent | None = None
+    pending_skips: list[AgentSessionEvent] = []
+    primary_lang = (call.language or "en")[:2]
+    believed_lang = primary_lang
+
+    for event in call.agent_session_events:
+        if event.type == "prepend_buffered_speech":
+            pending_prepend = event
+            continue
+
+        if event.type == "skip_llm_call":
+            pending_skips.append(event)
+            continue
+
+        if event.type == "confident_interim_accepted":
+            text = (event.current_interim_transcript or event.audio_transcript or "").strip()
+            if not text or text == last_interim_text:
+                continue
+            text_lang = detect_text_language(text)
+            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, event.ts):
+                continue
+            forwarded.append(
+                make_forwarded_event(
+                    event.ts,
+                    text,
+                    _infer_lang_from_events(routed_events, event.ts, text, False, call.language),
+                    False,
+                )
+            )
+            last_interim_text = text
+            believed_lang = _update_believed_language(believed_lang, primary_lang, forwarded)
+            continue
+
+        if event.type != "eou_detection":
+            continue
+
+        text = (event.audio_transcript or event.current_interim_transcript or event.committed_final_transcript or "").strip()
+        final_ts = event.ts
+
+        if pending_prepend and abs(pending_prepend.ts - event.ts) <= 0.75:
+            text = (pending_prepend.text or text or "").strip()
+            final_ts = max(final_ts, pending_prepend.ts)
+            pending_prepend = None
+
+        if not text:
+            last_interim_text = ""
+            continue
+
+        should_skip = False
+        for skip_event in pending_skips:
+            skip_text = (skip_event.text or "").strip()
+            if abs(skip_event.ts - event.ts) <= 1.0 and skip_text == text:
+                should_skip = True
+                break
+
+        if not should_skip:
+            text_lang = detect_text_language(text)
+            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, final_ts):
+                last_interim_text = ""
+                continue
+            forwarded.append(
+                make_forwarded_event(
+                    final_ts,
+                    text,
+                    _infer_lang_from_events(routed_events, final_ts, text, True, call.language),
+                    True,
+                )
+            )
+            believed_lang = _update_believed_language(believed_lang, primary_lang, forwarded)
+
+        last_interim_text = ""
+
     return forwarded
 
 
