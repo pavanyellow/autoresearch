@@ -489,6 +489,10 @@ def _should_suppress_event(
         if stt_events is not None:
             if _es_stream_active_near(stt_events, ts):
                 return True
+            # Wider window when ES stream has any confident final evidence
+            if _es_stream_recent_final_count(stt_events, ts, window=9999) >= 1:
+                if _es_stream_active_near(stt_events, ts, window=30.0):
+                    return True
             if not _es_stream_has_started(stt_events, ts):
                 first_stt_ts = next((e.ts for e in stt_events if e.stream is not None and e.stream < 2), None)
                 if first_stt_ts and ts - first_stt_ts < 5.0:
@@ -526,10 +530,21 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
     primary_lang = "en"
     believed_lang = primary_lang
 
+    # Precompute ES stream finals with confirmed Spanish text (strong signal)
+    es_spanish_final_times = [
+        e.ts for e in call.stt_events
+        if e.stream == 1 and e.type == "FINAL" and e.conf >= 0.6
+        and len(e.text.strip()) >= 6 and detect_text_language(e.text) == "es"
+    ]
+    # Also track all ES finals for wider suppression window
+    es_final_times = [e.ts for e in call.stt_events if e.stream == 1 and e.type == "FINAL" and e.conf >= 0.6]
+
     for event in call.agent_session_events:
-        # Flip believed_lang when ES stream clearly has Spanish content
-        if believed_lang == primary_lang and _es_stream_has_spanish_signal(call.stt_events, event.ts):
-            believed_lang = "es" if primary_lang == "en" else "en"
+        # Flip believed_lang when ES stream has produced a Spanish final
+        # (no window — handles cases where bot was speaking during ES activity)
+        if believed_lang == primary_lang:
+            if any(t <= event.ts for t in es_spanish_final_times):
+                believed_lang = "es" if primary_lang == "en" else "en"
 
         if event.type == "prepend_buffered_speech":
             pending_prepend = event
