@@ -1,63 +1,84 @@
 # autoresearch-language-switch
 
-This repo now carries the bilingual STT oracle benchmark workspace used to audit `BilingualSTT` forwarding behavior against Deepgram Nova-3 multi.
+This repo is a self-contained replay harness for bilingual STT forwarding research.
 
-The active benchmark lives under [eval_bilingual_stt](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt). It is a black-box eval of what production actually forwarded, not the older call-level `language_switched` backtest.
+The root loop is:
 
-## Current Workspace
+- [train.py](/tmp/auto-research-language-switch-0319-v2/train.py): baseline replay runner
+- [prepare.py](/tmp/auto-research-language-switch-0319-v2/prepare.py): shared loader and scorer
+- [eval_bilingual_stt](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt): bundled data, oracle cache, black-box evaluator, and spotcheck tools
 
-- [eval_bilingual_stt/bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json): extracted production routing/STT events
-- [eval_bilingual_stt/eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle): cached Nova-3 multi oracle transcripts
-- [eval_bilingual_stt/eval_routing_accuracy.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_routing_accuracy.py): portable evaluator
-- [eval_bilingual_stt/spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py): side-by-side call inspection
+## Goal
 
-Copied for provenance but not portable by themselves in this repo:
+Reduce downstream wrong-language output, prioritizing what the LLM actually receives.
 
-- [eval_bilingual_stt/extract_stt_events.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/extract_stt_events.py)
-- [eval_bilingual_stt/transcribe_oracle.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/transcribe_oracle.py)
+Primary target:
 
-Those two still depend on Taylor production utilities and secrets for S3 / Deepgram access.
+- `text_avg_switch_delay < 0.5`
 
-## Benchmark
+Primary guardrail:
 
-The current oracle eval measures two routing failure modes:
+- do not materially worsen `text_false_es_rate`
 
-- Positive-path delay: after the oracle sees the first clear Spanish utterance, how many bilingual forwarded events happen before the first forwarded Spanish event
-- Negative-path false positives: how many Spanish forwards happen while the oracle is still in English
+Current baseline on the bundled `0319_v2` dataset:
 
-Mixed oracle utterances are excluded.
+- `text_avg_switch_delay = 4.1390`
+- `text_false_es_rate = 0.72% (88/12216)`
+- `stream_avg_switch_delay = 2.5560`
+- `stream_false_es_rate = 1.42% (174/12216)`
+- `processed_calls = 508`
+- `switched_calls = 72`
 
-This is the current bundled result set:
-
-- `122` calls with oracle transcripts cached
-- `117` processed successfully
-- `22` calls with oracle Spanish regions
-- `avg_switch_delay = 3.1` bilingual events
-- `false_es_events = 24`
-
-See [eval_bilingual_stt/eval_results/aggregate.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/aggregate.json) and [eval_bilingual_stt/eval_results/per_call.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/per_call.json).
-
-## Run
-
-Run the portable evaluator with the bundled data:
+## Install
 
 ```bash
-python eval_bilingual_stt/eval_routing_accuracy.py \
+python3 -m venv .venv
+.venv/bin/python -m ensurepip --upgrade
+.venv/bin/python -m pip install -e .
+```
+
+## Canonical Run
+
+Run the root replay with the bundled data:
+
+```bash
+.venv/bin/python train.py
+```
+
+Write a report:
+
+```bash
+.venv/bin/python train.py --report-path reports/latest.json
+```
+
+Run the bundled black-box evaluator directly:
+
+```bash
+.venv/bin/python eval_bilingual_stt/eval_routing_accuracy.py \
   --events eval_bilingual_stt/bilingual_stt_events.json \
   --oracle-dir eval_bilingual_stt/eval_results/oracle \
   --output-dir eval_bilingual_stt/eval_results
 ```
 
-Generate a spotcheck for specific calls:
+Spotcheck suspicious calls:
 
 ```bash
-python eval_bilingual_stt/spotcheck.py \
+.venv/bin/python eval_bilingual_stt/spotcheck.py \
   --events eval_bilingual_stt/bilingual_stt_events.json \
   --oracle-dir eval_bilingual_stt/eval_results/oracle \
   --call-ids 5c7c8787,de68583a \
   -o /tmp/spotcheck.txt
 ```
 
-## Status
+## How It Works
 
-The old root-level [prepare.py](/Users/pavan/code/auto-research-language-switch/prepare.py) and [train.py](/Users/pavan/code/auto-research-language-switch/train.py) are the earlier call-level `language_switched` harness. They are still present for reference, but they are not the benchmark to use for the current bilingual routing work.
+- The bundled dataset is [eval_bilingual_stt/bilingual_stt_events.json](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/bilingual_stt_events.json).
+- The cached oracle transcripts are in [eval_bilingual_stt/eval_results/oracle](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/eval_results/oracle).
+- The root baseline replay reconstructs the logged forwarded `LLM_RECEIVED` outputs, so the root numbers match the black-box evaluator.
+- The next iteration step is to replace that replay with an editable simulator that uses the bundled `stt_events`, `routing_events`, and `agent_session_events` to beat the baseline.
+
+## Notes
+
+- This repo is self-contained for replay and scoring.
+- [eval_bilingual_stt/extract_stt_events.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/extract_stt_events.py) and [eval_bilingual_stt/transcribe_oracle.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/transcribe_oracle.py) are provenance utilities and still depend on Taylor production setup.
+- Mixed oracle utterances are excluded from scoring.

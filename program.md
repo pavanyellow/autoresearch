@@ -1,77 +1,44 @@
-# autoresearch-language-switch
+# Program
 
-This repo currently hosts the oracle benchmark bundle for bilingual STT routing.
+This repo is for offline bilingual STT forwarding research.
 
-## Active Benchmark
+## Objective
 
-Use the files under [eval_bilingual_stt](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt).
+Start from the prod-matching baseline in [train.py](/tmp/auto-research-language-switch-0319-v2/train.py) and beat it.
 
-Treat these as the important files:
+Primary target:
 
-- [eval_bilingual_stt/eval_routing_accuracy.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_routing_accuracy.py)
-- [eval_bilingual_stt/bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json)
-- [eval_bilingual_stt/eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle)
-- [eval_bilingual_stt/spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py)
+- reduce `text_avg_switch_delay` to `< 0.5`
 
-The copied [prepare.py](/Users/pavan/code/auto-research-language-switch/prepare.py) and [train.py](/Users/pavan/code/auto-research-language-switch/train.py) are legacy and should not be treated as the current benchmark.
+Primary guardrail:
 
-## Goal
+- keep `text_false_es_rate` at or below the current baseline unless there is a clear reason not to
 
-Measure black-box `BilingualSTT` forwarding quality against Nova-3 multi.
+Current baseline:
 
-The two benchmark questions are:
+- `text_avg_switch_delay = 4.1390`
+- `text_false_es_rate = 0.72% (88/12216)`
+- `stream_avg_switch_delay = 2.5560`
+- `stream_false_es_rate = 1.42% (174/12216)`
 
-1. Positive path: once the oracle reaches clear Spanish, how many wrong forwarded bilingual events happen before Spanish forwarding begins?
-2. Negative path: while the oracle is still English, how many Spanish forwards happen spuriously?
+## Rules
 
-Mixed oracle utterances are excluded.
+- Treat [prepare.py](/tmp/auto-research-language-switch-0319-v2/prepare.py) as the fixed scorer/loader unless the harness is broken.
+- Edit [train.py](/tmp/auto-research-language-switch-0319-v2/train.py) to change replay behavior.
+- The active dataset is bundled in [eval_bilingual_stt/bilingual_stt_events.json](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/bilingual_stt_events.json).
+- Use the bundled oracle cache in [eval_bilingual_stt/eval_results/oracle](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/eval_results/oracle).
 
-## Canonical Run
+## Workflow
 
-Run:
+1. Run `.venv/bin/python train.py`.
+2. Inspect the baseline metrics.
+3. Change the replay logic in [train.py](/tmp/auto-research-language-switch-0319-v2/train.py).
+4. Run `.venv/bin/python train.py --report-path reports/latest.json`.
+5. Use [eval_bilingual_stt/spotcheck.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/spotcheck.py) on suspicious calls.
+6. Keep a change only if it improves `text_avg_switch_delay` without unacceptable regressions in `text_false_es_rate`.
 
-```bash
-python eval_bilingual_stt/eval_routing_accuracy.py \
-  --events eval_bilingual_stt/bilingual_stt_events.json \
-  --oracle-dir eval_bilingual_stt/eval_results/oracle \
-  --output-dir eval_bilingual_stt/eval_results
-```
+## Interpretation
 
-Inspect specific calls with:
-
-```bash
-python eval_bilingual_stt/spotcheck.py \
-  --events eval_bilingual_stt/bilingual_stt_events.json \
-  --oracle-dir eval_bilingual_stt/eval_results/oracle \
-  --call-ids 5c7c8787,de68583a \
-  -o /tmp/spotcheck.txt
-```
-
-## Metrics
-
-Primary metrics to track separately:
-
-- `avg_switch_delay`
-- `zero_delay_calls`
-- `false_es_events`
-- `false_es_finals`
-- `calls_with_false_es`
-
-Do not collapse these into a single score unless explicitly asked. The positive-path and negative-path tradeoff is the point.
-
-## Scope
-
-- This bundle evaluates production black-box forwarded behavior.
-- It does not yet replay a new candidate policy.
-- `extract_stt_events.py` and `transcribe_oracle.py` were copied for provenance, but they still require Taylor repo production utilities and secrets.
-- The portable pieces inside this repo are the cached data, evaluator, and spotcheck script.
-
-## Logging
-
-If you run experiments or modify the evaluator, keep results in untracked artifacts such as:
-
-- `eval_bilingual_stt/eval_results/aggregate.json`
-- `eval_bilingual_stt/eval_results/per_call.json`
-- `/tmp/spotcheck.txt`
-
-If you need a tabular experiment log, keep using untracked `results.tsv`, but do not pretend the old `dev_bal_acc` workflow is still the active benchmark.
+- `text_*` metrics are primary because they reflect what the LLM effectively received.
+- `stream_*` metrics are secondary guardrails because they reflect raw routing purity.
+- Mixed oracle utterances are excluded from scoring.

@@ -1,69 +1,43 @@
-# Bilingual STT Routing Eval
+# Bilingual STT Eval Bundle
 
-This directory contains the current black-box benchmark for `BilingualSTT` forwarding behavior.
-
-It compares production forwarded output against Deepgram Nova-3 multi oracle utterances.
+This directory contains the bundled dataset and the reference black-box evaluator.
 
 ## Files
 
-- [bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json): extracted STT/routing/tool events
-- [eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle): cached oracle utterances
-- [eval_routing_accuracy.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_routing_accuracy.py): portable evaluator
-- [spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py): side-by-side debugging view
+- [bilingual_stt_events.json](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/bilingual_stt_events.json): active `0319_v2` event bundle
+- [eval_results/oracle](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/eval_results/oracle): cached oracle transcripts for `508` calls
+- [eval_routing_accuracy.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/eval_routing_accuracy.py): black-box evaluator
+- [spotcheck.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/spotcheck.py): side-by-side debugging view
 
-Copied but not standalone in this repo:
+Copied for provenance only:
 
-- [extract_stt_events.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/extract_stt_events.py)
-- [transcribe_oracle.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/transcribe_oracle.py)
+- [extract_stt_events.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/extract_stt_events.py)
+- [transcribe_oracle.py](/tmp/auto-research-language-switch-0319-v2/eval_bilingual_stt/transcribe_oracle.py)
 
-Those two still require Taylor repo production utilities and secrets.
+## Current Reference Numbers
 
-## Metrics
+On the bundled `0319_v2` data:
 
-The evaluator reports both:
-
-- `stream_based`: language inferred from the forwarded stream index
-- `text_based`: language detected from the actual forwarded text with `fast-langdetect`
-
-For optimization, use the text-based metrics first:
-
-- `text_based.avg_switch_delay = 1.6`
-- `text_based.false_es_rate = 0.50% (14/2816)`
-
-Keep the stream-based metrics as secondary routing diagnostics:
-
-- `stream_based.avg_switch_delay = 3.1`
-- `stream_based.false_es_rate = 0.85% (24/2816)`
-
-Mixed oracle utterances are excluded from scoring.
+- `text_based.avg_switch_delay = 4.1`
+- `text_based.false_es_rate = 0.72% (88/12216)`
+- `stream_based.avg_switch_delay = 2.6`
+- `stream_based.false_es_rate = 1.42% (174/12216)`
+- `508 / 508` calls processed
+- `72` switched calls
 
 ## Run
 
 ```bash
-python eval_bilingual_stt/eval_routing_accuracy.py \
+.venv/bin/python eval_bilingual_stt/eval_routing_accuracy.py \
   --events eval_bilingual_stt/bilingual_stt_events.json \
   --oracle-dir eval_bilingual_stt/eval_results/oracle \
   --output-dir eval_bilingual_stt/eval_results
 ```
 
-Spotcheck specific calls:
-
 ```bash
-python eval_bilingual_stt/spotcheck.py \
+.venv/bin/python eval_bilingual_stt/spotcheck.py \
   --events eval_bilingual_stt/bilingual_stt_events.json \
   --oracle-dir eval_bilingual_stt/eval_results/oracle \
   --call-ids 5c7c8787,de68583a \
   -o /tmp/spotcheck.txt
 ```
-
-## Cached Result Set
-
-The copied bundle currently contains:
-
-- `122` calls with oracle JSONs
-- `117` processed successfully
-- `22` calls with oracle Spanish regions
-- `text_based.avg_switch_delay = 1.6`
-- `text_based.false_es_rate = 0.50% (14/2816)`
-
-See [eval_results/aggregate.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/aggregate.json) and [eval_results/per_call.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/per_call.json).

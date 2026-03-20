@@ -1,46 +1,25 @@
 """
-Legacy call-level evaluation harness for bilingual STT switch-policy experiments.
-
-This module is kept for reference only. The active benchmark now lives under
-`eval_bilingual_stt/` and scores black-box forwarded behavior against the
-Nova-3 multi oracle.
+Shared loader and scorer for the bilingual STT forwarding replay benchmark.
 """
 
 from __future__ import annotations
 
-import argparse
 import json
-import os
-import random
-import statistics
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Callable
 
-DEFAULT_EVENTS_PATH = "/Users/pavan/Downloads/bilingual_stt_events.json"
-EVENTS_PATH_ENV = "AUTORESEARCH_EVENTS_PATH"
-SPLIT_SEED = 42
-SWITCH_ROUTING_PREFIX = "[BilingualSTT] LANGUAGE SWITCH:"
-CHANGE_LANGUAGE_EVENT = "change_language"
+from fast_langdetect import detect as lang_detect
 
-REQUIRED_CALL_KEYS = {
-    "call_id",
-    "result",
-    "duration",
-    "language",
-    "language_switched",
-    "stt_events",
-    "routing_events",
-    "tool_events",
-}
-REQUIRED_STT_EVENT_KEYS = {"ts", "audio_ts", "type", "stream", "lang", "conf", "text"}
-REQUIRED_LOG_EVENT_KEYS = {"ts", "event"}
+REPO_ROOT = Path(__file__).resolve().parent
+DEFAULT_EVENTS_PATH = REPO_ROOT / "eval_bilingual_stt/bilingual_stt_events.json"
+DEFAULT_ORACLE_DIR = REPO_ROOT / "eval_bilingual_stt/eval_results/oracle"
 
 
 @dataclass(frozen=True)
 class STTEvent:
     ts: float
-    audio_ts: float
+    audio_ts: float | None
     type: str
     stream: int | None
     lang: str
@@ -55,7 +34,39 @@ class LoggedEvent:
 
 
 @dataclass(frozen=True)
-class CallRecord:
+class AgentSessionEvent:
+    ts: float
+    type: str
+    reason: str | None = None
+    text: str | None = None
+    lang: str | None = None
+    confidence: float | None = None
+    committed_transcript: str | None = None
+    current_interim_transcript: str | None = None
+    audio_transcript: str | None = None
+    committed_final_transcript: str | None = None
+
+
+@dataclass(frozen=True)
+class OracleUtterance:
+    start: float
+    end: float
+    text: str
+    lang: str
+    word_langs: dict
+
+
+@dataclass(frozen=True)
+class ForwardedEvent:
+    ts: float
+    text: str
+    lang: str
+    is_final: bool
+    text_lang: str
+
+
+@dataclass(frozen=True)
+class CallInput:
     call_id: str
     result: str
     duration: int
@@ -64,270 +75,314 @@ class CallRecord:
     stt_events: tuple[STTEvent, ...]
     routing_events: tuple[LoggedEvent, ...]
     tool_events: tuple[LoggedEvent, ...]
+    agent_session_events: tuple[AgentSessionEvent, ...]
+    oracle_utterances: tuple[OracleUtterance, ...]
 
 
-@dataclass(frozen=True)
-class Prediction:
-    switch_to_es: bool
-    decision_ts: float
-    decision_audio_ts: float
-    trigger_text: str
-    reason: str
-
-
-@dataclass(frozen=True)
-class CallOutcome:
+@dataclass
+class CallScore:
     call_id: str
-    split: str
-    gold_switch: bool
-    gold_switch_ts: float | None
-    predicted_switch: bool
-    decision_ts: float | None
-    decision_audio_ts: float | None
-    latency_s: float | None
-    result: str
-    prediction_reason: str | None
-    trigger_text: str | None
+    call_language: str
+    language_switched: bool
+    first_oracle_es_time: float | None = None
+    first_oracle_es_text: str | None = None
+    oracle_utterance_count: int = 0
+    mixed_utterances: int = 0
+    stream_switch_delay: int | None = None
+    stream_switch_delay_events: list[dict] = field(default_factory=list)
+    stream_false_es_events: int = 0
+    stream_false_es_detail: list[dict] = field(default_factory=list)
+    text_switch_delay: int | None = None
+    text_switch_delay_events: list[dict] = field(default_factory=list)
+    text_false_es_events: int = 0
+    text_false_es_detail: list[dict] = field(default_factory=list)
+    en_region_total_events: int = 0
+    error: str | None = None
 
 
 def resolve_events_path(events_path: str | None = None) -> Path:
-    path = Path(events_path or os.environ.get(EVENTS_PATH_ENV) or DEFAULT_EVENTS_PATH)
+    path = Path(events_path) if events_path else DEFAULT_EVENTS_PATH
     if not path.exists():
-        raise FileNotFoundError(
-            f"Event log not found at {path}. "
-            f"Set {EVENTS_PATH_ENV} or place the file at {DEFAULT_EVENTS_PATH}."
-        )
+        raise FileNotFoundError(f"Event log not found at {path}")
     return path
 
 
-def _require_keys(obj: dict[str, Any], required: set[str], context: str) -> None:
-    missing = sorted(required - set(obj))
-    if missing:
-        raise ValueError(f"{context} is missing keys: {missing}")
+def resolve_oracle_dir(oracle_dir: str | None = None) -> Path:
+    path = Path(oracle_dir) if oracle_dir else DEFAULT_ORACLE_DIR
+    if not path.exists():
+        raise FileNotFoundError(f"Oracle directory not found at {path}")
+    return path
 
 
-def _load_logged_events(events: list[dict[str, Any]], context: str) -> tuple[LoggedEvent, ...]:
-    parsed = []
-    for index, event in enumerate(events):
-        _require_keys(event, REQUIRED_LOG_EVENT_KEYS, f"{context}[{index}]")
-        parsed.append(
-            LoggedEvent(
-                ts=float(event["ts"]),
-                event=str(event["event"]),
-            )
+def detect_text_language(text: str) -> str:
+    if not text.strip():
+        return "?"
+    detected = lang_detect(text)[0]
+    if detected["lang"] in ("en", "es") and detected["score"] >= 0.5:
+        return detected["lang"]
+    return "?"
+
+
+def make_forwarded_event(ts: float, text: str, lang: str, is_final: bool) -> ForwardedEvent:
+    return ForwardedEvent(
+        ts=ts,
+        text=text,
+        lang=lang,
+        is_final=is_final,
+        text_lang=detect_text_language(text),
+    )
+
+
+def _load_stt_events(raw_events: list[dict]) -> tuple[STTEvent, ...]:
+    parsed = [
+        STTEvent(
+            ts=float(event["ts"]),
+            audio_ts=float(event["audio_ts"]) if event.get("audio_ts") is not None else None,
+            type=str(event["type"]).upper(),
+            stream=int(event["stream"]) if event.get("stream") is not None else None,
+            lang=str(event.get("lang", "?")),
+            conf=float(event.get("conf", 0.0)),
+            text=str(event.get("text", "")),
         )
-    return tuple(sorted(parsed, key=lambda item: item.ts))
-
-
-def _load_stt_events(events: list[dict[str, Any]], context: str) -> tuple[STTEvent, ...]:
-    parsed = []
-    for index, event in enumerate(events):
-        _require_keys(event, REQUIRED_STT_EVENT_KEYS, f"{context}[{index}]")
-        parsed.append(
-            STTEvent(
-                ts=float(event["ts"]),
-                audio_ts=float(event["audio_ts"]),
-                type=str(event["type"]).upper(),
-                stream=int(event["stream"]) if event["stream"] is not None else None,
-                lang=str(event["lang"]),
-                conf=float(event["conf"]),
-                text=str(event["text"]),
-            )
-        )
+        for event in raw_events
+    ]
     return tuple(
         sorted(
             parsed,
-            key=lambda item: (item.ts, item.audio_ts, -1 if item.stream is None else item.stream, item.type),
+            key=lambda event: (
+                event.ts,
+                -1 if event.audio_ts is None else event.audio_ts,
+                -1 if event.stream is None else event.stream,
+                event.type,
+            ),
         )
     )
 
 
-def load_calls(events_path: str | None = None) -> list[CallRecord]:
-    path = resolve_events_path(events_path)
-    with path.open() as handle:
-        raw = json.load(handle)
+def _load_logged_events(raw_events: list[dict]) -> tuple[LoggedEvent, ...]:
+    return tuple(
+        sorted(
+            (LoggedEvent(ts=float(event["ts"]), event=str(event["event"])) for event in raw_events),
+            key=lambda event: event.ts,
+        )
+    )
 
-    if not isinstance(raw, list):
-        raise ValueError("Top-level event log must be a list of calls")
 
-    calls = []
-    for index, item in enumerate(raw):
-        if not isinstance(item, dict):
-            raise ValueError(f"Call entry {index} must be a dict")
-        _require_keys(item, REQUIRED_CALL_KEYS, f"call[{index}]")
+def _load_agent_session_events(raw_events: list[dict]) -> tuple[AgentSessionEvent, ...]:
+    return tuple(
+        sorted(
+            (
+                AgentSessionEvent(
+                    ts=float(event["ts"]),
+                    type=str(event["type"]),
+                    reason=event.get("reason"),
+                    text=event.get("text"),
+                    lang=event.get("lang"),
+                    confidence=float(event["confidence"]) if event.get("confidence") is not None else None,
+                    committed_transcript=event.get("committed_transcript"),
+                    current_interim_transcript=event.get("current_interim_transcript"),
+                    audio_transcript=event.get("audio_transcript"),
+                    committed_final_transcript=event.get("committed_final_transcript"),
+                )
+                for event in raw_events
+            ),
+            key=lambda event: event.ts,
+        )
+    )
+
+
+def _load_oracle(oracle_path: Path) -> tuple[OracleUtterance, ...]:
+    raw = json.loads(oracle_path.read_text())
+    return tuple(OracleUtterance(**item) for item in raw)
+
+
+def load_calls(events_path: str | None = None, oracle_dir: str | None = None) -> list[CallInput]:
+    events_path = resolve_events_path(events_path)
+    oracle_dir = resolve_oracle_dir(oracle_dir)
+    raw_calls = json.loads(events_path.read_text())
+
+    calls: list[CallInput] = []
+    for call in raw_calls:
+        call_id = call["call_id"]
+        oracle_path = oracle_dir / f"{call_id}.json"
+        if not oracle_path.exists():
+            continue
 
         calls.append(
-            CallRecord(
-                call_id=str(item["call_id"]),
-                result=str(item["result"]),
-                duration=int(item["duration"]),
-                language=str(item["language"]),
-                language_switched=bool(item["language_switched"]),
-                stt_events=_load_stt_events(item["stt_events"], f"call[{index}].stt_events"),
-                routing_events=_load_logged_events(item["routing_events"], f"call[{index}].routing_events"),
-                tool_events=_load_logged_events(item["tool_events"], f"call[{index}].tool_events"),
+            CallInput(
+                call_id=call_id,
+                result=str(call["result"]),
+                duration=int(call["duration"]),
+                language=str(call.get("language", "en")),
+                language_switched=bool(call.get("language_switched", False)),
+                stt_events=_load_stt_events(call.get("stt_events", [])),
+                routing_events=_load_logged_events(call.get("routing_events", [])),
+                tool_events=_load_logged_events(call.get("tool_events", [])),
+                agent_session_events=_load_agent_session_events(call.get("agent_session_events", [])),
+                oracle_utterances=_load_oracle(oracle_path),
             )
         )
+
     return calls
 
 
-def _class_split_counts(total: int) -> tuple[int, int, int]:
-    dev = round(total * 0.2)
-    test = round(total * 0.2)
-    train = total - dev - test
-    if min(train, dev, test) < 0:
-        raise ValueError(f"Invalid split counts for class size {total}")
-    return train, dev, test
+def _infer_lang_from_context(routing_events: tuple[LoggedEvent, ...], ts: float) -> str:
+    for event in routing_events:
+        if abs(event.ts - ts) > 0.5:
+            continue
+        if "FINAL EN" in event.event or "INTERIM EN" in event.event:
+            return "en"
+        if "FINAL ES" in event.event or "INTERIM ES" in event.event:
+            return "es"
+    return "?"
 
 
-def get_splits(calls: list[CallRecord], seed: int = SPLIT_SEED) -> dict[str, list[CallRecord]]:
-    switched = sorted((call for call in calls if call.language_switched), key=lambda call: call.call_id)
-    non_switched = sorted((call for call in calls if not call.language_switched), key=lambda call: call.call_id)
-
-    randomizer = random.Random(seed)
-    randomizer.shuffle(switched)
-    randomizer.shuffle(non_switched)
-
-    split_map = {"train": [], "dev": [], "test": []}
-    for bucket in (switched, non_switched):
-        train_count, dev_count, test_count = _class_split_counts(len(bucket))
-        split_map["train"].extend(bucket[:train_count])
-        split_map["dev"].extend(bucket[train_count : train_count + dev_count])
-        split_map["test"].extend(bucket[train_count + dev_count : train_count + dev_count + test_count])
-
-    for split_name in split_map:
-        split_map[split_name] = sorted(split_map[split_name], key=lambda call: call.call_id)
-
-    seen: set[str] = set()
-    for split_name, split_calls in split_map.items():
-        split_ids = {call.call_id for call in split_calls}
-        if seen & split_ids:
-            raise ValueError(f"Overlapping calls detected in split {split_name}")
-        seen.update(split_ids)
-
-    return split_map
-
-
-def get_gold_switch_ts(call: CallRecord) -> float | None:
-    for event in call.tool_events:
-        if event.event == CHANGE_LANGUAGE_EVENT:
-            return event.ts
+def extract_logged_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
+    forwarded: list[ForwardedEvent] = []
     for event in call.routing_events:
-        if SWITCH_ROUTING_PREFIX in event.event:
-            return event.ts
+        if "LLM_RECEIVED FINAL:" in event.event:
+            text = event.event.split('FINAL: "', 1)[-1].rstrip('"')
+            forwarded.append(
+                make_forwarded_event(event.ts, text, _infer_lang_from_context(call.routing_events, event.ts), True)
+            )
+        elif "LLM_RECEIVED interim:" in event.event:
+            text = event.event.split('interim: "', 1)[-1].rstrip('"')
+            forwarded.append(
+                make_forwarded_event(event.ts, text, _infer_lang_from_context(call.routing_events, event.ts), False)
+            )
+    return forwarded
+
+
+def estimate_wallclock_offset(stt_events: tuple[STTEvent, ...]) -> float | None:
+    for event in stt_events:
+        if event.audio_ts is not None and event.ts:
+            return event.ts - event.audio_ts
     return None
 
 
-def replay_call(call: CallRecord, policy: Any) -> Prediction | None:
-    for event in call.stt_events:
-        prediction = policy.observe_event(event)
-        if prediction is not None:
-            return prediction
-    return policy.finalize()
+def score_forwarded_events(call: CallInput, forwarded_events: list[ForwardedEvent]) -> CallScore:
+    score = CallScore(
+        call_id=call.call_id,
+        call_language=call.language,
+        language_switched=call.language_switched,
+        oracle_utterance_count=len(call.oracle_utterances),
+        mixed_utterances=sum(1 for utterance in call.oracle_utterances if utterance.lang == "mixed"),
+    )
+
+    offset = estimate_wallclock_offset(call.stt_events)
+    if offset is None:
+        score.error = "no_timestamp_mapping"
+        return score
+
+    first_oracle_es = next((utterance for utterance in call.oracle_utterances if utterance.lang == "es"), None)
+    en_region_end = first_oracle_es.start + offset if first_oracle_es else float("inf")
+
+    for event in forwarded_events:
+        if event.ts >= en_region_end:
+            break
+        score.en_region_total_events += 1
+        if event.lang == "es":
+            score.stream_false_es_events += 1
+            if len(score.stream_false_es_detail) < 10:
+                score.stream_false_es_detail.append(
+                    {"ts": event.ts, "text": event.text, "is_final": event.is_final}
+                )
+        if event.text_lang == "es":
+            score.text_false_es_events += 1
+            if len(score.text_false_es_detail) < 10:
+                score.text_false_es_detail.append(
+                    {"ts": event.ts, "text": event.text, "is_final": event.is_final}
+                )
+
+    if first_oracle_es is None:
+        return score
+
+    score.first_oracle_es_time = first_oracle_es.start
+    score.first_oracle_es_text = first_oracle_es.text
+    oracle_es_wallclock = first_oracle_es.start + offset
+
+    stream_delay_events: list[dict] = []
+    text_delay_events: list[dict] = []
+
+    for event in forwarded_events:
+        if event.ts < oracle_es_wallclock:
+            continue
+
+        if score.stream_switch_delay is None:
+            if event.lang == "es":
+                score.stream_switch_delay = len(stream_delay_events)
+            elif event.lang == "en":
+                stream_delay_events.append(
+                    {"ts": event.ts, "text": event.text, "is_final": event.is_final}
+                )
+
+        if score.text_switch_delay is None:
+            if event.text_lang == "es":
+                score.text_switch_delay = len(text_delay_events)
+            elif event.text_lang == "en":
+                text_delay_events.append(
+                    {
+                        "ts": event.ts,
+                        "text": event.text,
+                        "text_lang": event.text_lang,
+                        "is_final": event.is_final,
+                    }
+                )
+
+        if score.stream_switch_delay is not None and score.text_switch_delay is not None:
+            break
+
+    if score.stream_switch_delay is None:
+        score.stream_switch_delay = len(stream_delay_events)
+    if score.text_switch_delay is None:
+        score.text_switch_delay = len(text_delay_events)
+
+    score.stream_switch_delay_events = stream_delay_events
+    score.text_switch_delay_events = text_delay_events
+    return score
 
 
-def evaluate_policy(
-    policy_factory: Any,
-    calls: list[CallRecord],
-    split_name: str,
-) -> tuple[dict[str, float | int | None], list[CallOutcome]]:
-    outcomes: list[CallOutcome] = []
-    true_positive = false_positive = true_negative = false_negative = 0
-    latencies: list[float] = []
+def evaluate_replay(
+    replay_fn: Callable[[CallInput], list[ForwardedEvent]],
+    calls: list[CallInput],
+) -> tuple[dict, list[CallScore]]:
+    scores = [score_forwarded_events(call, replay_fn(call)) for call in calls]
+    processed = [score for score in scores if score.error is None]
+    switched = [score for score in processed if score.first_oracle_es_time is not None]
+    total_en_events = sum(score.en_region_total_events for score in processed)
 
-    for call in calls:
-        policy = policy_factory()
-        prediction = replay_call(call, policy)
-        predicted_switch = bool(prediction and prediction.switch_to_es)
-        gold_switch = call.language_switched
+    stream_delays = [score.stream_switch_delay for score in switched if score.stream_switch_delay is not None]
+    text_delays = [score.text_switch_delay for score in switched if score.text_switch_delay is not None]
+    stream_false = sum(score.stream_false_es_events for score in processed)
+    text_false = sum(score.text_false_es_events for score in processed)
 
-        if gold_switch and predicted_switch:
-            true_positive += 1
-        elif gold_switch and not predicted_switch:
-            false_negative += 1
-        elif not gold_switch and predicted_switch:
-            false_positive += 1
-        else:
-            true_negative += 1
-
-        gold_switch_ts = get_gold_switch_ts(call)
-        latency = None
-        if predicted_switch and gold_switch_ts is not None and prediction is not None:
-            latency = prediction.decision_ts - gold_switch_ts
-            latencies.append(latency)
-
-        outcomes.append(
-            CallOutcome(
-                call_id=call.call_id,
-                split=split_name,
-                gold_switch=gold_switch,
-                gold_switch_ts=gold_switch_ts,
-                predicted_switch=predicted_switch,
-                decision_ts=prediction.decision_ts if prediction else None,
-                decision_audio_ts=prediction.decision_audio_ts if prediction else None,
-                latency_s=latency,
-                result=call.result,
-                prediction_reason=prediction.reason if prediction else None,
-                trigger_text=prediction.trigger_text if prediction else None,
-            )
-        )
-
-    switched_total = true_positive + false_negative
-    non_switched_total = true_negative + false_positive
-    recall_switched = true_positive / switched_total if switched_total else 0.0
-    recall_non_switched = true_negative / non_switched_total if non_switched_total else 0.0
-    precision_switched = true_positive / (true_positive + false_positive) if (true_positive + false_positive) else 0.0
-    balanced_accuracy = (recall_switched + recall_non_switched) / 2.0
-    median_latency = statistics.median(latencies) if latencies else None
-    median_abs_latency = statistics.median(abs(value) for value in latencies) if latencies else None
-
-    metrics: dict[str, float | int | None] = {
-        f"{split_name}_bal_acc": balanced_accuracy,
-        f"{split_name}_precision_switched": precision_switched,
-        f"{split_name}_recall_switched": recall_switched,
-        f"{split_name}_fp": false_positive,
-        f"{split_name}_fn": false_negative,
-        f"{split_name}_tp": true_positive,
-        f"{split_name}_tn": true_negative,
-        f"{split_name}_median_latency_s": median_latency,
-        f"{split_name}_median_abs_latency_s": median_abs_latency,
-        f"num_{split_name}_calls": len(calls),
+    metrics = {
+        "total_calls": len(calls),
+        "processed": len(processed),
+        "errors": len(scores) - len(processed),
+        "switched_calls": len(switched),
+        "stream_based": {
+            "avg_switch_delay": round(sum(stream_delays) / len(stream_delays), 3) if stream_delays else None,
+            "zero_delay_calls": sum(1 for delay in stream_delays if delay == 0),
+            "false_es_events": stream_false,
+            "false_es_denominator": total_en_events,
+            "false_es_rate": round(stream_false / total_en_events * 100, 4) if total_en_events else 0.0,
+        },
+        "text_based": {
+            "avg_switch_delay": round(sum(text_delays) / len(text_delays), 3) if text_delays else None,
+            "zero_delay_calls": sum(1 for delay in text_delays if delay == 0),
+            "false_es_events": text_false,
+            "false_es_denominator": total_en_events,
+            "false_es_rate": round(text_false / total_en_events * 100, 4) if total_en_events else 0.0,
+        },
     }
-    return metrics, outcomes
+    return metrics, scores
 
 
-def summarize_dataset(calls: list[CallRecord]) -> dict[str, Any]:
-    switched_calls = sum(call.language_switched for call in calls)
+def build_report(metrics: dict, scores: list[CallScore], events_path: str, oracle_dir: str) -> dict:
     return {
-        "num_calls": len(calls),
-        "num_switched_calls": switched_calls,
-        "num_non_switched_calls": len(calls) - switched_calls,
-        "default_events_path": DEFAULT_EVENTS_PATH,
+        "events_path": events_path,
+        "oracle_dir": oracle_dir,
+        "metrics": metrics,
+        "per_call": [asdict(score) for score in scores],
     }
-
-
-def _print_json(data: dict[str, Any]) -> None:
-    print(json.dumps(data, indent=2, sort_keys=True))
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Inspect and validate the bilingual STT backtest dataset.")
-    parser.add_argument("--events-path", default=None, help=f"Override {EVENTS_PATH_ENV}")
-    args = parser.parse_args()
-
-    calls = load_calls(args.events_path)
-    splits = get_splits(calls)
-    summary = summarize_dataset(calls)
-    summary["splits"] = {
-        split_name: {
-            "count": len(split_calls),
-            "switched": sum(call.language_switched for call in split_calls),
-            "non_switched": sum(not call.language_switched for call in split_calls),
-        }
-        for split_name, split_calls in splits.items()
-    }
-    _print_json(summary)
-
-
-if __name__ == "__main__":
-    main()

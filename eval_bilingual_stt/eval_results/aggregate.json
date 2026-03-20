@@ -4,17 +4,10 @@
   "errors": 0,
   "error_breakdown": {},
   "switched_calls": 72,
+  "avg_switch_delay": 2.6,
+  "zero_delay_calls": 38,
   "en_only_calls": 436,
-  "stream_based": {
-    "avg_switch_delay": 2.6,
-    "zero_delay_calls": 38,
-    "false_es_events": 174,
-    "false_es_rate": 1.42
-  },
-  "text_based": {
-    "avg_switch_delay": 4.1,
-    "zero_delay_calls": 38,
-    "false_es_events": 88,
-    "false_es_rate": 0.72
-  }
+  "false_es_events": 174,
+  "false_es_finals": 135,
+  "calls_with_false_es": 109
 }
