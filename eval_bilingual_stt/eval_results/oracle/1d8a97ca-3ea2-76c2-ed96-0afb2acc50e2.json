@@ -1,0 +1,98 @@
+[
+  {
+    "start": 2.24,
+    "end": 3.04,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.7599998,
+    "end": 6.56,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.76,
+    "end": 10.16,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.685,
+    "end": 22.724998,
+    "text": "you speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.6,
+    "end": 32.48,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 37.28,
+    "end": 37.6,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 44.695,
+    "end": 45.735,
+    "text": "es",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 45.735,
+    "end": 47.015,
+    "text": "para time payment",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "pt"
+    }
+  }
+]

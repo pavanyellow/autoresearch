@@ -1,0 +1,146 @@
+[
+  {
+    "start": 0.56,
+    "end": 5.3599997,
+    "text": "hi if you record your name and reasoning for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.675,
+    "end": 19.155,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.71,
+    "end": 28.029999,
+    "text": "and",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.589998,
+    "end": 33.07,
+    "text": "like he he was on the defense completely flipped and all my guys hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.55,
+    "end": 39.39,
+    "text": "good luck some poor guys walking away like what just happened don't insult the mama man hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 42.51,
+    "end": 50.565,
+    "text": "this is taylor beverly",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 50.645,
+    "end": 50.965,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 70.62,
+    "end": 71.020004,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 78.895004,
+    "end": 79.615005,
+    "text": "april",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 80.495,
+    "end": 81.215004,
+    "text": "fourth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 86.895004,
+    "end": 87.615005,
+    "text": "not sure",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.17,
+    "end": 96.53,
+    "text": "no my car is totaled",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.39999998,
+    "end": 0.96,
+    "text": "your call",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.425,
+    "end": 16.705,
+    "text": "you got the wrong number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

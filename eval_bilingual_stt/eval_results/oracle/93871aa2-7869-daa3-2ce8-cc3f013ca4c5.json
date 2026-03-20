@@ -1,0 +1,26 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 3.7599998,
+    "text": "it's me leave a message the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.04,
+    "end": 10.719999,
+    "text": "mailbox is full and cannot accept any messages at this time goodbye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.96,
+    "text": "hi if you record your name and reason for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.395,
+    "end": 19.715,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.31,
+    "end": 37.95,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 41.87,
+    "end": 42.35,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 56.325,
+    "end": 56.725002,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 64.51,
+    "end": 65.95,
+    "text": "want to return car",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 73.494995,
+    "end": 75.255,
+    "text": "speak to a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 84.375,
+    "end": 85.814995,
+    "text": "returning the car",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

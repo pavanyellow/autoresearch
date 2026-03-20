@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 2.0,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.72,
+    "end": 5.2,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.045,
+    "end": 21.085,
+    "text": "i'll make it tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.789999,
+    "end": 28.99,
+    "text": "the twentieth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.23,
+    "end": 34.75,
+    "text": "nine hundred and seventy two dollars",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

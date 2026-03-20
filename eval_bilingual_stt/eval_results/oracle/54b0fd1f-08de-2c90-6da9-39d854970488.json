@@ -1,0 +1,242 @@
+[
+  {
+    "start": 0.24,
+    "end": 5.6,
+    "text": "hola si dejas tu nombre y el motivo de tu llamada revisar\u00e9 si esta persona est\u00e1 disponible",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 17
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 18.935,
+    "end": 21.414999,
+    "text": "gracias taylor permanece en la l\u00ednea",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 43.015,
+    "end": 43.815,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 48.855,
+    "end": 49.175,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 57.050003,
+    "end": 58.57,
+    "text": "espa\u00f1ol",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 60.73,
+    "end": 63.13,
+    "text": "do you understand yes i understand",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.370003,
+    "end": 63.530003,
+    "text": "s\u00ed",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 72.425,
+    "end": 72.90501,
+    "text": "s\u00ed",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 88.450005,
+    "end": 89.33,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 94.29,
+    "end": 95.57,
+    "text": "s\u00ed para el s\u00e1bado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 95.89,
+    "end": 96.770004,
+    "text": "s\u00ed para el s\u00e1bado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 103.755005,
+    "end": 104.395004,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 106.235,
+    "end": 107.195,
+    "text": "lo que se",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 107.595,
+    "end": 108.635,
+    "text": "lo que se debe",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 115.18,
+    "end": 116.7,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 123.18,
+    "end": 123.74,
+    "text": "perm\u00edtame",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 138.05501,
+    "end": 138.375,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 211.245,
+    "end": 212.365,
+    "text": "ser\u00eda todo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 225.165,
+    "end": 225.405,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 236.1,
+    "end": 236.81999,
+    "text": "fifty one",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

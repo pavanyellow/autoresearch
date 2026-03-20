@@ -1,160 +1,77 @@
 # autoresearch-language-switch
 
-This is an experiment to have the LLM improve bilingual STT switch logic by backtesting on real production calls.
+This repo currently hosts the oracle benchmark bundle for bilingual STT routing.
 
-## Setup
+## Active Benchmark
 
-To set up a new experiment, work with the user to:
+Use the files under [eval_bilingual_stt](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt).
 
-1. Agree on a run tag based on today's date.
-2. Create a fresh branch `autoresearch/<tag>`.
-3. Read the in-scope files:
-   - `README.md`
-   - `prepare.py`
-   - `train.py`
-4. Verify the local dataset exists:
-   - default path: `/Users/pavan/Downloads/bilingual_stt_events.json`
-   - override: `AUTORESEARCH_EVENTS_PATH`
-5. Initialize `results.tsv` with:
+Treat these as the important files:
 
-```tsv
-commit	dev_bal_acc	dev_fp	dev_fn	status	description
-```
+- [eval_bilingual_stt/eval_routing_accuracy.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_routing_accuracy.py)
+- [eval_bilingual_stt/bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json)
+- [eval_bilingual_stt/eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle)
+- [eval_bilingual_stt/spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py)
 
-6. Confirm setup and start.
-
-## Experimentation
-
-This repo is no longer a model-training repo.
-
-Each experiment is an offline replay of the fixed production-call dataset.
-
-Launch experiments with:
-
-```bash
-uv run train.py --split dev
-```
-
-You may also use:
-
-```bash
-python train.py --split dev
-```
-
-## What you CAN do
-
-- Modify `train.py`
-- Change the policy logic, thresholds, grouping rules, and decision heuristics
-- Add helper functions and policy state inside `train.py`
-
-## What you CANNOT do
-
-- Do not modify `prepare.py`
-- Do not change the dataset split logic
-- Do not change the evaluation metric definitions
-- Do not add dependencies
-- Do not commit the production event log into git
+The copied [prepare.py](/Users/pavan/code/auto-research-language-switch/prepare.py) and [train.py](/Users/pavan/code/auto-research-language-switch/train.py) are legacy and should not be treated as the current benchmark.
 
 ## Goal
 
-The primary goal is:
+Measure black-box `BilingualSTT` forwarding quality against Nova-3 multi.
 
-- maximize `dev_bal_acc`
+The two benchmark questions are:
 
-Secondary goals:
+1. Positive path: once the oracle reaches clear Spanish, how many wrong forwarded bilingual events happen before Spanish forwarding begins?
+2. Negative path: while the oracle is still English, how many Spanish forwards happen spuriously?
 
-- reduce `dev_fp`
-- reduce `dev_fn`
-- keep latency reasonable
-- keep the policy simple
+Mixed oracle utterances are excluded.
 
-All else equal, simpler is better.
+## Canonical Run
 
-## Output format
-
-`train.py` prints a summary like:
-
-```text
----
-dev_bal_acc: 0.923913
-dev_precision_switched: 0.800000
-dev_recall_switched: 1.000000
-dev_fp: 1
-dev_fn: 0
-dev_median_latency_s: -0.125000
-num_dev_calls: 27
-```
-
-The key metric is:
+Run:
 
 ```bash
-grep "^dev_bal_acc:" run.log
+python eval_bilingual_stt/eval_routing_accuracy.py \
+  --events eval_bilingual_stt/bilingual_stt_events.json \
+  --oracle-dir eval_bilingual_stt/eval_results/oracle \
+  --output-dir eval_bilingual_stt/eval_results
 ```
 
-## Logging results
-
-Log each experiment to `results.tsv` as tab-separated values:
-
-```tsv
-commit	dev_bal_acc	dev_fp	dev_fn	status	description
-```
-
-Rules:
-
-1. `commit` = short git hash
-2. `dev_bal_acc` = numeric score, use `0.000000` for crashes
-3. `dev_fp` = false positives on dev, use `0` for crashes
-4. `dev_fn` = false negatives on dev, use `0` for crashes
-5. `status` = `keep`, `discard`, or `crash`
-6. `description` = short summary of the idea
-
-Example:
-
-```tsv
-commit	dev_bal_acc	dev_fp	dev_fn	status	description
-a1b2c3d	0.500000	0	4	keep	baseline never-switch sanity check
-b2c3d4e	0.891304	2	0	keep	port arrival-time switch baseline
-c3d4e5f	0.847826	4	0	discard	lower switch threshold too aggressively
-```
-
-## The experiment loop
-
-LOOP FOREVER:
-
-1. Check git state.
-2. Change `train.py`.
-3. Commit the experiment.
-4. Run:
+Inspect specific calls with:
 
 ```bash
-uv run train.py --split dev > run.log 2>&1
+python eval_bilingual_stt/spotcheck.py \
+  --events eval_bilingual_stt/bilingual_stt_events.json \
+  --oracle-dir eval_bilingual_stt/eval_results/oracle \
+  --call-ids 5c7c8787,de68583a \
+  -o /tmp/spotcheck.txt
 ```
 
-5. Extract:
+## Metrics
 
-```bash
-grep "^dev_bal_acc:\|^dev_fp:\|^dev_fn:" run.log
-```
+Primary metrics to track separately:
 
-6. If the output is empty, treat the run as a crash and inspect:
+- `avg_switch_delay`
+- `zero_delay_calls`
+- `false_es_events`
+- `false_es_finals`
+- `calls_with_false_es`
 
-```bash
-tail -n 50 run.log
-```
+Do not collapse these into a single score unless explicitly asked. The positive-path and negative-path tradeoff is the point.
 
-7. Record the result in `results.tsv` and leave that file untracked.
-8. If `dev_bal_acc` improved, keep the commit.
-9. If `dev_bal_acc` is equal or worse, reset back.
+## Scope
 
-## Test split policy
+- This bundle evaluates production black-box forwarded behavior.
+- It does not yet replay a new candidate policy.
+- `extract_stt_events.py` and `transcribe_oracle.py` were copied for provenance, but they still require Taylor repo production utilities and secrets.
+- The portable pieces inside this repo are the cached data, evaluator, and spotcheck script.
 
-Do not optimize on the test split during normal iteration.
+## Logging
 
-Use `--split test` only for milestone validation after a meaningful dev improvement.
+If you run experiments or modify the evaluator, keep results in untracked artifacts such as:
 
-## Scope assumptions
+- `eval_bilingual_stt/eval_results/aggregate.json`
+- `eval_bilingual_stt/eval_results/per_call.json`
+- `/tmp/spotcheck.txt`
 
-- v1 is EN->ES only
-- every call starts from English as the base language
-- the gold switch label is `language_switched`
-- the gold switch timestamp comes from `change_language` tool events, with routing-event fallback
+If you need a tabular experiment log, keep using untracked `results.tsv`, but do not pretend the old `dev_bal_acc` workflow is still the active benchmark.

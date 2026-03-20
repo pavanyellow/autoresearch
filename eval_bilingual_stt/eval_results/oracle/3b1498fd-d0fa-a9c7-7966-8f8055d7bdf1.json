@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.04,
+    "end": 1.9199998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.08,
+    "end": 4.8,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 9.5199995,
+    "end": 10.24,
+    "text": "this",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.04,
+    "end": 12.639999,
+    "text": "is not his phone number can i help you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.674938,
+    "end": 17.914938,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  }
+]

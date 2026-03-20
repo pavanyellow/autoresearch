@@ -1,0 +1,134 @@
+[
+  {
+    "start": 5.8399997,
+    "end": 6.24,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.375,
+    "end": 21.095,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 25.015,
+    "end": 25.494999,
+    "text": "saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.18,
+    "end": 34.059998,
+    "text": "saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.739998,
+    "end": 40.22,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.325,
+    "end": 50.045,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.364998,
+    "end": 55.245,
+    "text": "saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.51,
+    "end": 63.91,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 75.805,
+    "end": 76.205,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 104.875,
+    "end": 105.275,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 127.025,
+    "end": 127.345,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  }
+]

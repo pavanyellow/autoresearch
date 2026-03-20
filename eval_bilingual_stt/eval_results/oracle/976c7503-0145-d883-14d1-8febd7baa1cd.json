@@ -1,0 +1,26 @@
+[
+  {
+    "start": 1.04,
+    "end": 2.56,
+    "text": "hello you have reached",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.1999998,
+    "end": 6.3999996,
+    "text": "i'm unable to come to the phone right now please call back later",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  }
+]

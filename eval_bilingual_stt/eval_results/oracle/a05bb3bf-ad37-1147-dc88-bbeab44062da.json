@@ -1,0 +1,50 @@
+[
+  {
+    "start": 0.08,
+    "end": 6.0,
+    "text": "five seven three nine seven nine three nine two",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.0,
+    "end": 7.3599997,
+    "text": "three is",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.3599997,
+    "end": 8.08,
+    "text": "not available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.655,
+    "end": 20.255,
+    "text": "we didn't get your message either because you were not speaking or because of a bad connection to disconnect press one",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 21
+      },
+      "fasttext": "en"
+    }
+  }
+]

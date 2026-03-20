@@ -1,0 +1,98 @@
+[
+  {
+    "start": 2.32,
+    "end": 2.8799999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.575001,
+    "end": 15.455,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.335,
+    "end": 26.015,
+    "text": "us savings center",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.12,
+    "end": 30.76,
+    "text": "mhmm",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.36,
+    "end": 39.4,
+    "text": "so have a blessed day i'm not gonna discuss anything",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.725,
+    "end": 47.285,
+    "text": "i'm not going to discuss",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 47.364998,
+    "end": 48.324997,
+    "text": "anything",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 48.324997,
+    "end": 50.485,
+    "text": "so have a blessed day bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "start": 1.12,
+    "end": 15.845,
+    "text": "hi sorry that i could not pick up the phone right now um if this is business related an email would be better which is i r s t e g a l l zero four at g mail dot com if this is something personal",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 46
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.845,
+    "end": 20.405,
+    "text": "uh it was better if you could text me if i did not pick up the phone thank you have a nice day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 23
+      },
+      "fasttext": "en"
+    }
+  }
+]

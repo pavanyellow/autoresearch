@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.79999995,
+    "end": 2.24,
+    "text": "why the fuck are you coming",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.52,
+    "end": 4.48,
+    "text": "oh yes ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

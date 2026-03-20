@@ -1,0 +1,386 @@
+[
+  {
+    "start": 0.71999997,
+    "end": 1.6800001,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 6.16,
+    "end": 7.04,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 12.559999,
+    "end": 12.799999,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 19.675,
+    "end": 20.555,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 21.994999,
+    "end": 23.035,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 25.355,
+    "end": 25.915,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 31.0,
+    "end": 31.960001,
+    "text": "s\u00ed con ella",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 49.235,
+    "end": 51.315002,
+    "text": "no me pagan la otra semana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 57.795,
+    "end": 58.515,
+    "text": "pues",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 59.235,
+    "end": 59.635002,
+    "text": "este",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ro"
+    }
+  },
+  {
+    "start": 60.95,
+    "end": 64.23,
+    "text": "lo de me pagan como el viernes o el s\u00e1bado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.11,
+    "end": 72.79,
+    "text": "no lo podr\u00eda hacer para el lunes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 73.435005,
+    "end": 75.275,
+    "text": "no este lunes sino el otro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 79.755005,
+    "end": 81.035,
+    "text": "no toda la cuota",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 86.43,
+    "end": 88.43,
+    "text": "este seiscientos sesenta y cinco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 97.39,
+    "end": 100.11,
+    "text": "s\u00ed por favor pero no este lunes el otro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 110.625,
+    "end": 112.145,
+    "text": "no hoy no no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 112.945,
+    "end": 113.985,
+    "text": "no para hoy no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 116.03001,
+    "end": 117.15,
+    "text": "este d\u00e9jeme",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 118.03001,
+    "end": 119.07,
+    "text": "ya le digo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "eo"
+    }
+  },
+  {
+    "start": 119.950005,
+    "end": 120.590004,
+    "text": "ya le digo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "eo"
+    }
+  },
+  {
+    "start": 131.685,
+    "end": 134.80501,
+    "text": "como para el como s\u00ed como para el veintisiete",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 139.205,
+    "end": 140.725,
+    "text": "seiscientos setenta y cinco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 154.17,
+    "end": 155.29001,
+    "text": "s\u00ed por favor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 155.61,
+    "end": 156.01,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 191.125,
+    "end": 191.445,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 206.61,
+    "end": 207.25002,
+    "text": "ah",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 207.89,
+    "end": 208.77,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 209.97,
+    "end": 210.45,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 221.75499,
+    "end": 222.715,
+    "text": "no no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 223.355,
+    "end": 224.315,
+    "text": "no gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 230.95,
+    "end": 231.67,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

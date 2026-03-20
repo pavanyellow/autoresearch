@@ -1,0 +1,158 @@
+[
+  {
+    "start": 5.92,
+    "end": 6.96,
+    "text": "c\u00f3mo est\u00e1",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 11.84,
+    "end": 13.04,
+    "text": "c\u00f3mo est\u00e1 espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 18.045,
+    "end": 18.925,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 26.845001,
+    "end": 27.564999,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 33.059998,
+    "end": 33.78,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 38.02,
+    "end": 38.5,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 56.635,
+    "end": 58.555,
+    "text": "no para el",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 59.31,
+    "end": 60.75,
+    "text": "el treinta",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.55,
+    "end": 72.75,
+    "text": "cuatrocientos setenta y ocho",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 90.39,
+    "end": 90.71,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 127.46,
+    "end": 127.78,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 159.715,
+    "end": 160.43501,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 161.075,
+    "end": 161.475,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  }
+]

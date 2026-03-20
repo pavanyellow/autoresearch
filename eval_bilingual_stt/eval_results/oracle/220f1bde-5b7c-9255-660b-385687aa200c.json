@@ -1,0 +1,206 @@
+[
+  {
+    "start": 0.32,
+    "end": 4.96,
+    "text": "hi if you record your name and reason for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.255001,
+    "end": 20.494999,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.51,
+    "end": 37.23,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.59,
+    "end": 38.91,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 41.405,
+    "end": 42.605,
+    "text": "yes speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 45.645,
+    "end": 46.045,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.78,
+    "end": 55.42,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.1,
+    "end": 57.9,
+    "text": "no ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 68.095,
+    "end": 71.615,
+    "text": "no ma'am i don't have it i have it on the thirtieth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 80.83,
+    "end": 82.19,
+    "text": "the full amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 84.11,
+    "end": 84.83,
+    "text": "the six",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 94.445,
+    "end": 96.365,
+    "text": "yes six twenty eight",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 99.245,
+    "end": 100.445,
+    "text": "the regular payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 103.17,
+    "end": 104.21,
+    "text": "the regular payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 129.52,
+    "end": 129.92,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 153.39,
+    "end": 153.95,
+    "text": "no ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 163.225,
+    "end": 164.66501,
+    "text": "no thank you for calling me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

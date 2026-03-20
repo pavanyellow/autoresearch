@@ -1,0 +1,362 @@
+[
+  {
+    "start": 0.64,
+    "end": 2.0,
+    "text": "over phone call",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.3199997,
+    "end": 5.36,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.52,
+    "end": 6.7999997,
+    "text": "oh honey i didn't",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.7599998,
+    "end": 8.959999,
+    "text": "honey i'm sorry",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.32,
+    "end": 12.88,
+    "text": "i didn't realize your ear is all sensitive",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.095,
+    "end": 15.375,
+    "text": "not sensitive",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.775001,
+    "end": 16.495,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.895,
+    "end": 18.415,
+    "text": "ma'am can i help you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.335,
+    "end": 21.775,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.975,
+    "end": 23.375,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.29,
+    "end": 37.61,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 39.585,
+    "end": 41.425,
+    "text": "what do you want let me go",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 52.09,
+    "end": 53.29,
+    "text": "don't you start",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.57,
+    "end": 56.25,
+    "text": "oh harley stop",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.61,
+    "end": 62.33,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 72.235,
+    "end": 74.155,
+    "text": "and they said it's not late yet",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 74.395,
+    "end": 75.835,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 77.59499,
+    "end": 79.435,
+    "text": "i think it's in may",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 79.59499,
+    "end": 81.515,
+    "text": "may eleventh or some shit last night",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.310005,
+    "end": 86.75,
+    "text": "march twenty eighth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 92.19,
+    "end": 92.83,
+    "text": "march",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 93.55,
+    "end": 94.19,
+    "text": "twenty eighth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.635,
+    "end": 96.275,
+    "text": "a",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 100.035,
+    "end": 100.595,
+    "text": "hundred dollars",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 110.8,
+    "end": 112.16,
+    "text": "harley no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 114.64001,
+    "end": 115.44,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 123.520004,
+    "end": 123.920006,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 128.015,
+    "end": 128.815,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 128.815,
+    "end": 130.175,
+    "text": "thanks",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 134.015,
+    "end": 134.41501,
+    "text": "goodbye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

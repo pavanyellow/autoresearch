@@ -1,0 +1,158 @@
+[
+  {
+    "start": 7.6,
+    "end": 8.639999,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 8.639999,
+    "end": 10.08,
+    "text": "habla espa\u00f1ol por favor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 16.255001,
+    "end": 19.455,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 25.390001,
+    "end": 26.03,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 31.23,
+    "end": 31.630001,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 49.98,
+    "end": 50.620003,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 60.06,
+    "end": 62.54,
+    "text": "aj\u00e1 podr\u00eda ser ma\u00f1ana en la ma\u00f1ana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 77.18,
+    "end": 77.82,
+    "text": "s\u00ed s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 114.185,
+    "end": 114.825,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 116.185,
+    "end": 116.744995,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 152.9,
+    "end": 154.42,
+    "text": "no est\u00e1 bien muchas gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 161.325,
+    "end": 162.125,
+    "text": "igualmente",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 162.125,
+    "end": 162.845,
+    "text": "bonito d\u00eda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  }
+]

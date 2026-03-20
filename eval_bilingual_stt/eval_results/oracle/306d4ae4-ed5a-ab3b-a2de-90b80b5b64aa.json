@@ -1,0 +1,170 @@
+[
+  {
+    "start": 1.04,
+    "end": 2.24,
+    "text": "this is peter",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.3199997,
+    "end": 4.56,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.985,
+    "end": 20.904999,
+    "text": "yes yes yes yes yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.425,
+    "end": 23.145,
+    "text": "absolutely",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.35,
+    "end": 32.829998,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.125,
+    "end": 39.165,
+    "text": "let's pull them out",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.5,
+    "end": 58.3,
+    "text": "no i i have a card already on it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 67.915,
+    "end": 69.115,
+    "text": "i mean of course yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 75.29,
+    "end": 75.61,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 87.625,
+    "end": 88.424995,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.064995,
+    "end": 96.185,
+    "text": "yes yes i am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 97.705,
+    "end": 98.024994,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 106.56,
+    "end": 106.88,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 111.215,
+    "end": 112.494995,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

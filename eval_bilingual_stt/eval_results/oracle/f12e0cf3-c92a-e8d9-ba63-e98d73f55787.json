@@ -1,0 +1,194 @@
+[
+  {
+    "start": 0.24,
+    "end": 1.1199999,
+    "text": "hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 1.12,
+    "end": 3.84,
+    "text": "if you record your name and reason for calling",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.16,
+    "end": 5.7599998,
+    "text": "i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.535,
+    "end": 19.535,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.289999,
+    "end": 29.09,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.97,
+    "end": 35.01,
+    "text": "yes this is her",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 50.784996,
+    "end": 52.305,
+    "text": "i have auto pay setup",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 60.260002,
+    "end": 62.980003,
+    "text": "i have it set up to pay my bill",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 72.435,
+    "end": 73.954994,
+    "text": "no pay it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 74.674995,
+    "end": 75.314995,
+    "text": "auto pay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.96999,
+    "end": 86.369995,
+    "text": "today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 90.625,
+    "end": 91.425,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 96.145004,
+    "end": 96.625,
+    "text": "today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 103.600006,
+    "end": 104.64,
+    "text": "the amount due",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 120.495,
+    "end": 120.895004,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 137.83499,
+    "end": 138.395,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

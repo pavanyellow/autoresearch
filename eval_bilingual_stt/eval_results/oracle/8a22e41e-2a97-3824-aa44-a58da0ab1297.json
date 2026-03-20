@@ -1,0 +1,50 @@
+[
+  {
+    "start": 1.8399999,
+    "end": 2.7199998,
+    "text": "hey",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 2.72,
+    "end": 4.32,
+    "text": "action shots by mel",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.48,
+    "end": 6.8,
+    "text": "we're out snapping a few photos",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.04,
+    "end": 12.639999,
+    "text": "if you wanna shoot us a quick text message we'll call you back when we can thanks and have a good day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  }
+]

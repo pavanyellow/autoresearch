@@ -1,0 +1,86 @@
+[
+  {
+    "start": 0.39999998,
+    "end": 2.1599998,
+    "text": "eight twenty israeli",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.6,
+    "end": 6.72,
+    "text": "hello country but hold off on it hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.84,
+    "end": 10.48,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.84,
+    "end": 12.4,
+    "text": "that's correct",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.73,
+    "end": 29.65,
+    "text": "i will separate the amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.57,
+    "end": 33.329998,
+    "text": "i would like today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.294937,
+    "end": 43.934937,
+    "text": "two hundred",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

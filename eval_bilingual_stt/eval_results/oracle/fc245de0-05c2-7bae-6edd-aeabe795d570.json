@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.28,
+    "end": 1.8399999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 13.575,
+    "end": 15.8949995,
+    "text": "i don't y'all the one called me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.935,
+    "end": 17.255,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.550001,
+    "end": 29.550001,
+    "text": "no i don't know nothing about that",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.41494,
+    "end": 38.294937,
+    "text": "no i don't",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

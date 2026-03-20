@@ -1,0 +1,74 @@
+[
+  {
+    "start": 2.72,
+    "end": 3.4399998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.7599998,
+    "end": 6.7999997,
+    "text": "who's calling please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.095,
+    "end": 14.495001,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.07,
+    "end": 35.63,
+    "text": "no not today i will make a partial payment and then at the end of the week i'll make the rest of it i change banks and that's a hold up right there",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 33
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.445,
+    "end": 45.245,
+    "text": "tomorrow morning",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.780003,
+    "end": 55.74,
+    "text": "two twenty five",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

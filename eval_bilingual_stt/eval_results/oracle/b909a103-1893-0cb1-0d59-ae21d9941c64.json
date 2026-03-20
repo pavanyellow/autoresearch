@@ -1,0 +1,230 @@
+[
+  {
+    "start": 2.6399999,
+    "end": 3.5199997,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 5.68,
+    "end": 6.4,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 8.4,
+    "end": 8.96,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 17.535,
+    "end": 18.415,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 23.935001,
+    "end": 24.335,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 29.720001,
+    "end": 30.12,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 47.975002,
+    "end": 48.375,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 55.99,
+    "end": 56.63,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 63.27,
+    "end": 64.950005,
+    "text": "el d\u00eda veintitr\u00e9s",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 65.83,
+    "end": 66.55,
+    "text": "de marzo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 70.645,
+    "end": 71.765,
+    "text": "los cuatrocientos",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.765,
+    "end": 72.16499,
+    "text": "once",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 91.92999,
+    "end": 92.81,
+    "text": "no escuch\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 109.775,
+    "end": 111.455,
+    "text": "yo tengo otra cuenta ah\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 119.409996,
+    "end": 120.93,
+    "text": "no no la que est\u00e1 ah\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 157.715,
+    "end": 158.035,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 192.80501,
+    "end": 193.605,
+    "text": "no gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 199.7,
+    "end": 200.34,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 206.34,
+    "end": 206.65999,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "total_calls": 122,
+  "processed": 117,
+  "errors": 5,
+  "error_breakdown": {
+    "no_timestamp_mapping": 5
+  },
+  "switched_calls": 22,
+  "avg_switch_delay": 3.1,
+  "zero_delay_calls": 8,
+  "en_only_calls": 95,
+  "false_es_events": 24,
+  "false_es_finals": 18,
+  "calls_with_false_es": 16
+}

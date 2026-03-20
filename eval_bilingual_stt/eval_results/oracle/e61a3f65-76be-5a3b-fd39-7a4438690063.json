@@ -1,0 +1,158 @@
+[
+  {
+    "start": 3.1999998,
+    "end": 3.84,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 5.2799997,
+    "end": 5.68,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 13.145,
+    "end": 14.105,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 18.904999,
+    "end": 19.545,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 23.385,
+    "end": 23.865,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 40.39,
+    "end": 40.79,
+    "text": "ma\u00f1ana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 47.395,
+    "end": 47.715,
+    "text": "todo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 59.89,
+    "end": 60.21,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 99.34499,
+    "end": 99.744995,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 128.49501,
+    "end": 129.45502,
+    "text": "es todo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 135.85501,
+    "end": 136.335,
+    "text": "ok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 142.29,
+    "end": 143.01001,
+    "text": "ok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 143.48999,
+    "end": 144.13,
+    "text": "igualmente",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "start": 1.5999999,
+    "end": 2.3999999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.44,
+    "end": 6.08,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.88,
+    "end": 11.999999,
+    "text": "junior",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "fr"
+    }
+  },
+  {
+    "start": 12.16,
+    "end": 13.12,
+    "text": "oh wait a second",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.18,
+    "end": 29.9,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 33.34,
+    "end": 34.06,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 39.9,
+    "end": 41.34,
+    "text": "ah pues todo bien se debe",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 43.035,
+    "end": 43.675,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 47.675,
+    "end": 48.075,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 64.72,
+    "end": 65.04,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 73.795,
+    "end": 74.674995,
+    "text": "twenty eight",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 78.674995,
+    "end": 79.795,
+    "text": "yeah twenty eight",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

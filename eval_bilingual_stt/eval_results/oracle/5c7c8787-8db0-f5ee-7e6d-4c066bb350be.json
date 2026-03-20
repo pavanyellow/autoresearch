@@ -1,0 +1,159 @@
+[
+  {
+    "start": 5.12,
+    "end": 6.96,
+    "text": "yes speak spanish please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 23.525,
+    "end": 26.005,
+    "text": "excuse me s\u00ed spanish",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "en": 2,
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 26.005001,
+    "end": 26.325,
+    "text": "please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 34.16,
+    "end": 35.04,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 39.84,
+    "end": 40.24,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 47.855,
+    "end": 49.774998,
+    "text": "repetir la informaci\u00f3n por favor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 95.59,
+    "end": 95.99,
+    "text": "ma\u00f1ana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 100.975,
+    "end": 103.295,
+    "text": "el cincuenta por ciento de la deuda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 112.015,
+    "end": 112.735,
+    "text": "es correcto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 151.66,
+    "end": 152.94,
+    "text": "revisar el monto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 154.905,
+    "end": 162.34499,
+    "text": "revisar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 162.34499,
+    "end": 163.385,
+    "text": "el monto a pagar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 170.64,
+    "end": 171.12,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

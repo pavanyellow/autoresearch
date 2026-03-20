@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.56,
+    "end": 1.3599999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.8799996,
+    "end": 7.2799997,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.655001,
+    "end": 14.975,
+    "text": "por qu\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  }
+]

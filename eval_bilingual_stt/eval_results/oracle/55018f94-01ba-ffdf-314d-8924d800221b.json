@@ -1,0 +1,110 @@
+[
+  {
+    "start": 0.39999998,
+    "end": 1.28,
+    "text": "hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 1.28,
+    "end": 5.8399997,
+    "text": "if you record your name and reason for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 16
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.655,
+    "end": 20.975,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 42.055,
+    "end": 43.255,
+    "text": "i'm sorry this person",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.375,
+    "end": 45.175,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.575,
+    "end": 50.855,
+    "text": "hi yes hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 68.40501,
+    "end": 71.285,
+    "text": "yes i will be making it this this evening",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 77.045006,
+    "end": 78.245,
+    "text": "yeah hundred dollars",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 86.32,
+    "end": 87.12,
+    "text": "tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

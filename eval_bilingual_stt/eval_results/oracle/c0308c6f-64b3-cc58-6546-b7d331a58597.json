@@ -1,0 +1,50 @@
+[
+  {
+    "start": 0.96,
+    "end": 1.6800001,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.3599997,
+    "end": 8.0,
+    "text": "nope",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "fi"
+    }
+  },
+  {
+    "start": 26.35,
+    "end": 26.75,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.915,
+    "end": 39.555,
+    "text": "forget i didn't know anything i didn't know anything like that forget about it there's not anything going on it's not me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  }
+]

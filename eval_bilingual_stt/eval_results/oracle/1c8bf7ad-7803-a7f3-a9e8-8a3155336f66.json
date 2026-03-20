@@ -1,0 +1,518 @@
+[
+  {
+    "start": 2.6399999,
+    "end": 3.36,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.7599998,
+    "end": 11.28,
+    "text": "no this is natalia but it's okay i'm your grandma and i'm already in the title of the card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.895,
+    "end": 15.455,
+    "text": "i mean i'm i'm as a cosigner",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.455,
+    "end": 17.455,
+    "text": "and i'm glad you called me because",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.175,
+    "end": 19.935,
+    "text": "my granddaughter heaven",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.175,
+    "end": 21.775,
+    "text": "was trying yesterday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.935,
+    "end": 26.015,
+    "text": "and one day before to talk to one of the representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.015,
+    "end": 26.654999,
+    "text": "when",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.895,
+    "end": 28.095,
+    "text": "there's",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.47,
+    "end": 31.669998,
+    "text": "in that answer",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.43,
+    "end": 34.07,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 34.629997,
+    "end": 35.35,
+    "text": "i need",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.87,
+    "end": 41.03,
+    "text": "we want to make a payment but we don't want the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 41.11,
+    "end": 44.15,
+    "text": "to like for you guys to proceed it twice",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 45.245003,
+    "end": 48.525,
+    "text": "because my granddaughter made a change that we",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 48.925003,
+    "end": 52.525,
+    "text": "rather to make the the payment online",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 52.765,
+    "end": 55.885002,
+    "text": "because i think it was a mistake on her birthday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 56.205,
+    "end": 58.125,
+    "text": "the dealer put the wrong",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 59.99,
+    "end": 62.95,
+    "text": "when we did the application for the loan and everything",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.350002,
+    "end": 65.270004,
+    "text": "they entered the wrong",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.270004,
+    "end": 67.75,
+    "text": "uh birthday for my granddaughter",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 67.75,
+    "end": 68.39,
+    "text": "for heaven",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 72.564995,
+    "end": 74.48499,
+    "text": "yes yes this is she",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 79.924995,
+    "end": 80.325,
+    "text": "mhmm",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 88.159996,
+    "end": 89.04,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 89.28,
+    "end": 96.24,
+    "text": "but i just wanna make sure that this is gonna be the new procedure for us to do the payment online",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 21
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 97.575,
+    "end": 103.174995,
+    "text": "not not to go straight to my to heaven account bank account",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 105.174995,
+    "end": 105.735,
+    "text": "today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 111.494995,
+    "end": 112.055,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 119.64,
+    "end": 122.12,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 141.505,
+    "end": 142.225,
+    "text": "let me see",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 146.59999,
+    "end": 147.56,
+    "text": "hold on",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 147.79999,
+    "end": 149.96,
+    "text": "no no no no no wait wait wait",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 152.68,
+    "end": 153.32,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 153.48,
+    "end": 153.87999,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 172.76999,
+    "end": 173.17,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 184.75499,
+    "end": 187.635,
+    "text": "i need to give you my new",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 188.59499,
+    "end": 189.39499,
+    "text": "debit card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 198.72,
+    "end": 201.68001,
+    "text": "i need to give you the new number of my debit card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 216.50499,
+    "end": 216.825,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 232.34999,
+    "end": 232.75,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 237.325,
+    "end": 237.805,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 374.95,
+    "end": 375.51,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

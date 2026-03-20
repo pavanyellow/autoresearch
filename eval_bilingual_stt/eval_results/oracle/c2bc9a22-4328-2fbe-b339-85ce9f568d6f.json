@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 2.0,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 2.1599998,
+    "end": 2.32,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.335,
+    "end": 15.615,
+    "text": "fine thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.295,
+    "end": 20.335,
+    "text": "why are you calling",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.83,
+    "end": 29.550001,
+    "text": "i do and do you know what time it is here",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  }
+]

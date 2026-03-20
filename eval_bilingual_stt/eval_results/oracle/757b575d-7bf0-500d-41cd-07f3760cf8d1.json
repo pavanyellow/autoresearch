@@ -1,0 +1,50 @@
+[
+  {
+    "start": 1.12,
+    "end": 6.88,
+    "text": "hi you've reached marcia stone i can't get to my phone right now you will leave your name and your number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 21
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.2799997,
+    "end": 11.04,
+    "text": "and i will get in touch with you as soon as possible thank you and have a great day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.785,
+    "end": 14.945,
+    "text": "at the tone please record your message",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.344999,
+    "end": 20.705,
+    "text": "when you've finished recording you may hang up or press one for more options to leave",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 16
+      },
+      "fasttext": "en"
+    }
+  }
+]

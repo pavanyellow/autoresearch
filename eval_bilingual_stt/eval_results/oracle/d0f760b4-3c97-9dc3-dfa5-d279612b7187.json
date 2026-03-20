@@ -1,0 +1,278 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 2.0,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.24,
+    "end": 4.7999997,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.775,
+    "end": 22.855,
+    "text": "no i can schedule a payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.91,
+    "end": 33.51,
+    "text": "one second",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.75,
+    "end": 36.23,
+    "text": "i would like to schedule it for",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.15,
+    "end": 38.55,
+    "text": "tuesday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 46.685,
+    "end": 48.605,
+    "text": "i can schedule it for tuesday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.52,
+    "end": 61.84,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 92.44,
+    "end": 93.24,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.24,
+    "end": 95.72,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 105.165,
+    "end": 110.445,
+    "text": "hi welcome to hometown widebroker my name is jennifer can i get a name for your order please carlos",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 112.445,
+    "end": 117.564995,
+    "text": "okay carlos what can i get started please i will do the number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 116.5,
+    "end": 117.21999,
+    "text": "twelve",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 117.46,
+    "end": 118.82,
+    "text": "number twelve",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 118.82,
+    "end": 121.38,
+    "text": "what's medium and large for your drink medium",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 121.619995,
+    "end": 123.46,
+    "text": "and what would you like for your drink",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 123.939995,
+    "end": 125.299995,
+    "text": "i will do a",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 125.53999,
+    "end": 126.17999,
+    "text": "coke",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 126.5,
+    "end": 128.5,
+    "text": "a coke anything else i can for you today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 129.795,
+    "end": 134.835,
+    "text": "no that's all any spicy or regular ketchup for your order today spicy ketchup",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 134.995,
+    "end": 137.07501,
+    "text": "any delicious brownies or apple pies",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 138.835,
+    "end": 139.395,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 139.875,
+    "end": 142.435,
+    "text": "twelve twenty three at the second window alright thanks",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  }
+]

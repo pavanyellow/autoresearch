@@ -1,0 +1,134 @@
+[
+  {
+    "start": 3.52,
+    "end": 4.24,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.24,
+    "end": 6.64,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.345,
+    "end": 24.665,
+    "text": "i'm gonna tomorrow i am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.585,
+    "end": 28.985,
+    "text": "tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.27,
+    "end": 36.149998,
+    "text": "so i'm gonna make it tomorrow morning around",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.55,
+    "end": 37.75,
+    "text": "nine ten am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 45.704998,
+    "end": 47.945,
+    "text": "the whole thing i wanna pay the whole four locations",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.65,
+    "end": 61.97,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 89.79,
+    "end": 90.19,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 116.18,
+    "end": 117.06,
+    "text": "no thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 122.905,
+    "end": 123.705,
+    "text": "alright thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

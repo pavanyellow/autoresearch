@@ -1,0 +1,14 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 4.64,
+    "text": "hey it's crystal you could try calling me back later thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  }
+]

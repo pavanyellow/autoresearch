@@ -1,0 +1,314 @@
+[
+  {
+    "start": 1.76,
+    "end": 2.6399999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 6.24,
+    "end": 6.96,
+    "text": "yes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.795,
+    "end": 18.275,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.689999,
+    "end": 28.41,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 36.329998,
+    "end": 36.89,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 42.875,
+    "end": 43.595,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 52.155,
+    "end": 53.835,
+    "text": "antonia tensiberio flores",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 61.01,
+    "end": 61.41,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 78.645004,
+    "end": 79.365005,
+    "text": "m\u00e1s tarde",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 88.240005,
+    "end": 89.36,
+    "text": "puedo marcar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 91.04,
+    "end": 91.520004,
+    "text": "atr\u00e1s",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 100.945,
+    "end": 101.34499,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 112.729996,
+    "end": 114.25,
+    "text": "tres veinte",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 114.25,
+    "end": 116.01,
+    "text": "del dos dos mil veinticuatro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 116.49,
+    "end": 117.45,
+    "text": "veinticinco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 117.69,
+    "end": 118.33,
+    "text": "veintis\u00e9is",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "fr"
+    }
+  },
+  {
+    "start": 124.875,
+    "end": 125.994995,
+    "text": "la cantidad del pago",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 139.92,
+    "end": 141.04,
+    "text": "el tres",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 141.92,
+    "end": 143.59999,
+    "text": "veinte del dos mil veintis\u00e9is",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 154.72499,
+    "end": 155.365,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 156.08499,
+    "end": 156.725,
+    "text": "marzo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 156.965,
+    "end": 157.685,
+    "text": "veinte",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 157.765,
+    "end": 158.965,
+    "text": "del dos mil veintis\u00e9is",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 171.45,
+    "end": 171.76999,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 209.255,
+    "end": 209.655,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 242.655,
+    "end": 243.055,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  }
+]

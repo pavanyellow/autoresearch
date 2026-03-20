@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.71999997,
+    "end": 1.6800001,
+    "text": "hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 4.3199997,
+    "end": 4.7999997,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.015,
+    "end": 24.535,
+    "text": "for today no so the next week please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.75,
+    "end": 34.35,
+    "text": "do you speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.83,
+    "end": 39.71,
+    "text": "espa\u00f1ol s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 44.165,
+    "end": 45.125,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 54.485,
+    "end": 55.204998,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 57.399998,
+    "end": 57.96,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 68.755005,
+    "end": 71.235,
+    "text": "quisiera que me llame un asesor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 76.995,
+    "end": 80.435,
+    "text": "quiero programar el pago para el para la \u00faltima cuota",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 89.42,
+    "end": 89.82,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 97.195,
+    "end": 99.354996,
+    "text": "no quiero hablar con un asesor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 108.409996,
+    "end": 109.85,
+    "text": "s\u00ed me quita ayuda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  }
+]

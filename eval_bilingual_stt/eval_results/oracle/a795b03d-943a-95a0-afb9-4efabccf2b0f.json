@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.24,
+    "end": 4.8,
+    "text": "we're sorry your call did not go through will you please try your call again",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 15
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.0,
+    "end": 10.24,
+    "text": "we're sorry your call did not go through will you please try your call again",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 15
+      },
+      "fasttext": "en"
+    }
+  }
+]

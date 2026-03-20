@@ -1,106 +1,63 @@
 # autoresearch-language-switch
 
-This repo repurposes `autoresearch` into an offline backtesting loop for bilingual STT language-switch logic.
+This repo now carries the bilingual STT oracle benchmark workspace used to audit `BilingualSTT` forwarding behavior against Deepgram Nova-3 multi.
 
-The goal is to improve the EN->ES switch decision when English and Spanish Nemotron streams run in parallel on real production call logs.
+The active benchmark lives under [eval_bilingual_stt](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt). It is a black-box eval of what production actually forwarded, not the older call-level `language_switched` backtest.
 
-## What matters
+## Current Workspace
 
-This repo now has two important files:
+- [eval_bilingual_stt/bilingual_stt_events.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/bilingual_stt_events.json): extracted production routing/STT events
+- [eval_bilingual_stt/eval_results/oracle](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/oracle): cached Nova-3 multi oracle transcripts
+- [eval_bilingual_stt/eval_routing_accuracy.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_routing_accuracy.py): portable evaluator
+- [eval_bilingual_stt/spotcheck.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/spotcheck.py): side-by-side call inspection
 
-- `prepare.py` - fixed offline benchmark harness. Do not modify during the experiment loop.
-- `train.py` - the only file the agent edits. It contains the current switch policy.
+Copied for provenance but not portable by themselves in this repo:
 
-`program.md` describes the autonomous experiment workflow.
+- [eval_bilingual_stt/extract_stt_events.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/extract_stt_events.py)
+- [eval_bilingual_stt/transcribe_oracle.py](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/transcribe_oracle.py)
 
-## Dataset
+Those two still depend on Taylor production utilities and secrets for S3 / Deepgram access.
 
-The benchmark uses a local production event log and keeps it out of git.
+## Benchmark
 
-- default path: `/Users/pavan/Downloads/bilingual_stt_events.json`
-- override: `AUTORESEARCH_EVENTS_PATH=/path/to/bilingual_stt_events.json`
+The current oracle eval measures two routing failure modes:
 
-Expected dataset shape:
+- Positive-path delay: after the oracle sees the first clear Spanish utterance, how many bilingual forwarded events happen before the first forwarded Spanish event
+- Negative-path false positives: how many Spanish forwards happen while the oracle is still in English
 
-- one list entry per call
-- call-level labels including `language_switched`
-- per-call `stt_events`, `routing_events`, and `tool_events`
+Mixed oracle utterances are excluded.
 
-The current dataset has 136 calls:
+This is the current bundled result set:
 
-- 20 switched calls
-- 116 non-switched calls
+- `122` calls with oracle transcripts cached
+- `117` processed successfully
+- `22` calls with oracle Spanish regions
+- `avg_switch_delay = 3.1` bilingual events
+- `false_es_events = 24`
 
-The fixed split is stratified with seed `42`:
+See [eval_bilingual_stt/eval_results/aggregate.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/aggregate.json) and [eval_bilingual_stt/eval_results/per_call.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/per_call.json).
 
-- train: 82 calls = 12 switched, 70 non-switched
-- dev: 27 calls = 4 switched, 23 non-switched
-- test: 27 calls = 4 switched, 23 non-switched
+## Run
 
-## Metric
-
-Primary metric:
-
-- `dev_bal_acc` = balanced accuracy on the dev split
-
-Supporting metrics:
-
-- `dev_precision_switched`
-- `dev_recall_switched`
-- `dev_fp`
-- `dev_fn`
-- `dev_median_latency_s`
-
-Higher `dev_bal_acc` is better.
-
-## Quick start
-
-Validate the local dataset:
+Run the portable evaluator with the bundled data:
 
 ```bash
-python prepare.py
+python eval_bilingual_stt/eval_routing_accuracy.py \
+  --events eval_bilingual_stt/bilingual_stt_events.json \
+  --oracle-dir eval_bilingual_stt/eval_results/oracle \
+  --output-dir eval_bilingual_stt/eval_results
 ```
 
-Run the current baseline policy on the dev split:
+Generate a spotcheck for specific calls:
 
 ```bash
-python train.py --split dev
+python eval_bilingual_stt/spotcheck.py \
+  --events eval_bilingual_stt/bilingual_stt_events.json \
+  --oracle-dir eval_bilingual_stt/eval_results/oracle \
+  --call-ids 5c7c8787,de68583a \
+  -o /tmp/spotcheck.txt
 ```
 
-Or with uv:
+## Status
 
-```bash
-uv run train.py --split dev
-```
-
-Write a per-call report:
-
-```bash
-python train.py --split dev --report-path reports/dev_report.json
-```
-
-## Policy shape
-
-`train.py` replays the STT events in timestamp order and lets the policy emit at most one decision:
-
-- switch to Spanish
-- or no decision
-
-The baseline is a simplified port of the current arrival-time bilingual routing logic:
-
-- English is the starting language for every call
-- only final Spanish events can trigger a switch
-- same-group switching requires a confidence delta threshold
-- new-group switching requires a higher confidence than the current English state
-
-## Experiment loop
-
-The intended autoresearch loop is:
-
-1. edit only `train.py`
-2. run `python train.py --split dev > run.log 2>&1`
-3. read `dev_bal_acc` and error counts from `run.log`
-4. keep or discard the change
-5. occasionally validate on `--split test`
-
-Artifacts such as `results.tsv`, `run.log`, and `reports/` are intentionally gitignored.
+The old root-level [prepare.py](/Users/pavan/code/auto-research-language-switch/prepare.py) and [train.py](/Users/pavan/code/auto-research-language-switch/train.py) are the earlier call-level `language_switched` harness. They are still present for reference, but they are not the benchmark to use for the current bilingual routing work.

@@ -1,0 +1,170 @@
+[
+  {
+    "start": 0.71999997,
+    "end": 5.92,
+    "text": "hi if you record your name and reason for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.915,
+    "end": 19.154999,
+    "text": "thanks taylor please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.14,
+    "end": 28.26,
+    "text": "yes speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 42.375,
+    "end": 43.175,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 52.135002,
+    "end": 53.095,
+    "text": "what they see now",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 64.71,
+    "end": 65.91,
+    "text": "another day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 68.23,
+    "end": 70.07,
+    "text": "the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 69.775,
+    "end": 70.415,
+    "text": "twenty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 70.735,
+    "end": 71.695,
+    "text": "the twenty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 78.255005,
+    "end": 79.455,
+    "text": "the full amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 92.04,
+    "end": 92.44,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 121.1,
+    "end": 121.5,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 147.24,
+    "end": 150.2,
+    "text": "yes so today i don't have to make a payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 156.87494,
+    "end": 158.15494,
+    "text": "no that's all thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

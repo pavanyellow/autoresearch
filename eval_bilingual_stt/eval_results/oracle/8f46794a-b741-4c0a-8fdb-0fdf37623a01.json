@@ -1,0 +1,338 @@
+[
+  {
+    "start": 0.08,
+    "end": 1.04,
+    "text": "hola",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 1.04,
+    "end": 4.08,
+    "text": "si dejas tu nombre y el motivo de tu llamada",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 4.24,
+    "end": 6.8799996,
+    "text": "revisar\u00e9 si esta persona est\u00e1 disponible",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 19.595,
+    "end": 21.035,
+    "text": "gracias taylor",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 22.474998,
+    "end": 23.035,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 29.28,
+    "end": 29.68,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 43.975002,
+    "end": 44.855,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 49.255,
+    "end": 49.975,
+    "text": "espa\u00f1ol",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 63.64,
+    "end": 64.6,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 69.16,
+    "end": 69.56,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 74.995,
+    "end": 76.035,
+    "text": "de",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 76.035,
+    "end": 76.355,
+    "text": "cu\u00e1nto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 88.62,
+    "end": 90.46001,
+    "text": "agendar el pago con me",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 100.62,
+    "end": 101.100006,
+    "text": "correcto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 110.755,
+    "end": 112.91499,
+    "text": "diecinueve de abril del dos mil veintis\u00e9is",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 119.09,
+    "end": 120.77,
+    "text": "el monto del banco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 121.729996,
+    "end": 122.689995,
+    "text": "novecientos",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 122.689995,
+    "end": 123.09,
+    "text": "cuarenta",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 140.725,
+    "end": 141.685,
+    "text": "no no la tengo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 153.62,
+    "end": 155.46,
+    "text": "es que yo no tengo ese auto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 156.725,
+    "end": 158.645,
+    "text": "alfredo cisneto tiene",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 174.06,
+    "end": 176.54001,
+    "text": "de qu\u00e9 es este pago de qu\u00e9 carro ves",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 190.625,
+    "end": 191.58499,
+    "text": "prentar\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 191.58499,
+    "end": 192.305,
+    "text": "uno de marzo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 197.90999,
+    "end": 200.62999,
+    "text": "monto con la el monto de la cuota",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 8
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 217.635,
+    "end": 218.27501,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 224.595,
+    "end": 225.155,
+    "text": "no lleva",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 234.4,
+    "end": 234.79999,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "start": 1.68,
+    "end": 2.4799998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.48,
+    "end": 5.2,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.615,
+    "end": 21.895,
+    "text": "oh no ma'am i don't have money so",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 23.015,
+    "end": 26.055,
+    "text": "how can how i can turn around the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.96,
+    "end": 28.48,
+    "text": "the vehicle",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.64,
+    "end": 39.6,
+    "text": "no it's okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.28,
+    "end": 55.239998,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.64,
+    "end": 59.0,
+    "text": "can i can i do a payment of the thirty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 67.655,
+    "end": 72.135,
+    "text": "no thirty bucks no i mean like on the day of the thirty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.689995,
+    "end": 86.649994,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 91.61,
+    "end": 93.049995,
+    "text": "no with no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 93.45,
+    "end": 94.329994,
+    "text": "with my card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.405,
+    "end": 96.765,
+    "text": "the card that i have",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 100.125,
+    "end": 101.085,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 103.485,
+    "end": 104.445,
+    "text": "the same card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 110.18,
+    "end": 110.74,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 114.82,
+    "end": 116.42,
+    "text": "i want to use the same card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "start": 0.16,
+    "end": 1.04,
+    "text": "qu\u00e9 onda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 4.3199997,
+    "end": 4.72,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 15.215,
+    "end": 16.095001,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 22.015,
+    "end": 22.415,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 28.77,
+    "end": 29.25,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 46.225002,
+    "end": 47.505,
+    "text": "de qu\u00e9 vamos a hablar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 50.14,
+    "end": 55.98,
+    "text": "est\u00e1 arreglando eso va a hablar para lo del gap para que el gap cancele la deuda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 17
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.035,
+    "end": 73.034996,
+    "text": "estoy llamando al",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 73.035,
+    "end": 77.840004,
+    "text": "al gas para que cancele el el subtotal del de que se debe",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 12
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 109.950005,
+    "end": 110.270004,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 124.86,
+    "end": 126.22,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 133.66,
+    "end": 133.98,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 137.435,
+    "end": 138.07501,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 149.675,
+    "end": 150.235,
+    "text": "lo s\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 151.46,
+    "end": 152.18001,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 152.34001,
+    "end": 154.5,
+    "text": "puede",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 154.5,
+    "end": 155.46,
+    "text": "pasar un agente",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.24,
+    "end": 4.32,
+    "text": "your call has been forwarded to an automated voice messaging system",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.56,
+    "end": 7.84,
+    "text": "is not available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.08,
+    "end": 13.759999,
+    "text": "at the tone please record your message when you've finished recording you may hang up or press one for more options",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 21
+      },
+      "fasttext": "en"
+    }
+  }
+]

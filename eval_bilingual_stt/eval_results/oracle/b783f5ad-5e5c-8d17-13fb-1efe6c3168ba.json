@@ -1,0 +1,86 @@
+[
+  {
+    "start": 1.92,
+    "end": 2.6399999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.04,
+    "end": 5.84,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.8,
+    "end": 11.44,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.654999,
+    "end": 26.895,
+    "text": "well wait what how i just paid that no no i just made the wait i just made that",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.5,
+    "end": 35.3,
+    "text": "let me check because i swear i just made a payment let me check",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.355,
+    "end": 43.315002,
+    "text": "woah wait i'm gonna have to get off my fucking phone give me a human",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 15
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 50.565,
+    "end": 52.405,
+    "text": "a fucking human you bitch",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

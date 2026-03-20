@@ -1,0 +1,62 @@
+[
+  {
+    "start": 6.0,
+    "end": 6.3999996,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.994999,
+    "end": 21.634998,
+    "text": "not pretty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.62,
+    "end": 40.22,
+    "text": "yes in a couple days",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 51.315002,
+    "end": 53.395,
+    "text": "i'm not sure when i'll get back",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 62.325,
+    "end": 62.885002,
+    "text": "thanks",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

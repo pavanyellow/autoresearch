@@ -1,0 +1,218 @@
+[
+  {
+    "start": 0.24,
+    "end": 6.16,
+    "text": "hola si dejas tu nombre y el motivo de tu llamada revisar\u00e9 si esta persona est\u00e1 disponible",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 17
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 18.175001,
+    "end": 18.895,
+    "text": "hola",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.815,
+    "end": 28.654999,
+    "text": "yeah can you hear me in spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 35.03,
+    "end": 37.670002,
+    "text": "can you hear me in spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.31,
+    "end": 40.23,
+    "text": "me puedes ayudar en espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 42.95,
+    "end": 43.190002,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 44.774998,
+    "end": 46.054996,
+    "text": "s\u00ed est\u00e1 listo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 51.094997,
+    "end": 51.495,
+    "text": "correcto",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 68.75,
+    "end": 69.15,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 76.435,
+    "end": 78.835,
+    "text": "no s\u00e9 si se pueda para el pr\u00f3ximo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 8
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 79.315,
+    "end": 81.075,
+    "text": "hoy es jueves para el lunes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 86.61,
+    "end": 89.17,
+    "text": "trescientos noventa y dos el monto adeudo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 98.395004,
+    "end": 100.715004,
+    "text": "correcto s\u00ed pero el lunes en la tarde",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 8
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 132.225,
+    "end": 133.18501,
+    "text": "puedo aceptar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 138.785,
+    "end": 139.105,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 171.24493,
+    "end": 173.08495,
+    "text": "no as\u00ed est\u00e1 bien muchas gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 176.68494,
+    "end": 177.80493,
+    "text": "ok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 180.68494,
+    "end": 180.84492,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

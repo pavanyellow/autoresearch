@@ -1,0 +1,33 @@
+Call: 5c7c8787-8db0-f5ee-7e6d-4c066bb350be
+Call language: es  |  language_switched: True
+
+   TIME  SOURCE    DETAIL
+------------------------------------------------------------------------------------------
+    5.1s  ORACLE    lang=en     words={'en': 4}  "yes speak spanish please"
+    9.6s  BILINGUAL  lang=en  conf=0.22  "yes"
+   10.1s  BILINGUAL  lang=?  conf=0.842  "Y es speak Spanish please"
+   23.5s  ORACLE    lang=mixed  words={'en': 2, 'es': 2}  "excuse me sí spanish"
+   26.0s  ORACLE    lang=es     words={'es': 1}  "please"
+   29.4s  BILINGUAL  lang=en  conf=0.657  "excuse me"
+   30.6s  BILINGUAL  lang=en  conf=0.788  "Es excuse me speak Spanish please"
+   31.7s  BILINGUAL  lang=en  conf=0.64  "spanish please"
+   34.2s  ORACLE    lang=es     words={'es': 1}  "español"
+   39.5s  BILINGUAL  lang=es  conf=0.736  "Español"
+   39.8s  ORACLE    lang=es     words={'es': 1}  "sí"
+   45.8s  BILINGUAL  lang=es  conf=0.724  "Sí"
+   47.9s  ORACLE    lang=es     words={'es': 5}  "repetir la información por favor"
+   56.0s  BILINGUAL  lang=es  conf=0.785  "Repetir la información por favor"
+   95.6s  ORACLE    lang=es     words={'es': 1}  "mañana"
+  101.0s  ORACLE    lang=es     words={'es': 7}  "el cincuenta por ciento de la deuda"
+  104.6s  BILINGUAL  lang=?  conf=0.202  "manana"
+  107.4s  BILINGUAL  lang=es  conf=0.924  "Mañana"
+  112.0s  ORACLE    lang=es     words={'es': 2}  "es correcto"
+  115.2s  BILINGUAL  lang=es  conf=0.856  "Es cincuenta por ciento de la deuda"
+  125.9s  BILINGUAL  lang=es  conf=0.82  "Es correcto"
+  151.7s  ORACLE    lang=es     words={'es': 3}  "revisar el monto"
+  154.9s  ORACLE    lang=es     words={'es': 1}  "revisar"
+  162.3s  ORACLE    lang=es     words={'es': 4}  "el monto a pagar"
+  169.0s  BILINGUAL  lang=es  conf=0.972  "Revisar el monto"
+  170.6s  ORACLE    lang=es     words={'es': 1}  "sí"
+  180.5s  BILINGUAL  lang=es  conf=0.906  "Revisar el monto a pagar"
+  189.1s  BILINGUAL  lang=es  conf=0.895  "Sí"

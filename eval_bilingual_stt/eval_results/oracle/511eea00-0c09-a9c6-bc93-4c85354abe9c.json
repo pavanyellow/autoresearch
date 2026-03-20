@@ -1,0 +1,266 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 1.9199998,
+    "text": "oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.16,
+    "end": 4.48,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 13.215,
+    "end": 14.015,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.895,
+    "end": 15.295,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.81,
+    "end": 31.45,
+    "text": "tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.435,
+    "end": 41.155,
+    "text": "oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 45.635002,
+    "end": 46.035,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.76,
+    "end": 56.68,
+    "text": "hey you'll be answered",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.239998,
+    "end": 62.519997,
+    "text": "is it pretty bad",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 64.119995,
+    "end": 65.4,
+    "text": "it's not good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.64,
+    "end": 68.76,
+    "text": "yes yes bitch sorry not you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 70.235,
+    "end": 71.115,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 71.995,
+    "end": 74.555,
+    "text": "holy no oh yeah that fucking freak",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 75.435,
+    "end": 76.075,
+    "text": "me see",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 76.715,
+    "end": 80.475,
+    "text": "soon as you turn like the fucking vehicle out just press that first question",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 89.88,
+    "end": 92.92,
+    "text": "literally i'm telling you now it's not it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 93.56,
+    "end": 95.24,
+    "text": "cools down for about",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.479996,
+    "end": 99.159996,
+    "text": "three seconds and it starts to hit that's yeah this is good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 105.465004,
+    "end": 106.265,
+    "text": "yes bitch",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 107.58494,
+    "end": 109.66494,
+    "text": "fuck get off my fucking phone",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 110.94494,
+    "end": 111.58494,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 113.104935,
+    "end": 114.30494,
+    "text": "fucking fag",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

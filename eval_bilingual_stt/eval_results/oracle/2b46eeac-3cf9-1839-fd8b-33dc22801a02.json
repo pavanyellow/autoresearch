@@ -1,0 +1,98 @@
+[
+  {
+    "start": 1.28,
+    "end": 2.08,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 5.52,
+    "end": 6.2400002,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 9.12,
+    "end": 9.919999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 12.0,
+    "end": 12.719999,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 13.865001,
+    "end": 15.065,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 20.905,
+    "end": 21.225,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 28.01,
+    "end": 31.449999,
+    "text": "oh ahorita no se encuentra le habla m\u00e1s al ratito",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 37.21,
+    "end": 37.21,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

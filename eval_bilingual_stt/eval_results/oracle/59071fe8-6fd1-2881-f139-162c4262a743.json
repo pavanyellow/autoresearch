@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.64,
+    "end": 1.44,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.4399998,
+    "end": 3.9199998,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.415,
+    "end": 29.575,
+    "text": "i'll make the payment but like yeah today i'll make the payment but probably a little later because i get paid today but i'm not sure like around what time i get paid because it's always a different time",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 39
+      },
+      "fasttext": "en"
+    }
+  }
+]

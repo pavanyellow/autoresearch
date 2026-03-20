@@ -1,10 +1,9 @@
 """
-Editable EN->ES switch-policy runner for autoresearch experiments.
+Legacy call-level EN->ES switch-policy runner.
 
-Run with:
-    python train.py --split dev
-or:
-    uv run train.py --split dev
+This file is kept for reference only. The active benchmark now lives under
+`eval_bilingual_stt/` and evaluates black-box forwarded behavior against the
+Nova-3 multi oracle.
 """
 
 from __future__ import annotations

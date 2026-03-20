@@ -1,0 +1,2322 @@
+[
+  {
+    "call_id": "b619c9fe-235c-ae0a-a998-c5196373e340",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "66297205-e5d7-a744-7a46-43b7a9599781",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "a795b03d-943a-95a0-afb9-4efabccf2b0f",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "f4f9f35e-b817-e59a-2eac-d8ffd245428e",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "15b4979d-4392-55a0-be6f-8fee518ff951",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "3d9bf9e8-872a-b7bd-b821-5f406d433ea8",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "2578fbba-f837-c1c7-c3e1-4f324e29af94",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "4e6d2ac8-e21f-8278-2946-44576109bbee",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "8a22e41e-2a97-3824-aa44-a58da0ab1297",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "9be62788-2fe6-45ca-e440-ea0fbdd92a03",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "da16732f-cb22-1283-9e7f-cef33fb632c0",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "d3515f26-c12d-b2e8-bda7-4217ef1ab06d",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 0,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": "no_timestamp_mapping"
+  },
+  {
+    "call_id": "812d8c5e-1256-e93b-afd5-35599be99c2e",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 1,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "321bf8e4-5b8f-7f52-5a57-d46028aa2680",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "29553a10-89c8-0325-0ce8-62dd9467bc07",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 6,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1c8bf7ad-7803-a7f3-a9e8-8a3155336f66",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 43,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "3fe77325-b2f7-79a9-5bf7-0c17a45f9dbc",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "06f37cb7-68b1-aa5d-13ac-4d61b7f04a2b",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "f12e0cf3-c92a-e8d9-ba63-e98d73f55787",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 16,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "55018f94-01ba-ffdf-314d-8924d800221b",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 9,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773948201.811369,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "6474d7a9-ee6b-6e02-a62b-de417d83e134",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "59071fe8-6fd1-2881-f139-162c4262a743",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "a5a6bfd1-f58c-df10-bb40-496e42adc529",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 3,
+    "false_es_finals": 2,
+    "false_es_detail": [
+      {
+        "ts": 1773947936.144472,
+        "text": "No",
+        "is_final": true
+      },
+      {
+        "ts": 1773947936.19022,
+        "text": "w",
+        "is_final": false
+      },
+      {
+        "ts": 1773947947.506659,
+        "text": "w",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "f2d07ade-fdc1-0429-c8f0-cee122179212",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e4c9608a-d767-0d73-c95b-6e4035799251",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "93871aa2-7869-daa3-2ce8-cc3f013ca4c5",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "64ea91aa-5016-dccd-27b7-662d005f03b1",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "abfbdd12-f7db-27ce-2389-d6044d80839e",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e39bdf6b-2f47-3b20-4160-91ce2fb50994",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "c27410e3-3dce-cdbd-ca8a-30b227377f74",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1b814ef4-0c43-033f-e575-6bb52cb8bcd7",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 7,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "5c7c8787-8db0-f5ee-7e6d-4c066bb350be",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 34.16,
+    "first_oracle_es_text": "espa\u00f1ol",
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 1,
+    "switch_delay": 2,
+    "switch_delay_events": [
+      {
+        "ts": 1773948050.103794,
+        "text": "espanol",
+        "is_final": false
+      },
+      {
+        "ts": 1773948050.229413,
+        "text": "Espa\u00f1ol",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "6c244902-c36d-55bc-362d-ef1a52a31b07",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773947980.269427,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "241c82ad-25da-f1ef-be59-1157a1a5b0c5",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "d0f760b4-3c97-9dc3-dfa5-d279612b7187",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 23,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "976c7503-0145-d883-14d1-8febd7baa1cd",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "6857b170-894e-8b72-fc66-5ce609e540a9",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "c0308c6f-64b3-cc58-6546-b7d331a58597",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773947959.699913,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "7e7f0f8a-635d-f5d7-1423-d0932b413cfe",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 1,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e550e6df-547b-81a9-6cdf-0b5aa841690a",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "3b1498fd-d0fa-a9c7-7966-8f8055d7bdf1",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1c380bdb-488f-c7cf-0e69-d27c309cca93",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "de68583a-eeee-4f56-af69-7e6963ce9577",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 1.36,
+    "first_oracle_es_text": "oh",
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": 8,
+    "switch_delay_events": [
+      {
+        "ts": 1773947882.290212,
+        "text": "oh",
+        "is_final": true
+      },
+      {
+        "ts": 1773947885.282503,
+        "text": "speak",
+        "is_final": false
+      },
+      {
+        "ts": 1773947885.433694,
+        "text": "speak span",
+        "is_final": false
+      },
+      {
+        "ts": 1773947885.590588,
+        "text": "speak spanish",
+        "is_final": false
+      },
+      {
+        "ts": 1773947885.773155,
+        "text": "speak spanish please",
+        "is_final": false
+      },
+      {
+        "ts": 1773947886.046513,
+        "text": "speak spanish please",
+        "is_final": true
+      },
+      {
+        "ts": 1773947896.019736,
+        "text": "espanol",
+        "is_final": false
+      },
+      {
+        "ts": 1773947896.240692,
+        "text": "Espa\u00f1ol",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "b74f2543-901b-6bd5-ca3c-31c6a24ab3f4",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "84e698c9-9d96-eaef-6fc4-dfc25485b656",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 7,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773946394.589815,
+        "text": "yes",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "efc2baa0-f819-ae12-09be-a1d626ae1479",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1d8a97ca-3ea2-76c2-ed96-0afb2acc50e2",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 31.6,
+    "first_oracle_es_text": "espa\u00f1ol",
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": 1,
+    "switch_delay_events": [
+      {
+        "ts": 1773947114.986715,
+        "text": "Espa\u00f1ol",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "0b7555bf-a96c-8150-6624-e74bb90ca39f",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "dcd50b21-0719-2c65-c328-3f04fab5441a",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 0,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": "no_timestamp_mapping"
+  },
+  {
+    "call_id": "1aa5eb52-f727-98ae-5ab0-05577551db62",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 0,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": "no_timestamp_mapping"
+  },
+  {
+    "call_id": "0c9ad63d-7f93-0423-651a-0b0df711e773",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "a05bb3bf-ad37-1147-dc88-bbeab44062da",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 3,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773953344.866259,
+        "text": "five seven three nine seven nine three nine two",
+        "is_final": true
+      },
+      {
+        "ts": 1773953345.076696,
+        "text": "th",
+        "is_final": false
+      },
+      {
+        "ts": 1773953345.15108,
+        "text": "three",
+        "is_final": false
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "757b575d-7bf0-500d-41cd-07f3760cf8d1",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "70b802ef-e3e0-9d0e-b68c-0a2cb4d2b917",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 0,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": "no_timestamp_mapping"
+  },
+  {
+    "call_id": "90d776c6-e272-1aa0-16cd-e9af007d6fe4",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "ee115213-e5f2-6af7-52d4-03622dbc74d9",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "9eb86f03-f707-5546-59e0-93635ae76b8a",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e7e51d01-6d66-73f8-e1d4-a6e2ae8991cb",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "a38c5be4-f809-f4c2-3ff9-fc6ec0b0e33c",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 0,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": "no_timestamp_mapping"
+  },
+  {
+    "call_id": "28e28c5c-f67f-4350-4416-6d9dffc81468",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773951997.342046,
+        "text": "Hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "c2bc9a22-4328-2fbe-b339-85ce9f568d6f",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "aa71c483-cc2c-20d8-62b0-beb7987daf9c",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": 29.18,
+    "first_oracle_es_text": "al\u00f3",
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": 12,
+    "switch_delay_events": [
+      {
+        "ts": 1773952503.075312,
+        "text": "hello",
+        "is_final": false
+      },
+      {
+        "ts": 1773952514.271453,
+        "text": "wait",
+        "is_final": true
+      },
+      {
+        "ts": 1773952514.431161,
+        "text": "for",
+        "is_final": false
+      },
+      {
+        "ts": 1773952514.610476,
+        "text": "for me",
+        "is_final": false
+      },
+      {
+        "ts": 1773952514.744056,
+        "text": "for you",
+        "is_final": false
+      },
+      {
+        "ts": 1773952515.139333,
+        "text": "for you",
+        "is_final": true
+      },
+      {
+        "ts": 1773952515.189776,
+        "text": "wait",
+        "is_final": false
+      },
+      {
+        "ts": 1773952517.165029,
+        "text": "hello",
+        "is_final": true
+      },
+      {
+        "ts": 1773952521.16075,
+        "text": "yeah",
+        "is_final": false
+      },
+      {
+        "ts": 1773952521.921397,
+        "text": "yeah",
+        "is_final": true
+      },
+      {
+        "ts": 1773952538.413593,
+        "text": "no",
+        "is_final": false
+      },
+      {
+        "ts": 1773952538.880956,
+        "text": "No",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "2c73fb3e-da6f-86fb-719c-82a61a34fc04",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": 14.655001,
+    "first_oracle_es_text": "por qu\u00e9",
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": 13,
+    "switch_delay_events": [
+      {
+        "ts": 1773952843.454424,
+        "text": "okay",
+        "is_final": false
+      },
+      {
+        "ts": 1773952844.122209,
+        "text": "okay",
+        "is_final": true
+      },
+      {
+        "ts": 1773952852.576187,
+        "text": "y",
+        "is_final": false
+      },
+      {
+        "ts": 1773952852.750798,
+        "text": "yeah",
+        "is_final": false
+      },
+      {
+        "ts": 1773952853.242323,
+        "text": "yeah you",
+        "is_final": false
+      },
+      {
+        "ts": 1773952853.387052,
+        "text": "yeah you can",
+        "is_final": false
+      },
+      {
+        "ts": 1773952853.570683,
+        "text": "yeah you can focus",
+        "is_final": false
+      },
+      {
+        "ts": 1773952853.706458,
+        "text": "yeah you can focus the",
+        "is_final": false
+      },
+      {
+        "ts": 1773952853.88066,
+        "text": "yeah you can focus on",
+        "is_final": false
+      },
+      {
+        "ts": 1773952854.019958,
+        "text": "yeah you can focus on my",
+        "is_final": false
+      },
+      {
+        "ts": 1773952854.197249,
+        "text": "yeah you can focus on the",
+        "is_final": false
+      },
+      {
+        "ts": 1773952854.360989,
+        "text": "yeah you can focus on the phone",
+        "is_final": false
+      },
+      {
+        "ts": 1773952854.711002,
+        "text": "yeah you can focus on the phone",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "d7155ef3-8c46-9cae-8bc7-f2db3e4d0f91",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 1,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "0b8d4157-f93f-3064-ef2e-92c365c77367",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 3,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "f536587c-5783-9d61-b20b-c0da8d0ee44d",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "2ae79615-e781-a23b-c3a5-9f7361e6e46b",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "cf7ff313-cdbc-174a-efb9-7bdf492ca0a6",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "913659d7-0c23-22da-af03-da550b8e6772",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "b783f5ad-5e5c-8d17-13fb-1efe6c3168ba",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 7,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "bc0445d7-2823-0172-d3f8-6af0f1ce79dc",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "c069c219-ab28-69dc-6464-8c2ef66350ee",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "00502583-0a75-c1f6-720b-532cc8db2f57",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "59f073e7-f311-826e-82fc-7d2297cd726d",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 6,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "2b46eeac-3cf9-1839-fd8b-33dc22801a02",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 1.28,
+    "first_oracle_es_text": "bueno",
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e637bd4f-c4d6-7fb6-0e0c-d70afcdc3439",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 1,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "ee019607-0b1d-3558-7db9-a795788d3609",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "ece46bd0-482b-cc64-1b64-4c472b0d1162",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1a920c84-227e-9632-613a-74e0d868af5c",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773952500.802297,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "fc245de0-05c2-7bae-6edd-aeabe795d570",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e49d02ee-72e5-5c42-423b-7941f26b81a2",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 2,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "910afe41-277a-92ee-6514-4b5ce167bbf0",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 5,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773952018.518118,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "06183ad9-377f-7b49-8920-5e3dbb8dc2ca",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 1.52,
+    "first_oracle_es_text": "al\u00f3",
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": 3,
+    "switch_delay_events": [
+      {
+        "ts": 1773953120.431814,
+        "text": "hello",
+        "is_final": true
+      },
+      {
+        "ts": 1773953123.359333,
+        "text": "see",
+        "is_final": false
+      },
+      {
+        "ts": 1773953123.680772,
+        "text": "say",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "7259f49c-563e-209a-c1f3-57b5ea7f7640",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 38.83,
+    "first_oracle_es_text": "espa\u00f1ol s\u00ed",
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "cd455a44-0771-2984-bbf0-216d91f5c7e7",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 7,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "8b25f18d-46a1-0931-7839-10c7f4f83742",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "8395ec07-bc5c-f4ed-f178-2221ef07150a",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 11,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "808f8a40-edd5-17ab-90fa-f7ec8caf48c3",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 30,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "306d4ae4-ed5a-ab3b-a2de-90b80b5b64aa",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 14,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "adfe9640-6dfa-1dc1-8d10-c9041bcd3d6b",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 17,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773952522.089124,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "511eea00-0c09-a9c6-bc93-4c85354abe9c",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 22,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "a3375bc8-a674-9e5d-dc76-4a3d919ce3a1",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "19e9b831-2d30-9e61-1063-6ac3f4cffe2d",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773952128.766985,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "8e2c43c8-c6a6-515b-4f52-3d2535228301",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773953237.50416,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "62a2d89b-b684-60ec-6055-b9aeb888c4ec",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 11,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "7dbb3e7c-2251-0f66-83e0-c3243edfe884",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "220f1bde-5b7c-9255-660b-385687aa200c",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 17,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773952767.498177,
+        "text": "hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "0c349e20-b253-caa3-0ad5-b7dc09e1c511",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 11,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 2,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773953122.636981,
+        "text": "Hello",
+        "is_final": false
+      },
+      {
+        "ts": 1773953132.96604,
+        "text": "Hello",
+        "is_final": true
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "a8e77e77-748f-669f-b1c0-40dbc9a4db8b",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 11,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "29ce6138-9d3f-41ef-4b49-a46cbf730fc2",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 14,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "9a55e5bd-c0bc-250e-6b2e-b9d4a3a2bcbe",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "d100b65a-7a27-801e-6027-05442667439f",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 6,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "f27c3f41-b313-5976-365a-1928f29423d1",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "2c825ab7-a2f4-8e43-9fdc-fbed6674a597",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 8,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "d9087634-52dc-d0b2-2be7-b009ae8ec24e",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 15.295,
+    "first_oracle_es_text": "s\u00ed",
+    "oracle_utterance_count": 12,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 4,
+    "false_es_finals": 2,
+    "false_es_detail": [
+      {
+        "ts": 1773952779.524059,
+        "text": "Spanish",
+        "is_final": true
+      },
+      {
+        "ts": 1773952783.555745,
+        "text": "Espa\u00f1ol",
+        "is_final": false
+      },
+      {
+        "ts": 1773952784.193851,
+        "text": "Espa\u00f1ol",
+        "is_final": true
+      },
+      {
+        "ts": 1773952788.531731,
+        "text": "S\u00ed",
+        "is_final": false
+      }
+    ],
+    "error": null
+  },
+  {
+    "call_id": "979912d9-326c-8e76-4705-5537d219fa07",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 2.3999999,
+    "first_oracle_es_text": "buenas tardes",
+    "oracle_utterance_count": 11,
+    "mixed_utterances": 0,
+    "switch_delay": 10,
+    "switch_delay_events": [
+      {
+        "ts": 1773953030.486809,
+        "text": "what that is",
+        "is_final": true
+      },
+      {
+        "ts": 1773953032.893884,
+        "text": "yes",
+        "is_final": false
+      },
+      {
+        "ts": 1773953033.601863,
+        "text": "yes",
+        "is_final": true
+      },
+      {
+        "ts": 1773953044.925191,
+        "text": "are you",
+        "is_final": false
+      },
+      {
+        "ts": 1773953045.389938,
+        "text": "are you speaking",
+        "is_final": false
+      },
+      {
+        "ts": 1773953045.532154,
+        "text": "are you speaking in",
+        "is_final": false
+      },
+      {
+        "ts": 1773953045.682786,
+        "text": "are you speaking span",
+        "is_final": false
+      },
+      {
+        "ts": 1773953045.847152,
+        "text": "are you speaking spanish",
+        "is_final": false
+      },
+      {
+        "ts": 1773953046.220516,
+        "text": "are you speaking spanish",
+        "is_final": true
+      },
+      {
+        "ts": 1773953049.258146,
+        "text": "you",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "5236e265-4ccc-4621-a252-6f431f212bb2",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 7.6,
+    "first_oracle_es_text": "s\u00ed",
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 0,
+    "switch_delay": 1,
+    "switch_delay_events": [
+      {
+        "ts": 1773951996.776494,
+        "text": "see",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "763d4166-3a0a-71d9-2796-831f9c4da36c",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 5.92,
+    "first_oracle_es_text": "c\u00f3mo est\u00e1",
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 0,
+    "switch_delay": 6,
+    "switch_delay_events": [
+      {
+        "ts": 1773952038.438724,
+        "text": "what",
+        "is_final": false
+      },
+      {
+        "ts": 1773952038.940909,
+        "text": "what was",
+        "is_final": false
+      },
+      {
+        "ts": 1773952044.532046,
+        "text": "come",
+        "is_final": false
+      },
+      {
+        "ts": 1773952044.676437,
+        "text": "com",
+        "is_final": false
+      },
+      {
+        "ts": 1773952044.86777,
+        "text": "commiss",
+        "is_final": false
+      },
+      {
+        "ts": 1773952045.190122,
+        "text": "commissar",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "6aeca1cb-d6dc-8347-e679-b01d42d250fc",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 0.24,
+    "first_oracle_es_text": "hola si dejas tu nombre y el motivo de tu llamada revisar\u00e9 si esta persona est\u00e1 disponible",
+    "oracle_utterance_count": 18,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "e61a3f65-76be-5a3b-fd39-7a4438690063",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 3.1999998,
+    "first_oracle_es_text": "bueno",
+    "oracle_utterance_count": 13,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "b909a103-1893-0cb1-0d59-ae21d9941c64",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 2.6399999,
+    "first_oracle_es_text": "al\u00f3",
+    "oracle_utterance_count": 19,
+    "mixed_utterances": 0,
+    "switch_delay": 1,
+    "switch_delay_events": [
+      {
+        "ts": 1773953105.94837,
+        "text": "Al\u00f3",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "54b0fd1f-08de-2c90-6da9-39d854970488",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 0.24,
+    "first_oracle_es_text": "hola si dejas tu nombre y el motivo de tu llamada revisar\u00e9 si esta persona est\u00e1 disponible",
+    "oracle_utterance_count": 20,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "218c0cf0-d247-3c7e-c478-ef50506cffd9",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 1.76,
+    "first_oracle_es_text": "bueno",
+    "oracle_utterance_count": 26,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "7881b48f-cada-d3b7-d8e1-9d1c465ce891",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 0.71999997,
+    "first_oracle_es_text": "al\u00f3",
+    "oracle_utterance_count": 32,
+    "mixed_utterances": 0,
+    "switch_delay": 3,
+    "switch_delay_events": [
+      {
+        "ts": 1773952594.04431,
+        "text": "hello",
+        "is_final": true
+      },
+      {
+        "ts": 1773952598.51509,
+        "text": "hell",
+        "is_final": false
+      },
+      {
+        "ts": 1773952598.835501,
+        "text": "hello",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "9e88b033-4191-6e67-72dd-017f96966526",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 10,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "19339d4a-9561-42f8-dff0-4f8ad5520a0f",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 16,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "1123eb10-da55-bd52-de94-ea19c69229f0",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 7,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "f53b0468-029d-f0d2-697b-2a469f5ebe06",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 2.32,
+    "first_oracle_es_text": "hello",
+    "oracle_utterance_count": 17,
+    "mixed_utterances": 0,
+    "switch_delay": 6,
+    "switch_delay_events": [
+      {
+        "ts": 1773952468.793405,
+        "text": "hello",
+        "is_final": true
+      },
+      {
+        "ts": 1773952472.333633,
+        "text": "mom",
+        "is_final": false
+      },
+      {
+        "ts": 1773952472.652603,
+        "text": "moment",
+        "is_final": false
+      },
+      {
+        "ts": 1773952472.966744,
+        "text": "moment to",
+        "is_final": false
+      },
+      {
+        "ts": 1773952473.135,
+        "text": "moment to per",
+        "is_final": false
+      },
+      {
+        "ts": 1773952473.222584,
+        "text": "for",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "8f46794a-b741-4c0a-8fdb-0fdf37623a01",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 0.08,
+    "first_oracle_es_text": "hola",
+    "oracle_utterance_count": 28,
+    "mixed_utterances": 0,
+    "switch_delay": 1,
+    "switch_delay_events": [
+      {
+        "ts": 1773952780.40928,
+        "text": "hold on",
+        "is_final": false
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "11b257ef-7d01-502d-3d40-58bb942c25a0",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 2.48,
+    "first_oracle_es_text": "al\u00f3",
+    "oracle_utterance_count": 9,
+    "mixed_utterances": 0,
+    "switch_delay": 1,
+    "switch_delay_events": [
+      {
+        "ts": 1773952600.963708,
+        "text": "Al\u00f3",
+        "is_final": true
+      }
+    ],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "de30a800-8ce1-b2c0-216d-ea15801102a0",
+    "call_language": "es",
+    "language_switched": true,
+    "first_oracle_es_time": 0.16,
+    "first_oracle_es_text": "qu\u00e9 onda",
+    "oracle_utterance_count": 17,
+    "mixed_utterances": 0,
+    "switch_delay": 0,
+    "switch_delay_events": [],
+    "false_es_events": 0,
+    "false_es_finals": 0,
+    "false_es_detail": [],
+    "error": null
+  },
+  {
+    "call_id": "11ef3e54-ea8c-7aa9-f221-4f4fce0352d2",
+    "call_language": "en",
+    "language_switched": false,
+    "first_oracle_es_time": null,
+    "first_oracle_es_text": null,
+    "oracle_utterance_count": 4,
+    "mixed_utterances": 0,
+    "switch_delay": null,
+    "switch_delay_events": [],
+    "false_es_events": 1,
+    "false_es_finals": 1,
+    "false_es_detail": [
+      {
+        "ts": 1773936702.084844,
+        "text": "Ay ya s\u00e9",
+        "is_final": true
+      }
+    ],
+    "error": null
+  }
+]

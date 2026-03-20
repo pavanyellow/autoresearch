@@ -1,9 +1,9 @@
 """
-Fixed offline evaluation harness for bilingual STT switch-policy experiments.
+Legacy call-level evaluation harness for bilingual STT switch-policy experiments.
 
-This module is intentionally read-only during the autoresearch loop.
-It loads the production event log, builds deterministic splits, and
-evaluates a policy by replaying STT events call by call.
+This module is kept for reference only. The active benchmark now lives under
+`eval_bilingual_stt/` and scores black-box forwarded behavior against the
+Nova-3 multi oracle.
 """
 
 from __future__ import annotations

@@ -1,0 +1,50 @@
+[
+  {
+    "start": 0.56,
+    "end": 3.12,
+    "text": "your call has been forwarded to voicemail",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.4399998,
+    "end": 6.2400002,
+    "text": "the person you're trying to reach is not available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.3999996,
+    "end": 8.48,
+    "text": "at the tone please record your message",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.035,
+    "end": 11.434999,
+    "text": "when you have finished recording you may hang up",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  }
+]
