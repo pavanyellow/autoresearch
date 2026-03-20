@@ -37,24 +37,12 @@
   },
   {
     "start": 31.33,
-    "end": 34.61,
-    "text": "no no no goodbye goodbye goodbye goodbye",
+    "end": 34.37,
+    "text": "no no no goodbye goodbye goodbye goodbye goodbye",
     "lang": "en",
     "word_langs": {
       "deepgram": {
-        "en": 7
-      },
-      "fasttext": "en"
-    }
-  },
-  {
-    "start": 42.769997,
-    "end": 43.089996,
-    "text": "goodbye",
-    "lang": "en",
-    "word_langs": {
-      "deepgram": {
-        "en": 1
+        "en": 8
       },
       "fasttext": "en"
     }

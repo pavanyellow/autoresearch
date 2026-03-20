@@ -1,0 +1,50 @@
+[
+  {
+    "start": 1.12,
+    "end": 1.8399999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.24,
+    "end": 4.72,
+    "text": "nope",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "fi"
+    }
+  },
+  {
+    "start": 11.905001,
+    "end": 16.385,
+    "text": "no i don't think i think you're mistaken number it's not pickled over has nothing to do with him",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.185001,
+    "end": 24.465,
+    "text": "yes yes stop calling me your",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

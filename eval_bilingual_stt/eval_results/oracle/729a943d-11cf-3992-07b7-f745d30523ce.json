@@ -1,0 +1,74 @@
+[
+  {
+    "start": 7.2,
+    "end": 7.52,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.004999,
+    "end": 15.6449995,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.849998,
+    "end": 32.89,
+    "text": "yes i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "pa"
+    }
+  },
+  {
+    "start": 34.25,
+    "end": 35.69,
+    "text": "would like to talk to a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.385,
+    "end": 46.344997,
+    "text": "talking to a representative talking to a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 53.559998,
+    "end": 55.16,
+    "text": "paying off the car in full",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

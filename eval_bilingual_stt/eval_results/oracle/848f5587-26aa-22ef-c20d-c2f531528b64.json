@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.16,
+    "end": 1.4399999,
+    "text": "i'm sorry the person you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.44,
+    "end": 7.04,
+    "text": "call again later goodbye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  }
+]

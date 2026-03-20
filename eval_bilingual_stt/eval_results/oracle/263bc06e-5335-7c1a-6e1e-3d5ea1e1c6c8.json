@@ -1,0 +1,26 @@
+[
+  {
+    "start": 1.04,
+    "end": 1.76,
+    "text": "stefan",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "de"
+    }
+  },
+  {
+    "start": 4.7999997,
+    "end": 5.2799997,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

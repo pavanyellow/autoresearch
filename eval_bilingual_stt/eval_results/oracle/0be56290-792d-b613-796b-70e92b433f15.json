@@ -1,0 +1,14 @@
+[
+  {
+    "start": 1.12,
+    "end": 3.36,
+    "text": "bueno por ahorita no estoy disponible",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  }
+]

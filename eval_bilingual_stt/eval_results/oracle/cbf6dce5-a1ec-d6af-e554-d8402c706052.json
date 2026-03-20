@@ -1,0 +1,26 @@
+[
+  {
+    "start": 6.96,
+    "end": 7.2799997,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 23.595,
+    "end": 25.115,
+    "text": "no i'll go pay tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

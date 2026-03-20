@@ -1,0 +1,314 @@
+[
+  {
+    "start": 1.12,
+    "end": 1.9199998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.24,
+    "end": 5.04,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.2,
+    "end": 7.8399997,
+    "text": "yes yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.494999,
+    "end": 27.295,
+    "text": "would you be able to make the payment today no i'm gonna be able to make a payment until",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.73,
+    "end": 29.33,
+    "text": "the beginning of next month",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.65,
+    "end": 30.769999,
+    "text": "would that be okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.85,
+    "end": 44.655,
+    "text": "you know what it'd probably be done by the next due date i'll be able to make both of the payments",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 21
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 51.614998,
+    "end": 52.574997,
+    "text": "it will be",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.095,
+    "end": 57.535,
+    "text": "two payment what is it two two two fifty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.99,
+    "end": 66.39,
+    "text": "no no no no i didn't say two thousand",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 66.47,
+    "end": 67.590004,
+    "text": "what are you talking about",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 81.295,
+    "end": 83.134995,
+    "text": "on the twelfth of next month",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 94.31,
+    "end": 95.829994,
+    "text": "it doesn't work for me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 97.189995,
+    "end": 101.27,
+    "text": "let me speak with or can i speak with",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 104.865005,
+    "end": 105.505005,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 107.425,
+    "end": 108.305,
+    "text": "thank you very much",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 119.76,
+    "end": 120.72,
+    "text": "yes i'm here",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "fa"
+    }
+  },
+  {
+    "start": 124.905,
+    "end": 127.064995,
+    "text": "who am i who am i speaking with",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 132.905,
+    "end": 135.785,
+    "text": "no i'd like to i'd like to speak with a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 141.63,
+    "end": 144.27,
+    "text": "i'd like to speak with a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 145.79,
+    "end": 146.99,
+    "text": "alive okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 148.19,
+    "end": 151.39,
+    "text": "i don't wanna speak with the ia i'd like to speak with a human being",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 15
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 163.825,
+    "end": 166.065,
+    "text": "can i speak with a representative",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 166.065,
+    "end": 166.54501,
+    "text": "please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 169.025,
+    "end": 169.585,
+    "text": "thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 172.045,
+    "end": 172.36499,
+    "text": "thank",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

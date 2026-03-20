@@ -1,0 +1,14 @@
+[
+  {
+    "start": 7.6,
+    "end": 8.32,
+    "text": "yes ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

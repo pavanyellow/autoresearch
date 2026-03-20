@@ -1,0 +1,26 @@
+[
+  {
+    "start": 2.56,
+    "end": 3.4399998,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 6.56,
+    "end": 7.04,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

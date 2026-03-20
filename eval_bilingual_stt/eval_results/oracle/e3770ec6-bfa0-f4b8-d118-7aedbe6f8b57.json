@@ -1,0 +1,110 @@
+[
+  {
+    "start": 1.36,
+    "end": 2.24,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 6.0,
+    "end": 7.28,
+    "text": "ah no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 8.08,
+    "end": 9.599999,
+    "text": "es brenda del g\u00f3mez",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 15.215,
+    "end": 15.695,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.91,
+    "end": 31.87,
+    "text": "tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.87,
+    "end": 32.510002,
+    "text": "payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.004997,
+    "end": 39.405,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.18,
+    "end": 50.54,
+    "text": "two clock",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.38,
+    "end": 55.58,
+    "text": "habla espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  }
+]

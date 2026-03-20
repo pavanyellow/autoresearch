@@ -1,0 +1,230 @@
+[
+  {
+    "start": 2.96,
+    "end": 3.7599998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.3599997,
+    "end": 5.8399997,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.685,
+    "end": 24.605,
+    "text": "i'm not gonna be able to make it till next friday i lost my job",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 15
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 25.005,
+    "end": 27.884998,
+    "text": "and i just got another job but i don't got paid till next friday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.4,
+    "end": 38.72,
+    "text": "whatever next friday is i don't know what",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.2,
+    "end": 40.239998,
+    "text": "what that day is",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 47.465,
+    "end": 50.985,
+    "text": "is that march twenty seventh march twenty seventh remember",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.024998,
+    "end": 54.664997,
+    "text": "that",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.144997,
+    "end": 56.265,
+    "text": "yes i'll",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.144997,
+    "end": 58.024998,
+    "text": "pay the full amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 71.369995,
+    "end": 73.85,
+    "text": "i'll call on march twenty seventh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 74.795,
+    "end": 76.155,
+    "text": "and make my payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 82.475,
+    "end": 85.115,
+    "text": "no ma'am i don't have any money in there yet",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 91.28,
+    "end": 96.56,
+    "text": "no wanna use my same bank account i just don't got no money in it and i ain't doing the automatic payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 102.415,
+    "end": 103.055,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 109.775,
+    "end": 110.494995,
+    "text": "yes ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 117.36,
+    "end": 118.079994,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 121.759995,
+    "end": 122.799995,
+    "text": "no ma'am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 127.28,
+    "end": 128.31999,
+    "text": "you too thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  }
+]

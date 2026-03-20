@@ -1,0 +1,14 @@
+[
+  {
+    "start": 1.5999999,
+    "end": 3.4399998,
+    "text": "yeah it speaks you know",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

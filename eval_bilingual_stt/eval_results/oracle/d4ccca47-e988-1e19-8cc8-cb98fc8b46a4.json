@@ -1,0 +1,50 @@
+[
+  {
+    "start": 2.1599998,
+    "end": 2.8799999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.96,
+    "end": 12.0,
+    "text": "what is this about",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.395,
+    "end": 19.994999,
+    "text": "yeah what is this about",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.235,
+    "end": 24.715,
+    "text": "bye bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

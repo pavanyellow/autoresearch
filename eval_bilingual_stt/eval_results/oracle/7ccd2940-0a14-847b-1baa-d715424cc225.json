@@ -1,0 +1,206 @@
+[
+  {
+    "start": 0.39999998,
+    "end": 1.3599999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 1.8399999,
+    "end": 2.4799998,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 4.48,
+    "end": 5.68,
+    "text": "no felipe es jona",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 12.895,
+    "end": 15.455,
+    "text": "no es available no es que yo perd\u00ed persona",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 21.535,
+    "end": 22.975,
+    "text": "dile que no est\u00e1 freddy persona",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 24.27,
+    "end": 24.91,
+    "text": "hello",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.710001,
+    "end": 32.03,
+    "text": "yes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.524998,
+    "end": 41.004997,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 56.46,
+    "end": 58.14,
+    "text": "ese banco lo tienes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 58.7,
+    "end": 61.835,
+    "text": "qu\u00e9 es lo que dice que que de un banco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 62.395,
+    "end": 65.035,
+    "text": "est\u00e1s pasado de mil seiscientos",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 65.835,
+    "end": 67.115,
+    "text": "estoy pasado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 75.08,
+    "end": 76.04,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 77.72,
+    "end": 80.04,
+    "text": "s\u00ed pero no tienes rebalco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 82.200005,
+    "end": 83.32,
+    "text": "no no escuch\u00e9 bien",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 96.135,
+    "end": 97.815,
+    "text": "no voy a hablar con felipe arjona",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 103.81,
+    "end": 107.649994,
+    "text": "de nada deja me comunico con felipe arjona y me comunico con ustedes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 13
+      },
+      "fasttext": "es"
+    }
+  }
+]

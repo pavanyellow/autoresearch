@@ -1,0 +1,340 @@
+[
+  {
+    "start": 1.52,
+    "end": 2.3999999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 4.88,
+    "end": 6.08,
+    "text": "who are you",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "es": 1,
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.4,
+    "end": 10.719999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.375,
+    "end": 16.735,
+    "text": "yes but who are you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.535,
+    "end": 21.855,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.26,
+    "end": 28.300001,
+    "text": "who are you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.06,
+    "end": 33.02,
+    "text": "for what",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.98,
+    "end": 40.3,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 48.395,
+    "end": 49.115,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 53.035,
+    "end": 53.355,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 58.61,
+    "end": 59.489998,
+    "text": "i am ra\u00fal",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "nl"
+    }
+  },
+  {
+    "start": 77.534996,
+    "end": 78.575,
+    "text": "well i'll make it tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.23,
+    "end": 86.51,
+    "text": "well i called",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 94.83,
+    "end": 96.11,
+    "text": "i'm working right now",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 101.765,
+    "end": 102.405,
+    "text": "sure",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 108.805,
+    "end": 110.165,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 111.685,
+    "end": 112.165,
+    "text": "don't know",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 121.04,
+    "end": 123.52,
+    "text": "nineteen where is today nineteen yeah twenty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 129.495,
+    "end": 130.775,
+    "text": "sorry",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 135.81499,
+    "end": 136.215,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 142.98999,
+    "end": 143.63,
+    "text": "oro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 145.23,
+    "end": 147.47,
+    "text": "de oro de a four hundred seventy something",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "es": 5,
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 162.83499,
+    "end": 163.155,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 177.84,
+    "end": 178.24,
+    "text": "banco",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 234.335,
+    "end": 235.53502,
+    "text": "tomorrow morning",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 242.41501,
+    "end": 246.335,
+    "text": "all calls will be monitored or recorded for quality assurance purposes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 261.855,
+    "end": 266.255,
+    "text": "thank you for calling westlake financial my name is mosul vargas can i have your account number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 282.64,
+    "end": 286.0,
+    "text": "thank you for calling westlake financial my name is moses can i have your account number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 16
+      },
+      "fasttext": "en"
+    }
+  }
+]

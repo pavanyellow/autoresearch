@@ -1,0 +1,50 @@
+[
+  {
+    "start": 5.92,
+    "end": 6.3999996,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.025,
+    "end": 23.305,
+    "text": "i'll make it tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.53,
+    "end": 31.130001,
+    "text": "i will pay the full amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.785,
+    "end": 42.105,
+    "text": "no i will pay it through the app",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  }
+]

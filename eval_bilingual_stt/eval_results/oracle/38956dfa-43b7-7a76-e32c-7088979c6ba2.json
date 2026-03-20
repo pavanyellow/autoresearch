@@ -1,0 +1,74 @@
+[
+  {
+    "start": 0.32,
+    "end": 1.44,
+    "text": "designed",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 1.5999999,
+    "end": 3.7599998,
+    "text": "order to make an excellent internet",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.2799997,
+    "end": 9.28,
+    "text": "my god he's so good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.44,
+    "end": 10.0,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.304937,
+    "end": 26.544937,
+    "text": "will that present no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.544937,
+    "end": 27.984936,
+    "text": "the no i thought that's",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

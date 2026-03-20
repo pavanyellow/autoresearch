@@ -1,0 +1,50 @@
+[
+  {
+    "start": 2.32,
+    "end": 3.04,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.8,
+    "end": 11.36,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.775,
+    "end": 20.814999,
+    "text": "i'm good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "lb"
+    }
+  },
+  {
+    "start": 26.415,
+    "end": 26.814999,
+    "text": "mhmm",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

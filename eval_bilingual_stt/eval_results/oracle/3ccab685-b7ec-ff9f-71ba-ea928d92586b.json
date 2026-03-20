@@ -1,0 +1,38 @@
+[
+  {
+    "start": 2.56,
+    "end": 5.6,
+    "text": "hey thanks for calling the phone i'm unavailable",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.0,
+    "end": 8.24,
+    "text": "i'm with a special woman in my life",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.599999,
+    "end": 13.04,
+    "text": "leave your name number and i'll talk to you later bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  }
+]

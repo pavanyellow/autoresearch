@@ -130,17 +130,5 @@
       },
       "fasttext": "pt"
     }
-  },
-  {
-    "start": 155.075,
-    "end": 155.635,
-    "text": "me too",
-    "lang": "en",
-    "word_langs": {
-      "deepgram": {
-        "en": 2
-      },
-      "fasttext": "en"
-    }
   }
 ]

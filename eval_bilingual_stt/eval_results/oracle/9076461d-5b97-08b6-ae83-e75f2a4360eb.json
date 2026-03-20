@@ -1,0 +1,182 @@
+[
+  {
+    "start": 2.6399999,
+    "end": 3.5199997,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 10.4,
+    "end": 11.36,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 16.675,
+    "end": 17.395,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 22.595,
+    "end": 23.314999,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 25.395,
+    "end": 25.715,
+    "text": "gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 39.760002,
+    "end": 40.08,
+    "text": "no",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 46.614998,
+    "end": 47.094997,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 56.31,
+    "end": 57.030003,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 59.43,
+    "end": 59.75,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 68.995,
+    "end": 72.115,
+    "text": "no quiero cancelar el pago del auto quiero devolverlo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 80.595,
+    "end": 83.235,
+    "text": "y c\u00f3mo devolver mi veh\u00edculo y no pagar m\u00e1s",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 112.42,
+    "end": 112.82,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 144.81,
+    "end": 145.13,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 156.665,
+    "end": 157.54501,
+    "text": "est\u00e1 bien",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 158.025,
+    "end": 159.145,
+    "text": "ok gracias",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  }
+]

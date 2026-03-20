@@ -1,0 +1,62 @@
+[
+  {
+    "start": 0.64,
+    "end": 1.6800001,
+    "text": "hello yep",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.04,
+    "end": 9.615,
+    "text": "it's at ten thirty ten thirty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.094999,
+    "end": 11.295,
+    "text": "that's",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.295,
+    "end": 14.334999,
+    "text": "all i'm saying think that yeah that time of the year",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.8949995,
+    "end": 20.335,
+    "text": "i'm on the hell that's even more i do i know you might do i do a shit i'm",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 19
+      },
+      "fasttext": "en"
+    }
+  }
+]

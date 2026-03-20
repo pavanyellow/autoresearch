@@ -86,6 +86,18 @@
   {
     "start": 56.480003,
     "end": 57.120003,
+    "text": "would you like",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.120003,
+    "end": 62.08,
     "text": "yes",
     "lang": "en",
     "word_langs": {
@@ -96,7 +108,7 @@
     }
   },
   {
-    "start": 62.16,
+    "start": 62.08,
     "end": 63.2,
     "text": "yes yes yes",
     "lang": "en",

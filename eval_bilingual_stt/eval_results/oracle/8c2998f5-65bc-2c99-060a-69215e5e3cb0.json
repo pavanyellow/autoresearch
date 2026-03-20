@@ -1,0 +1,194 @@
+[
+  {
+    "start": 0.88,
+    "end": 1.6800001,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.6799998,
+    "end": 4.56,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.88,
+    "end": 11.44,
+    "text": "speaking",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.635,
+    "end": 17.755001,
+    "text": "who is this",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 25.195,
+    "end": 25.755001,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.454998,
+    "end": 43.574997,
+    "text": "not right now i'm working on it i i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.735,
+    "end": 45.975,
+    "text": "i'm working on it i have a problem",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 46.295,
+    "end": 46.934998,
+    "text": "so",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "als"
+    }
+  },
+  {
+    "start": 47.095,
+    "end": 48.934998,
+    "text": "i i'm trying to fix it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.574997,
+    "end": 50.535,
+    "text": "as soon as possible",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.33,
+    "end": 61.170002,
+    "text": "i'm expecting for tomorrow but i'm not sure okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.33,
+    "end": 67.89,
+    "text": "no no i will do that online",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 68.995,
+    "end": 72.275,
+    "text": "i have to make sure i have enough money in my account first",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 75.715004,
+    "end": 78.035,
+    "text": "i i have i have no idea yet okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.71,
+    "end": 86.509995,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 91.47,
+    "end": 92.03,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

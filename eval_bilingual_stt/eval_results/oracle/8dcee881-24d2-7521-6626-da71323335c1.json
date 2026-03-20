@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.32,
+    "end": 5.52,
+    "text": "dennis hello you're chatting up pardon my finger sorry yes i thought you were doing just the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.7599998,
+    "end": 8.559999,
+    "text": "i don't know three to six foot like like fantasy",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.559999,
+    "end": 11.44,
+    "text": "yeah and i i was down with this no no that actually happened yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.555,
+    "end": 15.755,
+    "text": "yes were getting yes without teaks i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.755,
+    "end": 17.675,
+    "text": "thought you were talking about the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.995,
+    "end": 18.875,
+    "text": "other thing",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.395,
+    "end": 24.955,
+    "text": "you are",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 41.940002,
+    "end": 42.58,
+    "text": "repeat",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.505,
+    "end": 44.225002,
+    "text": "tiktok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "lt"
+    }
+  },
+  {
+    "start": 48.145,
+    "end": 57.105003,
+    "text": "so i guess once we're gonna i think we're gonna be one yeah which because next year that one so you break down the matchups and everything yeah yeah yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 30
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.47,
+    "end": 65.71,
+    "text": "listen i i could get into it listen i've already got to the pros that's a little bit too heavy for you know my intelligence though yeah okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 28
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.87,
+    "end": 70.11,
+    "text": "i did have a couple of quick ones oh yeah nba specialties yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 70.51,
+    "end": 71.79,
+    "text": "seattle and vegas",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

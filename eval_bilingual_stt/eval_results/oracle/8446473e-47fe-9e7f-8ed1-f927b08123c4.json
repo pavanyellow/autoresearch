@@ -1,0 +1,184 @@
+[
+  {
+    "start": 2.8,
+    "end": 6.4,
+    "text": "we're gonna have a first conference s\u00ed yo soy bringing",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8,
+        "es": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.04,
+    "end": 11.039999,
+    "text": "dave benadillas and sulu ram\u00edrez now we're here you know they're world champions",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12,
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.2,
+    "end": 12.16,
+    "text": "and now they're",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.635,
+    "end": 16.555,
+    "text": "oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.395,
+    "end": 27.195,
+    "text": "can i pay you guys i'll call you back like saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.355,
+    "end": 27.915,
+    "text": "saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.85,
+    "end": 31.89,
+    "text": "or maybe tomorrow but for sure saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.85,
+    "end": 37.65,
+    "text": "saturday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.65,
+    "end": 38.29,
+    "text": "is better",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 42.755,
+    "end": 46.995,
+    "text": "i'll call you like we will make the payment with seven eleven",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 51.875,
+    "end": 52.515,
+    "text": "one thousand",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.269997,
+    "end": 65.11,
+    "text": "no we paid up",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.75,
+    "end": 66.79,
+    "text": "december eleventh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 71.375,
+    "end": 72.73499,
+    "text": "no not right now",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 83.134995,
+    "end": 84.174995,
+    "text": "you too bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

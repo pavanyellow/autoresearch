@@ -1,0 +1,110 @@
+[
+  {
+    "start": 5.6,
+    "end": 6.0,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.665,
+    "end": 24.105,
+    "text": "can i make it next wednesday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.789999,
+    "end": 32.07,
+    "text": "hold on a minute",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 39.51,
+    "end": 40.39,
+    "text": "the",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.295002,
+    "end": 44.815002,
+    "text": "the twenty fifth",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 50.415,
+    "end": 52.495003,
+    "text": "the the whole the total amount",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 61.460003,
+    "end": 62.5,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 94.65,
+    "end": 95.05,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 117.6,
+    "end": 126.64,
+    "text": "can you check on the two thousand and sixteen gmc yukon can i schedule that on for half half of that payment on the twenty fifth also",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 27
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "start": 2.8799999,
+    "end": 3.6799998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.44,
+    "end": 6.7999997,
+    "text": "yes is anything worse",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 20.115,
+    "end": 21.474998,
+    "text": "i already made the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

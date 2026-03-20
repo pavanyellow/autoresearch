@@ -1,0 +1,182 @@
+[
+  {
+    "start": 4.0,
+    "end": 5.3599997,
+    "text": "oh am i speaking with",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.56,
+    "end": 7.44,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.599999,
+    "end": 11.04,
+    "text": "to verify am i speaking with",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.639999,
+    "end": 13.28,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.395,
+    "end": 28.795,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 35.399998,
+    "end": 37.96,
+    "text": "two hundred and fifty on april third",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.895,
+    "end": 55.615,
+    "text": "march",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.855003,
+    "end": 59.135002,
+    "text": "thirty first march thirty first two hundred and fifty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 71.5,
+    "end": 72.54,
+    "text": "three hundred and fifty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 81.465,
+    "end": 81.865,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 110.245,
+    "end": 110.645,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 130.96,
+    "end": 134.40001,
+    "text": "i do i already took the bottle was one dollar cut right no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 135.115,
+    "end": 137.115,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 137.675,
+    "end": 137.91501,
+    "text": "alright",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 144.87494,
+    "end": 145.67494,
+    "text": "nothing else",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

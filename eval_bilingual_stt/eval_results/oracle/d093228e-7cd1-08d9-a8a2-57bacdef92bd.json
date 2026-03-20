@@ -1,0 +1,14 @@
+[
+  {
+    "start": 0.88,
+    "end": 3.52,
+    "text": "hey you've reached valerie call me back thanks",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  }
+]

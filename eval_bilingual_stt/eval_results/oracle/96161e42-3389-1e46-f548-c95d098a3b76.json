@@ -1,0 +1,50 @@
+[
+  {
+    "start": 6.24,
+    "end": 6.64,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.455,
+    "end": 23.775,
+    "text": "excuse me i just paid a thousand plus",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.75,
+    "end": 26.91,
+    "text": "i just paid a thousand plus",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.51,
+    "end": 33.47,
+    "text": "i just paid a thousand plus to claim my car",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  }
+]

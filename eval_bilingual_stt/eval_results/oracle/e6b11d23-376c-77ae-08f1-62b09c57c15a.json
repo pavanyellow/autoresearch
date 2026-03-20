@@ -1,0 +1,146 @@
+[
+  {
+    "start": 1.5999999,
+    "end": 2.8,
+    "text": "hello everybody yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.52,
+    "end": 6.4,
+    "text": "i am",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "de"
+    }
+  },
+  {
+    "start": 12.08,
+    "end": 12.639999,
+    "text": "espa\u00f1ol",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 14.655,
+    "end": 15.535,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 18.255,
+    "end": 18.895,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 27.295,
+    "end": 28.415,
+    "text": "s\u00ed es conmigo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 28.82,
+    "end": 29.619999,
+    "text": "waldini",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 48.185,
+    "end": 49.625,
+    "text": "ma\u00f1ana te parece",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 52.025,
+    "end": 52.585,
+    "text": "entiendo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 54.425003,
+    "end": 55.705,
+    "text": "completo pero ma\u00f1ana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 69.985,
+    "end": 71.825,
+    "text": "una tarjeta de d\u00e9bito pero ma\u00f1ana",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 85.99,
+    "end": 86.31,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  }
+]

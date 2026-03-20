@@ -1,0 +1,74 @@
+[
+  {
+    "start": 4.64,
+    "end": 5.36,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.0,
+    "end": 8.639999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.24,
+    "end": 12.48,
+    "text": "sorry",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.965,
+    "end": 19.485,
+    "text": "i'm douglas is not here at the moment can you please call later",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 23.645,
+    "end": 26.285,
+    "text": "can you please call later shirley douglas is not",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 26.755,
+    "end": 30.115,
+    "text": "at in my area in a moment said please call later",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  }
+]

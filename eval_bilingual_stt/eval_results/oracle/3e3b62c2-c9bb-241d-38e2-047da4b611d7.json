@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.96,
+    "end": 1.6800001,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.68,
+    "end": 8.32,
+    "text": "nope",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "fi"
+    }
+  },
+  {
+    "start": 17.775,
+    "end": 18.655,
+    "text": "no no no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "pt"
+    }
+  }
+]

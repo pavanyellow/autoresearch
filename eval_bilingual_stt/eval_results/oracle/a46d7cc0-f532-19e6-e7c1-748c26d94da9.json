@@ -1,0 +1,98 @@
+[
+  {
+    "start": 0.16,
+    "end": 1.04,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.1999998,
+    "end": 3.76,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.335,
+    "end": 17.055,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.415,
+    "end": 21.935,
+    "text": "no i will call back tomorrow with payment okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.83,
+    "end": 35.79,
+    "text": "the full amount but i have to go move money to my account so you can get it or else i gotta get it on a card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 27
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.685,
+    "end": 40.845,
+    "text": "i gotta check and it's and it's cash so i've gotta put it on a card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 16
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 53.67,
+    "end": 60.79,
+    "text": "no i'm gonna have to get a new card because the bank is too far away so no i will i will call tomorrow with the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 27
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 71.244995,
+    "end": 71.725,
+    "text": "thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

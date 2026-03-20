@@ -1,0 +1,110 @@
+[
+  {
+    "start": 0.0,
+    "end": 4.7999997,
+    "text": "hi if you record your name and reason for calling i'll see if this person is available",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.695,
+    "end": 16.895,
+    "text": "thanks taylor",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.215,
+    "end": 18.335,
+    "text": "please stay on the line",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 25.42,
+    "end": 26.220001,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.420002,
+    "end": 30.300001,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.02,
+    "end": 36.62,
+    "text": "you are if you call my phone again i'm a block the number i know i owe a truck payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 20
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.02,
+    "end": 39.5,
+    "text": "you ain't gotta call me every five minutes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.475,
+    "end": 41.995,
+    "text": "all day long",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 43.915,
+    "end": 45.515,
+    "text": "i'll pay it when i get the money",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  }
+]

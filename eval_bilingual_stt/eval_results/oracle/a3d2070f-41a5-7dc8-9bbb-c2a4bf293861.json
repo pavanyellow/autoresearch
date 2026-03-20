@@ -1,0 +1,50 @@
+[
+  {
+    "start": 1.52,
+    "end": 2.24,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.8,
+    "end": 9.92,
+    "text": "yes hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.275002,
+    "end": 21.835,
+    "text": "fine",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 30.25,
+    "end": 33.93,
+    "text": "of course dumbass you motherfuckers call all day every day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  }
+]

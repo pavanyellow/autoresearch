@@ -1,0 +1,122 @@
+[
+  {
+    "start": 2.48,
+    "end": 3.6799998,
+    "text": "hello oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.72,
+    "end": 6.88,
+    "text": "yes mario yes can i help you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.4,
+    "end": 8.72,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.955,
+    "end": 22.195,
+    "text": "six hundred and seven dollars and eight cents would you be able to pay this six months",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.994999,
+    "end": 27.074999,
+    "text": "today i don't have a lot of money you you wait me for this monday please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 16
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 38.66,
+    "end": 38.9,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 68.77,
+    "end": 69.17,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 75.655,
+    "end": 80.534996,
+    "text": "no just wait a wait a for a just wait me for a this this next this monday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 18
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 82.135,
+    "end": 82.695,
+    "text": "next monday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 88.115,
+    "end": 89.955,
+    "text": "no i don't know you know spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  }
+]

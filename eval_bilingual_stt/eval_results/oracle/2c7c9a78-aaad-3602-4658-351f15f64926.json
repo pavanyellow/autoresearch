@@ -1,0 +1,26 @@
+[
+  {
+    "start": 2.08,
+    "end": 3.36,
+    "text": "qu\u00e9 pas\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 6.64,
+    "end": 7.44,
+    "text": "ya se muri\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  }
+]

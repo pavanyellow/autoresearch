@@ -1,0 +1,62 @@
+[
+  {
+    "start": 0.16,
+    "end": 1.8399999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.56,
+    "end": 6.96,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.255001,
+    "end": 16.735,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.56,
+    "end": 33.120003,
+    "text": "qu\u00e9 was",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 51.445,
+    "end": 51.765,
+    "text": "hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ca"
+    }
+  }
+]

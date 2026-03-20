@@ -1,0 +1,110 @@
+[
+  {
+    "start": 3.28,
+    "end": 4.48,
+    "text": "hello am i speaking with",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.2799997,
+    "end": 8.719999,
+    "text": "no you're speaking with adrian marcus the secondary owner on the vehicle",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.92,
+    "end": 11.04,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.255001,
+    "end": 29.415,
+    "text": "no i'll be making it tomorrow afternoon",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 34.72,
+    "end": 35.68,
+    "text": "the full balance",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.755,
+    "end": 46.675,
+    "text": "no i will be doing it through the app",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.205,
+    "end": 55.165,
+    "text": "no thanks",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.165,
+    "end": 57.805,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 59.085,
+    "end": 59.725002,
+    "text": "didn't call",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

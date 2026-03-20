@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.96,
+    "end": 2.08,
+    "text": "this is travis",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.28,
+    "end": 4.0,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

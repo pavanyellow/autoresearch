@@ -1,0 +1,291 @@
+[
+  {
+    "start": 0.56,
+    "end": 1.44,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 4.16,
+    "end": 4.88,
+    "text": "yes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.3199997,
+    "end": 6.8799996,
+    "text": "al\u00f3",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 19.475,
+    "end": 21.635,
+    "text": "yes sorry no speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.715,
+    "end": 28.675,
+    "text": "what sorry",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 31.67,
+    "end": 32.47,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 35.03,
+    "end": 35.91,
+    "text": "continuar",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "de"
+    }
+  },
+  {
+    "start": 37.59,
+    "end": 38.55,
+    "text": "continua espa\u00f1ol",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "en": 1,
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 42.295002,
+    "end": 44.055,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 51.495003,
+    "end": 52.695,
+    "text": "un pago de qu\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 60.92,
+    "end": 64.68,
+    "text": "pero el monto de qu\u00e9 de de del del carro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 77.505,
+    "end": 79.825,
+    "text": "pero s\u00ed ya me lo cobraron ya yo lo pagu\u00e9 ya",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 11
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 88.32,
+    "end": 88.96,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 90.159996,
+    "end": 92.4,
+    "text": "s\u00ed ya yo lo pagu\u00e9 ya",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 93.2,
+    "end": 94.56,
+    "text": "ya ya yo lo pagu\u00e9 ya",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "sw"
+    }
+  },
+  {
+    "start": 100.525,
+    "end": 104.125,
+    "text": "ya te lo voy a decir d\u00e9jame verificar un momento la la app",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 13
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 110.59,
+    "end": 112.909996,
+    "text": "voy dame un segundo para revisar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 139.25,
+    "end": 143.09,
+    "text": "oh no no no se hizo el pago pero por qu\u00e9 no se hizo si yo lo tengo autom\u00e1tico",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 19
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 153.175,
+    "end": 156.37502,
+    "text": "revista primero porque yo lo tengo autom\u00e1tico y no s\u00e9 ah\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 11
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 159.49501,
+    "end": 159.975,
+    "text": "ok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 170.64,
+    "end": 172.16,
+    "text": "es que el pago est\u00e1 autom\u00e1tico",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 182.625,
+    "end": 184.945,
+    "text": "si quiere agrega la la cuenta",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 185.105,
+    "end": 186.465,
+    "text": "o sea la la tarjeta",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 242.47,
+    "end": 246.63,
+    "text": "mira estoy revisando la app y me dice que el pr\u00f3ximo pago es el mes cuatro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 16
+      },
+      "fasttext": "es"
+    }
+  }
+]

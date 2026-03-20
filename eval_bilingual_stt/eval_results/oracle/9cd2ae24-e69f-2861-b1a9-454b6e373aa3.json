@@ -1,0 +1,86 @@
+[
+  {
+    "start": 1.52,
+    "end": 2.24,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.24,
+    "end": 6.64,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.575,
+    "end": 18.654999,
+    "text": "oh i'm fine as a matter of fact",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.295,
+    "end": 19.935,
+    "text": "how are you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.71,
+    "end": 34.43,
+    "text": "that's correct",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.445,
+    "end": 46.085,
+    "text": "i'm ninety one no i'm ninety two now",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 56.02,
+    "end": 57.94,
+    "text": "i'm good thank you how are you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  }
+]

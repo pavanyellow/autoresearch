@@ -1,0 +1,182 @@
+[
+  {
+    "start": 0.96,
+    "end": 1.8399999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 4.96,
+    "end": 6.16,
+    "text": "ahorita no se encuentra",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 12.175,
+    "end": 15.455,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 20.415,
+    "end": 20.815,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 25.710001,
+    "end": 26.11,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 42.204998,
+    "end": 42.605,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 49.59,
+    "end": 53.03,
+    "text": "ma\u00f1ana se va a hacer el pago por el s\u00e1bado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 59.91,
+    "end": 60.63,
+    "text": "el s\u00e1bado",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 66.895,
+    "end": 69.134995,
+    "text": "pues lo de la troca ni modo qu\u00e9 m\u00e1s",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 9
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.055,
+    "end": 71.615,
+    "text": "lo del pago",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 78.909996,
+    "end": 80.27,
+    "text": "seiscientos cincuenta y cinco",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 90.284996,
+    "end": 90.685,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 93.095,
+    "end": 94.775,
+    "text": "no yo les hablo para",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 95.015,
+    "end": 98.695,
+    "text": "no no no no yo les hablo para hacer el pago",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 11
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 100.135,
+    "end": 100.534996,
+    "text": "bye",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

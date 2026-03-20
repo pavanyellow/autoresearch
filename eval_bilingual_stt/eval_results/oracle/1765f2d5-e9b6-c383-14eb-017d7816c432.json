@@ -1,0 +1,149 @@
+[
+  {
+    "start": 0.96,
+    "end": 1.8399999,
+    "text": "i had",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.3199997,
+    "end": 7.2,
+    "text": "dolores",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 11.759999,
+    "end": 12.24,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.105,
+    "end": 18.825,
+    "text": "spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.145,
+    "end": 20.425,
+    "text": "spanish please",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "en": 1,
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 25.705,
+    "end": 33.04,
+    "text": "dile que hasta el we already made the payment we have to be april not now hasta en abril dos diecis\u00e9is",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "es": 7,
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 34.32,
+    "end": 34.96,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 35.52,
+    "end": 36.079998,
+    "text": "s\u00ed",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 37.36,
+    "end": 38.879997,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 42.32,
+    "end": 48.705,
+    "text": "told you in april i i already made the payment on the twelfth for the last this month",
+    "lang": "mixed",
+    "word_langs": {
+      "deepgram": {
+        "en": 9,
+        "es": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.105,
+    "end": 53.185,
+    "text": "and when i'll be april the other payment the last payment okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 57.505,
+    "end": 58.145,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

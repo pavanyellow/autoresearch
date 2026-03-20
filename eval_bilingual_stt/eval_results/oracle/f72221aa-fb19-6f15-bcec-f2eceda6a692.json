@@ -1,0 +1,74 @@
+[
+  {
+    "start": 0.32,
+    "end": 1.1199999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.88,
+    "end": 5.3599997,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 15.535,
+    "end": 17.455,
+    "text": "from where you are calling me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 23.455,
+    "end": 24.255001,
+    "text": "i'm good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "lb"
+    }
+  },
+  {
+    "start": 31.33,
+    "end": 33.25,
+    "text": "no i i don't need it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.449997,
+    "end": 38.129997,
+    "text": "i'm not that yet",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  }
+]

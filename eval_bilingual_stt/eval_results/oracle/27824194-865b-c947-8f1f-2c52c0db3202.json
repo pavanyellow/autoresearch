@@ -1,0 +1,86 @@
+[
+  {
+    "start": 0.88,
+    "end": 1.6800001,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 2.96,
+    "end": 3.52,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.735,
+    "end": 28.535,
+    "text": "i'm not gonna do it today i'm gonna do it next week it's only past due four days so i i don't think that's a problem a problem",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 28
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.49,
+    "end": 32.85,
+    "text": "next week i'm gonna pay it i'm waiting",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.33,
+    "end": 39.65,
+    "text": "so i can get a money that goes in my account and then i pay the three hundred and eighty nine dollar",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.385,
+    "end": 50.184998,
+    "text": "i'm not sure",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 60.03,
+    "end": 63.31,
+    "text": "no not there neither each thank you very much have a nice day",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  }
+]

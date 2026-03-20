@@ -1,0 +1,50 @@
+[
+  {
+    "start": 9.92,
+    "end": 10.32,
+    "text": "yep",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 25.645,
+    "end": 27.965,
+    "text": "yeah later i'm busy right now at work",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 35.19,
+    "end": 36.87,
+    "text": "today online i'll do it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.535,
+    "end": 45.655,
+    "text": "alright i gotta go",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  }
+]

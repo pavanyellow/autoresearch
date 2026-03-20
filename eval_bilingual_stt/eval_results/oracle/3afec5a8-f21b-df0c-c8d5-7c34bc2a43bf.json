@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.96,
+    "end": 10.639999,
+    "text": "hi you've reached the grace dane manor i'm either on the other line or away from my desk but if you leave a message i'll return your phone call as soon as possible thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 35
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 13.264999,
+    "end": 17.345,
+    "text": "the mailbox is full and cannot accept any messages at this time goodbye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  }
+]

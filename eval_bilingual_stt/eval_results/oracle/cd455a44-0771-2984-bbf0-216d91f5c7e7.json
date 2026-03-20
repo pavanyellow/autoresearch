@@ -60,19 +60,19 @@
     }
   },
   {
-    "start": 31.57,
+    "start": 31.81,
     "end": 33.329998,
-    "text": "i would like today",
+    "text": "would like today",
     "lang": "en",
     "word_langs": {
       "deepgram": {
-        "en": 4
+        "en": 3
       },
       "fasttext": "en"
     }
   },
   {
-    "start": 43.294937,
+    "start": 43.214935,
     "end": 43.934937,
     "text": "two hundred",
     "lang": "en",

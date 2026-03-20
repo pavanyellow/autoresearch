@@ -1,0 +1,434 @@
+[
+  {
+    "start": 2.56,
+    "end": 3.36,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.48,
+    "end": 9.28,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 9.28,
+    "end": 11.36,
+    "text": "you're speaking to tony lopez",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.654999,
+    "end": 18.615,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.015,
+    "end": 20.615,
+    "text": "i think that's my card name",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 34.07,
+    "end": 35.83,
+    "text": "that's it yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.67,
+    "end": 38.71,
+    "text": "i'll make the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 41.385002,
+    "end": 45.145,
+    "text": "i need a i need a i need autopay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.86,
+    "end": 62.379997,
+    "text": "yes i would wait what what is she what what is they calling for it's my car note say yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 20
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.579998,
+    "end": 65.979996,
+    "text": "so i don't have to pay it every month",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 66.14,
+    "end": 67.82,
+    "text": "it'll come out oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 68.925,
+    "end": 71.165,
+    "text": "say yes so that you can hear",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 76.285,
+    "end": 77.805,
+    "text": "a no debit card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 156.87,
+    "end": 157.19,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 164.485,
+    "end": 167.44499,
+    "text": "no that's it i need my receipt",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 182.81999,
+    "end": 184.1,
+    "text": "did she hang up",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 186.58,
+    "end": 187.86,
+    "text": "i said",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 187.86,
+    "end": 188.01999,
+    "text": "what",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 197.315,
+    "end": 198.67502,
+    "text": "oh it's",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 199.07501,
+    "end": 200.43501,
+    "text": "my car loan",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 200.595,
+    "end": 201.31502,
+    "text": "oh",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 201.71501,
+    "end": 202.51501,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 203.07501,
+    "end": 205.155,
+    "text": "need my receipt",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 205.5,
+    "end": 208.94,
+    "text": "text message to me my confirmation",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 217.81999,
+    "end": 219.34,
+    "text": "what date does that mail it",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 220.555,
+    "end": 221.595,
+    "text": "now today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 227.675,
+    "end": 229.515,
+    "text": "the amount that's due",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 232.33,
+    "end": 236.09001,
+    "text": "i've already paid it so i'm not paying nothing else",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 243.29,
+    "end": 245.77,
+    "text": "i went by and put money in the bank account",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 247.89499,
+    "end": 249.655,
+    "text": "because that keeps",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 249.655,
+    "end": 251.095,
+    "text": "calling me you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 251.735,
+    "end": 263.59003,
+    "text": "better be that keeps calling me telling me that my car notes are are in some type of loan it's my car loan i told benjamin they keep calling me now you stay busy",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 34
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 263.99002,
+    "end": 273.875,
+    "text": "but you just paid it she just paid it you just gave her the car number i just told papa that do you get information to talk to work around no but didn't do nothing anymore",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 36
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 274.035,
+    "end": 276.91498,
+    "text": "nobody's you know i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 275.07498,
+    "end": 278.755,
+    "text": "you papa i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 279.155,
+    "end": 280.995,
+    "text": "ain't not",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

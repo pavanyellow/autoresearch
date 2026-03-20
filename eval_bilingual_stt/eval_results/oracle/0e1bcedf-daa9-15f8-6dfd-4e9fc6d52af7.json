@@ -1,0 +1,446 @@
+[
+  {
+    "start": 1.5999999,
+    "end": 2.24,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.56,
+    "end": 5.28,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.44,
+    "end": 8.16,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 9.44,
+    "end": 10.16,
+    "text": "oh you are",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 17.295,
+    "end": 18.895,
+    "text": "for the third time yes you are",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.84,
+    "end": 36.8,
+    "text": "if you can make it on my checking account and not the card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 48.265,
+    "end": 48.665,
+    "text": "today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 59.97,
+    "end": 61.65,
+    "text": "hold on one second let me make sure",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 63.704998,
+    "end": 65.945,
+    "text": "this is the right payment method",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 65.945,
+    "end": 68.665,
+    "text": "hold on yeah thank you let's see here",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 70.985,
+    "end": 72.345,
+    "text": "five one you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 74.185,
+    "end": 75.465,
+    "text": "would you hold on a minute",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 78.69,
+    "end": 80.29,
+    "text": "thanks hold on a second",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 85.57,
+    "end": 88.61,
+    "text": "i'm opening my bank app making sure this is the right account",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 92.105,
+    "end": 92.905,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 96.265,
+    "end": 98.105,
+    "text": "asked you to hold on a second",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 98.585,
+    "end": 100.985,
+    "text": "i don't like this ai stuff simply because of this",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 107.88,
+    "end": 109.08,
+    "text": "i",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "sv"
+    }
+  },
+  {
+    "start": 110.6,
+    "end": 116.52,
+    "text": "don't need assistance i'm opening my bank account so i can get my make sure the bank number is right",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 20
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 117.345,
+    "end": 118.784996,
+    "text": "easy right",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 122.865,
+    "end": 124.945,
+    "text": "yes six nine one alright",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 125.185,
+    "end": 131.985,
+    "text": "six nine one six is correct now you guys dropped the call on me i tried to make this payment two days ago you hung up on me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 28
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 142.40001,
+    "end": 143.20001,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 143.92,
+    "end": 146.32,
+    "text": "and i wanna talk to a live agent when we're done",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 155.315,
+    "end": 156.99501,
+    "text": "have you made this payment yet",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 157.075,
+    "end": 159.715,
+    "text": "have you made this payment yet or have we made the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 12
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 167.93,
+    "end": 173.20999,
+    "text": "no i'm asking we're making the payment right now you're not keeping up with me i'm about to hang up on you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 180.625,
+    "end": 181.34502,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 181.505,
+    "end": 181.905,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 191.12001,
+    "end": 201.04001,
+    "text": "you just asked me that i wanna make that payment now and i said yes and now you're asking me what date i wanna schedule it on let me speak to a live agent or i'm just hanging up on your app",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 42
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 206.145,
+    "end": 209.105,
+    "text": "you are not here to help i wanna speak to a live agent",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 13
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 214.4,
+    "end": 217.04001,
+    "text": "yeah i'm i'm hanging up see you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 222.16,
+    "end": 222.88,
+    "text": "all",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 224.24,
+    "end": 227.76,
+    "text": "calls will be monitored or recorded for quality assurance purposes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 245.44,
+    "end": 248.8,
+    "text": "our representatives are still busy please continue to hold",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 265.89502,
+    "end": 269.17502,
+    "text": "our representatives are still busy please continue to hold",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 289.495,
+    "end": 295.735,
+    "text": "hello thank you for calling westlake financial services my name is marcelino crespo may i please have your account number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 20
+      },
+      "fasttext": "en"
+    }
+  }
+]

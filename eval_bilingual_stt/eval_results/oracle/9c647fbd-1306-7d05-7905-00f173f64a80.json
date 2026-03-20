@@ -1,0 +1,50 @@
+[
+  {
+    "start": 5.68,
+    "end": 7.44,
+    "text": "yes can i speak to agent",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 22.525,
+    "end": 23.805,
+    "text": "okay speak to agent",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.99,
+    "end": 30.71,
+    "text": "agent",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.27,
+    "end": 39.19,
+    "text": "yes i wanna speak to a human",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.36,
+    "end": 3.28,
+    "text": "hello this is peterson",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 3.28,
+    "end": 8.24,
+    "text": "at this time i cannot come to the phone try calling back later at seven two zero",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 17
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 8.559999,
+    "end": 9.759999,
+    "text": "eight one three",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.08,
+    "end": 12.079999,
+    "text": "five eight zero five",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.559999,
+    "end": 13.2,
+    "text": "thank you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

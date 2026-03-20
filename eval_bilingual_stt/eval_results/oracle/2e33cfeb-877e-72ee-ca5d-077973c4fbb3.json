@@ -1,0 +1,62 @@
+[
+  {
+    "start": 1.52,
+    "end": 2.1599998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.44,
+    "end": 6.3999996,
+    "text": "yes you are",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.935001,
+    "end": 23.295,
+    "text": "no i will not today",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 29.79,
+    "end": 37.79,
+    "text": "i am in the hospital right now as soon as i'm released from the hospital and get back home i will make arrangements to pay the payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 27
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 45.805,
+    "end": 46.285,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

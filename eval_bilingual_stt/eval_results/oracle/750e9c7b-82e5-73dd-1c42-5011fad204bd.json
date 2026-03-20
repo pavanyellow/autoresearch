@@ -1,0 +1,567 @@
+[
+  {
+    "start": 1.04,
+    "end": 1.8399999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.2799997,
+    "end": 5.92,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.72,
+    "end": 7.36,
+    "text": "please",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.8399997,
+    "end": 8.559999,
+    "text": "speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 16.255001,
+    "end": 16.655,
+    "text": "ok",
+    "lang": "hi",
+    "word_langs": {
+      "deepgram": {
+        "hi": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.59,
+    "end": 25.39,
+    "text": "okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 32.27,
+    "end": 33.79,
+    "text": "twenty",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 33.79,
+    "end": 34.190002,
+    "text": "four",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 36.684998,
+    "end": 38.684998,
+    "text": "heath twenty four okay",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.605,
+    "end": 41.085,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 49.43,
+    "end": 50.149998,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 50.95,
+    "end": 51.67,
+    "text": "four",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 52.07,
+    "end": 52.949997,
+    "text": "four",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.11,
+    "end": 55.989998,
+    "text": "speak",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 55.989998,
+    "end": 56.71,
+    "text": "spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 59.27,
+    "end": 60.309998,
+    "text": "speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 62.405,
+    "end": 63.445,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 66.645,
+    "end": 66.645,
+    "text": "listo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "eo"
+    }
+  },
+  {
+    "start": 73.46,
+    "end": 74.1,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 75.939995,
+    "end": 76.82,
+    "text": "al\u00f4",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 77.299995,
+    "end": 78.34,
+    "text": "c\u00f3mo est\u00e1",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 82.34,
+    "end": 82.58,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 85.395,
+    "end": 86.354996,
+    "text": "para d\u00eda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 86.915,
+    "end": 87.875,
+    "text": "veinticuatro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 87.875,
+    "end": 88.915,
+    "text": "de marzo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 96.354996,
+    "end": 97.795,
+    "text": "cu\u00e1l es el valor total",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 98.36,
+    "end": 101.72,
+    "text": "dos cuatro seis seis cuatro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 101.72,
+    "end": 102.76,
+    "text": "seis seis",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 112.855,
+    "end": 115.415,
+    "text": "no el el d\u00e9bito autom\u00e1tico",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 122.695,
+    "end": 123.015,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 126.630005,
+    "end": 126.950005,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 138.165,
+    "end": 140.805,
+    "text": "eu gostaria que fosse em d\u00e9bito autom\u00e1tico",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 7
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 140.805,
+    "end": 144.56499,
+    "text": "voc\u00ea precisa de voc\u00ea necesita de de n\u00famero da cuenta",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 10
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 151.93999,
+    "end": 152.74,
+    "text": "ok",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 153.14,
+    "end": 154.9,
+    "text": "dia vinte e quatro",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 4
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 155.45999,
+    "end": 158.73999,
+    "text": "do m\u00eas de mar\u00e7o de dois mil e vinte e seis",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 11
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 163.47499,
+    "end": 163.875,
+    "text": "gracias",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 175.87001,
+    "end": 178.35,
+    "text": "so a mesma conta que j\u00e1 tenho",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 7
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 179.95001,
+    "end": 182.59001,
+    "text": "na conta quatorze vinte e oito final",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 7
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 195.485,
+    "end": 198.845,
+    "text": "eu n\u00e3o tenho outra outra conta banc\u00e1ria a \u00fanica",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 9
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 206.77,
+    "end": 208.93001,
+    "text": "eu n\u00e3o tenho tarjeta de d\u00e9bito",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 6
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 209.01,
+    "end": 209.73,
+    "text": "s\u00f3 isso",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 2
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 220.845,
+    "end": 221.48502,
+    "text": "com",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 222.365,
+    "end": 225.085,
+    "text": "contas direto em d\u00e9bito autom\u00e1tico",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4,
+        "pt": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 225.80501,
+    "end": 226.125,
+    "text": "s\u00ed",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 230.61,
+    "end": 233.09001,
+    "text": "voc\u00ea pode pode",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 3
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 233.89,
+    "end": 235.41,
+    "text": "cham\u00e1lo um pouco mais tarde",
+    "lang": "pt",
+    "word_langs": {
+      "deepgram": {
+        "pt": 5
+      },
+      "fasttext": "pt"
+    }
+  }
+]

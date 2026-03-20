@@ -1,0 +1,14 @@
+[
+  {
+    "start": 4.88,
+    "end": 6.08,
+    "text": "no you got the wrong number",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

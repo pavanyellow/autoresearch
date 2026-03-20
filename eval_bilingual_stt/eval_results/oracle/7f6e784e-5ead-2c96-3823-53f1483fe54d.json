@@ -1,0 +1,110 @@
+[
+  {
+    "start": 1.1999999,
+    "end": 2.08,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.96,
+    "end": 13.28,
+    "text": "well i don't y'all the one called me",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 14.24,
+    "end": 14.639999,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 24.775002,
+    "end": 26.935001,
+    "text": "no i don't know nothing about that",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 35.78,
+    "end": 36.66,
+    "text": "no i don't",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 44.675003,
+    "end": 46.595,
+    "text": "right must be a fraud i don't know",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 54.985,
+    "end": 57.225,
+    "text": "well i don't even know what y'all talking about",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 60.665,
+    "end": 61.385002,
+    "text": "so",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "als"
+    }
+  },
+  {
+    "start": 61.785,
+    "end": 63.465,
+    "text": "you guys",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  }
+]

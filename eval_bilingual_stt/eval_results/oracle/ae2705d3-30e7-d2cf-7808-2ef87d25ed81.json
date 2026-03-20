@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.0,
+    "end": 3.4399998,
+    "text": "the number you are calling is temporarily unavailable",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 8
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.16,
+    "end": 5.2,
+    "text": "please try later",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

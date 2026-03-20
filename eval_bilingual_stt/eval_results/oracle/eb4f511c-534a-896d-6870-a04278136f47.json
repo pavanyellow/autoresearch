@@ -1,0 +1,206 @@
+[
+  {
+    "start": 2.8799999,
+    "end": 3.6,
+    "text": "hello",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 4.96,
+    "end": 11.12,
+    "text": "qu\u00e9",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 11.12,
+    "end": 11.679999,
+    "text": "le puedo ayudar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 16.475,
+    "end": 18.075,
+    "text": "en qu\u00e9 le puedo ayudar",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 25.195,
+    "end": 25.835,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 31.72,
+    "end": 32.68,
+    "text": "dale ok",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 37.32,
+    "end": 38.36,
+    "text": "s\u00ed s\u00ed d\u00edgame",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 43.455,
+    "end": 44.175003,
+    "text": "te mando",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 52.895,
+    "end": 57.870003,
+    "text": "vencida con un saldo de cero d\u00f3lares pero yo lo pagu\u00e9 el el d\u00eda diecisiete",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 15
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 62.510002,
+    "end": 64.03001,
+    "text": "cuatrocientos diecisiete",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 64.67,
+    "end": 65.630005,
+    "text": "cuatrocientos diecisiete",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.575,
+    "end": 72.534996,
+    "text": "el d\u00eda",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 72.695,
+    "end": 74.055,
+    "text": "diecisiete de este mes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 4
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 90.270004,
+    "end": 93.39,
+    "text": "s\u00ed yo realic\u00e9 el pago yo no tengo que realizarlo nuevamente",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 11
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 100.265,
+    "end": 102.905,
+    "text": "ya yo lo program\u00e9 yo no lo tengo que programar de nuevo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 12
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 116.450005,
+    "end": 118.53001,
+    "text": "pues si no hay pago pendiente para qu\u00e9 me llamas",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 10
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 131.94499,
+    "end": 132.265,
+    "text": "bien",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "fr"
+    }
+  }
+]

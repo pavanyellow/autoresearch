@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.48,
+    "end": 1.1199999,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.56,
+    "end": 7.84,
+    "text": "yes what",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.24,
+    "end": 11.679999,
+    "text": "i'm sorry what do you want",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

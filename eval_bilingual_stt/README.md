@@ -20,14 +20,20 @@ Those two still require Taylor repo production utilities and secrets.
 
 ## Metrics
 
-Positive path:
+The evaluator reports both:
 
-- `switch_delay`: after the first clear oracle Spanish utterance, count bilingual forwarded events before the first bilingual Spanish forward
+- `stream_based`: language inferred from the forwarded stream index
+- `text_based`: language detected from the actual forwarded text with `fast-langdetect`
 
-Negative path:
+For optimization, use the text-based metrics first:
 
-- `false_es_events`: bilingual Spanish forwards during the oracle-English region
-- `false_es_finals`: same, finals only
+- `text_based.avg_switch_delay = 1.6`
+- `text_based.false_es_rate = 0.50% (14/2816)`
+
+Keep the stream-based metrics as secondary routing diagnostics:
+
+- `stream_based.avg_switch_delay = 3.1`
+- `stream_based.false_es_rate = 0.85% (24/2816)`
 
 Mixed oracle utterances are excluded from scoring.
 
@@ -57,7 +63,7 @@ The copied bundle currently contains:
 - `122` calls with oracle JSONs
 - `117` processed successfully
 - `22` calls with oracle Spanish regions
-- `avg_switch_delay = 3.1`
-- `false_es_events = 24`
+- `text_based.avg_switch_delay = 1.6`
+- `text_based.false_es_rate = 0.50% (14/2816)`
 
 See [eval_results/aggregate.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/aggregate.json) and [eval_results/per_call.json](/Users/pavan/code/auto-research-language-switch/eval_bilingual_stt/eval_results/per_call.json).

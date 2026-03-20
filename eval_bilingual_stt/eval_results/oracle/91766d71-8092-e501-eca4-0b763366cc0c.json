@@ -1,0 +1,134 @@
+[
+  {
+    "start": 0.32,
+    "end": 1.1999999,
+    "text": "hola",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 1.1999999,
+    "end": 6.24,
+    "text": "si dejas tu nombre y el motivo de tu llamada revisar\u00e9 si esta persona est\u00e1 disponible",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 16
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 20.335,
+    "end": 22.255001,
+    "text": "gracias taylor permanece en la l\u00ednea",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 44.364998,
+    "end": 45.324997,
+    "text": "buena tarde",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 51.405,
+    "end": 52.284996,
+    "text": "s\u00ed espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 61.620003,
+    "end": 62.420002,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 68.755,
+    "end": 69.395,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 74.835,
+    "end": 75.235,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 77.33,
+    "end": 77.97,
+    "text": "el carro",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 93.585,
+    "end": 93.905,
+    "text": "no",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "pt"
+    }
+  },
+  {
+    "start": 102.695,
+    "end": 103.09499,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "start": 1.5999999,
+    "end": 2.3999999,
+    "text": "yep",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 7.44,
+    "end": 8.4,
+    "text": "yo hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "km"
+    }
+  },
+  {
+    "start": 16.235,
+    "end": 17.355,
+    "text": "what can i do for you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

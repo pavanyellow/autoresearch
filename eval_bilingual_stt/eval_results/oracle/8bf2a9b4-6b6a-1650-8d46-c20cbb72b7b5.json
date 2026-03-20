@@ -1,0 +1,39 @@
+[
+  {
+    "start": 3.1999998,
+    "end": 4.64,
+    "text": "yes yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 6.3999996,
+    "end": 9.2,
+    "text": "tendr\u00e1 la raguet\u00f3n tambi\u00e9n el cobro adem\u00e1s yes",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 7,
+        "en": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 17.555,
+    "end": 22.675,
+    "text": "tomorrow",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

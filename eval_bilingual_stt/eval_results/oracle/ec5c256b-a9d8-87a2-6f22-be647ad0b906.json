@@ -1,0 +1,26 @@
+[
+  {
+    "start": 3.52,
+    "end": 4.56,
+    "text": "who is this",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.92,
+    "end": 12.32,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

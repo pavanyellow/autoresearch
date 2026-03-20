@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.71999997,
+    "end": 1.5999999,
+    "text": "hi",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ca"
+    }
+  },
+  {
+    "start": 1.8399999,
+    "end": 8.16,
+    "text": "i'm unable to reach the phone right now but if you leave a name number and a brief message i could get",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 22
+      },
+      "fasttext": "en"
+    }
+  }
+]

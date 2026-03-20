@@ -1,0 +1,26 @@
+[
+  {
+    "start": 0.48,
+    "end": 1.3599999,
+    "text": "bueno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 4.48,
+    "end": 5.2,
+    "text": "qu\u00e9 se fue",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  }
+]

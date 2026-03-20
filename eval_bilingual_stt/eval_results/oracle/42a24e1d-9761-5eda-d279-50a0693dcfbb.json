@@ -1,0 +1,50 @@
+[
+  {
+    "start": 2.3999999,
+    "end": 3.28,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 10.24,
+    "end": 12.799999,
+    "text": "i'm not going to discuss",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.6449995,
+    "end": 13.605,
+    "text": "anything",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 13.605,
+    "end": 15.844999,
+    "text": "sir have a blessed day bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 6
+      },
+      "fasttext": "en"
+    }
+  }
+]

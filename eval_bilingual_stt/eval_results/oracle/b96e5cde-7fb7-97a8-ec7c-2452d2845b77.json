@@ -1,0 +1,38 @@
+[
+  {
+    "start": 10.96,
+    "end": 11.36,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 18.495,
+    "end": 19.775,
+    "text": "this is him what happened",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 28.165,
+    "end": 31.685001,
+    "text": "i'm gonna i'm gonna i'm a i'm a call tomorrow to do my payment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 14
+      },
+      "fasttext": "en"
+    }
+  }
+]

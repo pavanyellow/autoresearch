@@ -1,0 +1,38 @@
+[
+  {
+    "start": 0.32,
+    "end": 0.64,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.975,
+    "end": 24.055,
+    "text": "es",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 24.055,
+    "end": 25.735,
+    "text": "la m\u00e1quina o es una persona",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 6
+      },
+      "fasttext": "es"
+    }
+  }
+]

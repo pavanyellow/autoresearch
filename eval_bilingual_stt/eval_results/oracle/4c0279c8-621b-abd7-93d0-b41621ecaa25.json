@@ -1,0 +1,122 @@
+[
+  {
+    "start": 2.56,
+    "end": 3.5199997,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.2,
+    "end": 6.3999996,
+    "text": "yeah this is bristan",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 21.595,
+    "end": 32.9,
+    "text": "not at the moment i'm waiting for the bank to refund me the money that went through because the card declined and then they have to send me back the money so once it comes back i'll be able to update with the new card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 45
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 40.66,
+    "end": 43.940002,
+    "text": "um they said four to five days since yesterday",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 9
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 43.940002,
+    "end": 47.475002,
+    "text": "so like four or five days maybe on monday the latest",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 11
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 53.155,
+    "end": 54.675003,
+    "text": "i'll just pay the regular",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 67.479996,
+    "end": 75.134995,
+    "text": "no they're sending me a new card with the refund because they are switching out from the old mastercard to a new card",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 23
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 81.534996,
+    "end": 81.854996,
+    "text": "yeah",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 95.75,
+    "end": 96.39,
+    "text": "sounds good",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 102.445,
+    "end": 103.885,
+    "text": "okay thank you bye bye",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 5
+      },
+      "fasttext": "en"
+    }
+  }
+]

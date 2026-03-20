@@ -1,0 +1,14 @@
+[
+  {
+    "start": 0.79999995,
+    "end": 4.0,
+    "text": "hi i'm dallas amber i'm not available at the moment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "start": 6.8799996,
+    "end": 7.68,
+    "text": "hello yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 19.795,
+    "end": 20.915,
+    "text": "sorry speak spanish",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 30.1,
+    "end": 30.98,
+    "text": "espa\u00f1ol",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 35.54,
+    "end": 35.940002,
+    "text": "s\u00ed",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 1
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 42.135,
+    "end": 44.054996,
+    "text": "me permite d\u00f3nde me llaman",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 53.015,
+    "end": 54.375,
+    "text": "pero de d\u00f3nde me llaman",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 5
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 63.95,
+    "end": 65.07,
+    "text": "elegir otra fecha",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 71.905,
+    "end": 72.785,
+    "text": "ya te indico",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "sw"
+    }
+  },
+  {
+    "start": 83.56,
+    "end": 84.68,
+    "text": "treinta y uno",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 85.0,
+    "end": 86.04,
+    "text": "de marzo",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 2
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 86.92,
+    "end": 87.799995,
+    "text": "dos mil veintis\u00e9is",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 3
+      },
+      "fasttext": "es"
+    }
+  },
+  {
+    "start": 94.245,
+    "end": 97.205,
+    "text": "el accidente de cuatrocientos algo lo que falta para la cuota",
+    "lang": "es",
+    "word_langs": {
+      "deepgram": {
+        "es": 11
+      },
+      "fasttext": "es"
+    }
+  }
+]

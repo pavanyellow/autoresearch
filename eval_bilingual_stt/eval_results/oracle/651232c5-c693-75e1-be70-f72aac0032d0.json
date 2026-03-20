@@ -1,0 +1,50 @@
+[
+  {
+    "start": 1.76,
+    "end": 2.4799998,
+    "text": "hello",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 11.12,
+    "end": 11.599999,
+    "text": "fine",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "it"
+    }
+  },
+  {
+    "start": 19.225,
+    "end": 21.945,
+    "text": "so i'm sorry i have to decline at this time",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 10
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 27.844936,
+    "end": 28.644938,
+    "text": "i'm sorry",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 2
+      },
+      "fasttext": "cy"
+    }
+  }
+]

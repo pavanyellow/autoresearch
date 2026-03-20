@@ -1,0 +1,26 @@
+[
+  {
+    "start": 1.4399999,
+    "end": 2.32,
+    "text": "top",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "ru"
+    }
+  },
+  {
+    "start": 5.3599997,
+    "end": 5.7599998,
+    "text": "yes",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 1
+      },
+      "fasttext": "en"
+    }
+  }
+]

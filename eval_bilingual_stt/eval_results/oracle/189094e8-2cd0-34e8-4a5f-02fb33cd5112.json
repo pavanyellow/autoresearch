@@ -1,0 +1,14 @@
+[
+  {
+    "start": 6.56,
+    "end": 7.3599997,
+    "text": "this is he",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 3
+      },
+      "fasttext": "en"
+    }
+  }
+]

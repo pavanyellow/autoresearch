@@ -1,0 +1,38 @@
+[
+  {
+    "start": 2.48,
+    "end": 3.9199998,
+    "text": "can i help you",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 4
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 5.8399997,
+    "end": 7.3599997,
+    "text": "no she's at work at the moment",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  },
+  {
+    "start": 12.975,
+    "end": 14.415001,
+    "text": "well i just said she's at work",
+    "lang": "en",
+    "word_langs": {
+      "deepgram": {
+        "en": 7
+      },
+      "fasttext": "en"
+    }
+  }
+]
