@@ -281,7 +281,7 @@ def extract_logged_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
 
 
 def extract_multi_stt_forwarded_events(call: CallInput) -> list[ForwardedEvent]:
-    primary_language = (call.language or "en")[:2]
+    primary_language = "en"
     current_language: str | None = None
     current_language_confidence = 0.0
     current_text = ""
@@ -490,7 +490,7 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
     last_interim_text = ""
     pending_prepend: AgentSessionEvent | None = None
     pending_skips: list[AgentSessionEvent] = []
-    primary_lang = (call.language or "en")[:2]
+    primary_lang = "en"
     believed_lang = primary_lang
 
     for event in call.agent_session_events:
