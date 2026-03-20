@@ -510,7 +510,8 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
             routed_lang = _infer_lang_from_events(routed_events, event.ts, text, False, call.language)
             if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, event.ts, routed_lang):
                 continue
-            forwarded.append(make_forwarded_event(event.ts, text, routed_lang, False))
+            effective_lang = believed_lang if routed_lang != believed_lang and text_lang != routed_lang else routed_lang
+            forwarded.append(make_forwarded_event(event.ts, text, effective_lang, False))
             last_interim_text = text
             believed_lang = _update_believed_language(believed_lang, primary_lang, forwarded)
             continue
@@ -543,11 +544,12 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
             if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, final_ts, routed_lang):
                 last_interim_text = ""
                 continue
+            effective_lang = believed_lang if routed_lang != believed_lang and text_lang != routed_lang else routed_lang
             forwarded.append(
                 make_forwarded_event(
                     final_ts,
                     text,
-                    routed_lang,
+                    effective_lang,
                     True,
                 )
             )
