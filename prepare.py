@@ -415,7 +415,7 @@ def _infer_lang_from_events(
     return fallback_lang
 
 
-def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 5.0) -> bool:
+def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 7.0) -> bool:
     for event in stt_events:
         if event.stream != 1:
             continue
