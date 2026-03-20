@@ -415,7 +415,7 @@ def _infer_lang_from_events(
     return fallback_lang
 
 
-def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 3.0) -> bool:
+def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: float = 5.0) -> bool:
     for event in stt_events:
         if event.stream != 1:
             continue
@@ -426,9 +426,19 @@ def _es_stream_active_near(stt_events: tuple[STTEvent, ...], ts: float, window: 
     return False
 
 
+def _es_stream_has_started(stt_events: tuple[STTEvent, ...], ts: float) -> bool:
+    for event in stt_events:
+        if event.stream == 1 and event.ts <= ts:
+            return True
+        if event.ts > ts:
+            break
+    return False
+
+
 def _should_suppress_event(
     text_lang: str, believed_lang: str, call_language: str, text: str,
     stt_events: tuple[STTEvent, ...] | None = None, ts: float = 0.0,
+    routed_lang: str | None = None,
 ) -> bool:
     if text_lang not in ("en", "es"):
         return False
@@ -438,11 +448,18 @@ def _should_suppress_event(
     if believed_lang == "en" and text_lang == "es":
         if len(normalized) <= 3 or normalized in ENGLISH_TRIGGER_BLOCKLIST:
             return True
+        if routed_lang == "en" and len(normalized) <= 10:
+            return True
     if believed_lang == "es" and text_lang == "en":
         if len(normalized) <= 4 or normalized in ENGLISH_TRIGGER_BLOCKLIST:
             return True
-        if stt_events is not None and _es_stream_active_near(stt_events, ts):
-            return True
+        if stt_events is not None:
+            if _es_stream_active_near(stt_events, ts):
+                return True
+            if not _es_stream_has_started(stt_events, ts):
+                first_stt_ts = next((e.ts for e in stt_events if e.stream is not None and e.stream < 2), None)
+                if first_stt_ts and ts - first_stt_ts < 5.0:
+                    return True
     return False
 
 
@@ -490,16 +507,10 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
             if not text or text == last_interim_text:
                 continue
             text_lang = detect_text_language(text)
-            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, event.ts):
+            routed_lang = _infer_lang_from_events(routed_events, event.ts, text, False, call.language)
+            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, event.ts, routed_lang):
                 continue
-            forwarded.append(
-                make_forwarded_event(
-                    event.ts,
-                    text,
-                    _infer_lang_from_events(routed_events, event.ts, text, False, call.language),
-                    False,
-                )
-            )
+            forwarded.append(make_forwarded_event(event.ts, text, routed_lang, False))
             last_interim_text = text
             believed_lang = _update_believed_language(believed_lang, primary_lang, forwarded)
             continue
@@ -528,14 +539,15 @@ def extract_agent_session_forwarded_events(call: CallInput) -> list[ForwardedEve
 
         if not should_skip:
             text_lang = detect_text_language(text)
-            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, final_ts):
+            routed_lang = _infer_lang_from_events(routed_events, final_ts, text, True, call.language)
+            if _should_suppress_event(text_lang, believed_lang, call.language, text, call.stt_events, final_ts, routed_lang):
                 last_interim_text = ""
                 continue
             forwarded.append(
                 make_forwarded_event(
                     final_ts,
                     text,
-                    _infer_lang_from_events(routed_events, final_ts, text, True, call.language),
+                    routed_lang,
                     True,
                 )
             )
